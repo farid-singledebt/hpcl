@@ -1,0 +1,14 @@
+@media screen and (max-width: 1250px) {
+  .navbar ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .carousel-item img {
+    max-height: calc(100vh - 84.8px - 72px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .presentation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

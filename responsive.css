@@ -4,7 +4,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
   .carousel-item img {
-    max-height: calc(100vh - 84.8px - 72px);
+    max-height: calc(100vh - 84.8px);
   }
 }
 @media screen and (max-width: 992px) {

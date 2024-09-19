@@ -21,16 +21,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
     <header class="container-fluid p-2 header" id="home">
-      <div class="logo" data-aos="zoom-in">
+      <div class="logo">
         <img src="./images/hp logo.png" alt="hp logo" />
       </div>
-      <div class="right-logo" data-aos="zoom-in">
+      <div class="right-logo">
         <img src="./images/right logo.png" alt="right logo" />
       </div>
     </header>
@@ -111,91 +109,81 @@
       <div
         class="d-flex align-items-center justify-content-center flex-wrap gap-2 my-4"
       >
-        <button
-          class="button agendaButton active"
-          onclick="toggleAgenda(1)"
-          data-aos="zoom-out"
-        >
+        <button class="button agendaButton active" onclick="toggleAgenda(1)">
           Agenda day 1
         </button>
-        <button
-          class="button agendaButton"
-          onclick="toggleAgenda(2)"
-          data-aos="zoom-out"
-        >
+        <button class="button agendaButton" onclick="toggleAgenda(2)">
           Agenda day 2
         </button>
-        <button
-          class="button agendaButton"
-          onclick="toggleAgenda(3)"
-          data-aos="zoom-out"
-        >
+        <button class="button agendaButton" onclick="toggleAgenda(3)">
           Agenda day 3
         </button>
       </div>
 
-      <div class="agendaDiv">
-        <table class="table table-bordered table-hover">
-          <tbody>
-            <tr>
-              <td>123</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="agendaDiv d-none">
-        <table class="table table-bordered table-hover">
-          <tbody>
-            <tr>
-              <td>456</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="agendaDiv d-none">
-        <table class="table table-bordered table-hover">
-          <tbody>
-            <tr>
-              <td>789</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="container overflow-container">
+        <div class="agendaDiv">
+          <table class="table table-bordered table-hover">
+            <tbody>
+              <tr>
+                <td>123</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="agendaDiv d-none">
+          <table class="table table-bordered table-hover">
+            <tbody>
+              <tr>
+                <td>456</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="agendaDiv d-none">
+          <table class="table table-bordered table-hover">
+            <tbody>
+              <tr>
+                <td>789</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <!--  -->
@@ -249,173 +237,15 @@
     <!--  -->
 
     <!-- awards -->
-    <div class="container p-2 py-5" id="awards">
+    <div class="container p-2 pt-5" id="awards">
       <div class="py-4"></div>
       <div class="title">
         <h1>Awards</h1>
       </div>
-      <table class="table table-bordered table-hover my-4">
-        <thead>
-          <tr>
-            <th>Sr No</th>
-            <th>SBU</th>
-            <th>Category</th>
-            <th>Winner</th>
-            <th>Winner image</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Lorem</td>
-            <td>Lorem, ipsum dolor.</td>
-            <td>Lorem, ipsum.</td>
-            <td>View image</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-    <!--  -->
-
-    <!-- pragati prangan -->
-    <div class="container p-2 py-5" id="pragatiprangan">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>Pragati prangan</h1>
-      </div>
-
-      <div
-        class="d-flex align-items-center justify-content-center flex-wrap gap-2 my-4"
-      >
-        <button
-          class="button ppButton active"
-          onclick="togglePP(1)"
-          data-aos="zoom-out"
-        >
-          Stall
-        </button>
-        <button
-          class="button ppButton"
-          onclick="togglePP(2)"
-          data-aos="zoom-out"
-        >
-          Gallery
-        </button>
-        <button
-          class="button ppButton"
-          onclick="togglePP(3)"
-          data-aos="zoom-out"
-        >
-          Prizes
-        </button>
-      </div>
-
-      <div class="stall ppDiv" id="stall">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
-          assumenda saepe iste pariatur minima porro quia veritatis repellendus,
-          voluptate dignissimos corporis nihil iure placeat voluptates
-          laudantium. Impedit consequatur eveniet quae, neque, temporibus ut
-          quam dolorum modi sit eligendi quibusdam perspiciatis? Quo facere,
-          accusamus cupiditate reiciendis iure rem quasi eligendi. Deleniti
-          debitis consectetur asperiores doloribus, sequi ratione perspiciatis?
-          Voluptas asperiores iste atque optio eveniet consequatur explicabo
-          cumque impedit corporis tempora assumenda laboriosam aliquid, commodi
-          voluptatum est harum, facilis magni! Dolor quas cumque molestias
-          deserunt quaerat provident iste similique mollitia quae veniam,
-          eligendi numquam facere recusandae, consectetur quasi eos pariatur
-          laboriosam?
-        </p>
-      </div>
-
-      <div class="gallery ppDiv d-none" id="gallery">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img
-              src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Image 1"
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Image 2"
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Image 3"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="prizes ppDiv d-none">
-        <table class="table table-bordered table-hover my-4">
+    <div class="container-fluid awards-bg">
+      <div class="container px-0 py-4 overflow-container">
+        <table class="table glass-table glass-table-hover my-4">
           <thead>
             <tr>
               <th>Sr No</th>
@@ -502,6 +332,154 @@
     </div>
     <!--  -->
 
+    <!-- pragati prangan -->
+    <div class="container p-2 py-5" id="pragatiprangan">
+      <div class="py-4"></div>
+      <div class="title">
+        <h1>Pragati prangan</h1>
+      </div>
+
+      <div
+        class="d-flex align-items-center justify-content-center flex-wrap gap-2 my-4"
+      >
+        <button class="button ppButton active" onclick="togglePP(1)">
+          Stall
+        </button>
+        <button class="button ppButton" onclick="togglePP(2)">Gallery</button>
+        <button class="button ppButton" onclick="togglePP(3)">Prizes</button>
+      </div>
+
+      <div class="stall ppDiv" id="stall">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam
+          assumenda saepe iste pariatur minima porro quia veritatis repellendus,
+          voluptate dignissimos corporis nihil iure placeat voluptates
+          laudantium. Impedit consequatur eveniet quae, neque, temporibus ut
+          quam dolorum modi sit eligendi quibusdam perspiciatis? Quo facere,
+          accusamus cupiditate reiciendis iure rem quasi eligendi. Deleniti
+          debitis consectetur asperiores doloribus, sequi ratione perspiciatis?
+          Voluptas asperiores iste atque optio eveniet consequatur explicabo
+          cumque impedit corporis tempora assumenda laboriosam aliquid, commodi
+          voluptatum est harum, facilis magni! Dolor quas cumque molestias
+          deserunt quaerat provident iste similique mollitia quae veniam,
+          eligendi numquam facere recusandae, consectetur quasi eos pariatur
+          laboriosam?
+        </p>
+      </div>
+
+      <div class="gallery ppDiv d-none" id="gallery">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Image 1"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Image 2"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container overflow-container">
+        <div class="prizes ppDiv d-none">
+          <table class="table table-bordered table-hover my-4">
+            <thead>
+              <tr>
+                <th>Sr No</th>
+                <th>SBU</th>
+                <th>Category</th>
+                <th>Winner</th>
+                <th>Winner image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Lorem</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum.</td>
+                <td>View image</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
     <!-- launches -->
     <div class="container p-2 py-5" id="launches">
       <div class="py-4"></div>
@@ -512,39 +490,19 @@
       <div
         class="d-flex align-items-center justify-content-center flex-wrap flex-wrap gap-2 my-4"
       >
-        <button
-          class="button launchButton active"
-          onclick="toggleLaunch(1)"
-          data-aos="zoom-out"
-        >
+        <button class="button launchButton active" onclick="toggleLaunch(1)">
           LPG
         </button>
-        <button
-          class="button launchButton"
-          onclick="toggleLaunch(2)"
-          data-aos="zoom-out"
-        >
+        <button class="button launchButton" onclick="toggleLaunch(2)">
           Lubes
         </button>
-        <button
-          class="button launchButton"
-          onclick="toggleLaunch(3)"
-          data-aos="zoom-out"
-        >
+        <button class="button launchButton" onclick="toggleLaunch(3)">
           R&D
         </button>
-        <button
-          class="button launchButton"
-          onclick="toggleLaunch(4)"
-          data-aos="zoom-out"
-        >
+        <button class="button launchButton" onclick="toggleLaunch(4)">
           Mission 60
         </button>
-        <button
-          class="button launchButton"
-          onclick="toggleLaunch(5)"
-          data-aos="zoom-out"
-        >
+        <button class="button launchButton" onclick="toggleLaunch(5)">
           Digital initiatives
         </button>
       </div>
@@ -675,21 +633,18 @@
         <button
           class="button mediaGalleryButton active"
           onclick="toggleMediaGallery(1)"
-          data-aos="zoom-out"
         >
           day 1
         </button>
         <button
           class="button mediaGalleryButton"
           onclick="toggleMediaGallery(2)"
-          data-aos="zoom-out"
         >
           day 2
         </button>
         <button
           class="button mediaGalleryButton"
           onclick="toggleMediaGallery(3)"
-          data-aos="zoom-out"
         >
           day 3
         </button>
@@ -765,126 +720,128 @@
     <!--  -->
 
     <!-- leadership speaks -->
-    <div class="container p-2 py-5" id="leadershipspeaks">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>leadership speaks</h1>
-      </div>
+    <div class="container-fluid p-0 leadership-bg">
+      <div class="container p-2 py-5" id="leadershipspeaks">
+        <div class="py-4"></div>
+        <div class="title">
+          <h1>leadership speaks</h1>
+        </div>
 
-      <div class="text-center pt-4">
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by c & md</h2>
+        <div class="text-center pt-4">
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by c & md</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
-        </div>
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by director finance</h2>
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by director finance</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
-        </div>
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by director refinery</h2>
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by director refinery</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
-        </div>
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by director marketing</h2>
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by director marketing</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
-        </div>
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by director hr</h2>
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by director hr</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
-        </div>
-        <div class="mb-4">
-          <div class="subtitle">
-            <h2>Address by cheif vigiliance officer</h2>
+          <div class="mb-4">
+            <div class="subtitle">
+              <h2>Address by cheif vigiliance officer</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
+              numquam. Quod, dignissimos explicabo? Natus amet aperiam illo
+              totam recusandae optio eius mollitia quae placeat hic voluptates
+              facere et maiores, nihil dignissimos, voluptatum nam at quos nulla
+              ab fugiat! Temporibus, nihil voluptatem? Distinctio illo
+              aspernatur minus, eos dignissimos dolorem. Non odio esse aliquam
+              magnam vitae illum. Pariatur quam dolorum enim unde amet adipisci?
+              Voluptatum, sapiente corrupti maxime placeat nobis vel nemo odio
+              exercitationem asperiores necessitatibus beatae totam nulla
+              consequuntur repellendus enim, alias iusto deleniti at temporibus,
+              eius dolore earum. Exercitationem sit quas quos architecto
+              mollitia perferendis quia dolores? Eum, magni!
+            </p>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa
-            numquam. Quod, dignissimos explicabo? Natus amet aperiam illo totam
-            recusandae optio eius mollitia quae placeat hic voluptates facere et
-            maiores, nihil dignissimos, voluptatum nam at quos nulla ab fugiat!
-            Temporibus, nihil voluptatem? Distinctio illo aspernatur minus, eos
-            dignissimos dolorem. Non odio esse aliquam magnam vitae illum.
-            Pariatur quam dolorum enim unde amet adipisci? Voluptatum, sapiente
-            corrupti maxime placeat nobis vel nemo odio exercitationem
-            asperiores necessitatibus beatae totam nulla consequuntur
-            repellendus enim, alias iusto deleniti at temporibus, eius dolore
-            earum. Exercitationem sit quas quos architecto mollitia perferendis
-            quia dolores? Eum, magni!
-          </p>
         </div>
       </div>
     </div>
@@ -948,14 +905,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <!--  -->
     <script>
       let scrolltotop = document.getElementById("scrolltotop");
+      const navbar = document.querySelector(".navbar");
       $(document).ready(function () {
-        AOS.init();
         $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 8,
@@ -974,10 +928,12 @@
         });
         //
         window.addEventListener("scroll", () => {
-          if (window.scrollY > 100) {
+          if (window.scrollY > 10) {
             scrolltotop.classList.remove("d-none");
-          } else if (window.scrollY < 100) {
+            navbar.classList.add("active");
+          } else if (window.scrollY < 10) {
             scrolltotop.classList.add("d-none");
+            navbar.classList.remove("active");
           }
         });
       });

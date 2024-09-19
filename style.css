@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 html {
@@ -16,7 +17,7 @@ body {
 :root {
   --red: #ea2127;
   --blue: #023f87;
-  --transition: all 0.5s ease-in-out;
+  --transition: all 0.5s linear;
   --radius: 4px;
 }
 h1 {
@@ -47,11 +48,16 @@ img {
   max-width: 200px;
 }
 .navbar {
-  background: var(--blue);
-  position: sticky;
-  top: 0;
+  background: transparent;
+  position: fixed;
+  top: 84.8px;
   z-index: 10;
   overflow: hidden;
+  transition: var(--transition);
+}
+.navbar.active {
+  background: var(--blue);
+  top: 0;
 }
 .navbar ul {
   display: flex;
@@ -75,7 +81,7 @@ img {
   color: var(--red);
 }
 .carousel-item img {
-  max-height: calc(100vh - 84.8px - 40px);
+  max-height: calc(100vh - 84.8px);
 }
 .title {
   text-align: center;
@@ -96,9 +102,35 @@ img {
   background: var(--blue);
   transition: var(--transition);
   border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
 }
 .button:hover {
   background: var(--red);
+}
+.button::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--blue);
+  transition: var(--transition);
+}
+.button::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--blue);
+  transition: var(--transition);
+}
+.button:hover::before,
+.button:hover::after {
+  width: 100%;
 }
 .presentation-grid {
   display: grid;
@@ -113,6 +145,7 @@ img {
   overflow: hidden;
   position: relative;
   width: 100%;
+  transition: var(--transition);
 }
 .presentation-grid .presentation-card img {
   height: 200px;
@@ -167,4 +200,66 @@ img {
   width: 30px;
   height: 30px;
   filter: invert(1);
+}
+.awards-bg {
+  background: linear-gradient(to top, #00000080, #00000080),
+    url("https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+      center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.glass-table {
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  overflow: hidden;
+}
+.glass-table th,
+.glass-table td {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000;
+  padding: 10px;
+  border: none;
+  color: #fff;
+}
+
+.glass-table thead th {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.glass-table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.table {
+  min-width: 576px;
+}
+.overflow-container {
+  overflow-x: auto;
+}
+.overflow-container::-webkit-scrollbar {
+  opacity: 0;
+}
+.table {
+  border: 2px solid var(--blue) !important;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 2px solid var(--blue) !important;
+  transition: var(--transition);
+}
+.table-bordered th {
+  background: var(--blue);
+  color: #fff;
+}
+.table-hover tbody tr:hover td {
+  background-color: #02408734 !important;
+}
+
+.table-hover tbody tr:hover th {
+  background-color: var(--blue) !important;
+  color: white !important;
 }

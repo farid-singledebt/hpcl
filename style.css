@@ -87,7 +87,7 @@ img {
   color: var(--red) !important;
 }
 .carousel-item img {
-  max-height: calc(100vh - 84.8px);
+  height: calc(100vh - 84.8px - 39.99px);
 }
 .title {
   text-align: center;
@@ -383,4 +383,9 @@ img {
     transform: translateY(-6px) rotate(45deg);
     width: 40%;
   }
+}
+footer {
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
 }

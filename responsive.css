@@ -11,4 +11,37 @@
   .presentation-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .launches-button-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .agenda-button-flex,
+  .pragati-button-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .agenda-button-flex button,
+  .pragati-button-flex button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .launches-button-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 525px) {
+  .agenda-button-flex,
+  .pragati-button-flex {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .media-button-flex {
+    flex-direction: column;
+  }
+  .media-button-flex button {
+    width: 100%;
+  }
 }

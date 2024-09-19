@@ -76,6 +76,21 @@ img {
   text-decoration: none;
   display: block;
   transition: var(--transition);
+  position: relative;
+}
+.navbar ul li a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: var(--transition);
+}
+.navbar ul li a:hover::before,
+.navbar ul li a.active::before {
+  width: 100%;
 }
 .navbar ul li a.active {
   color: var(--red);
@@ -262,4 +277,28 @@ img {
 .table-hover tbody tr:hover th {
   background-color: var(--blue) !important;
   color: white !important;
+}
+.agenda-button-flex,
+.pragati-button-flex,
+.media-button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.agenda-button-flex button {
+  width: 155px;
+}
+.pragati-button-flex button {
+  width: 115px;
+}
+.launches-button-flex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.media-button-flex button {
+  width: 90px;
 }

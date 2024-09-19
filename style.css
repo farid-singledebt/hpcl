@@ -389,3 +389,47 @@ footer {
   color: #fff;
   text-align: center;
 }
+.photo-modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  z-index: 11;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  /*  */
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+.photo-modal-container.active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  pointer-events: all;
+}
+.photo-modal-container .photo-box {
+  width: calc(100% - 16px);
+  height: calc(100% - 100px);
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin: 0 auto;
+}
+.photo-modal-container .photo-box img {
+  height: 100%;
+}
+.close {
+  cursor: pointer;
+}
+.close img {
+  width: 20px;
+  height: 20px;
+}

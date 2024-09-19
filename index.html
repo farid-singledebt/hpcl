@@ -25,8 +25,11 @@
   <body>
     <!-- header -->
     <header class="container-fluid p-2 header" id="home">
-      <div class="logo">
+      <div class="logo d-lg-block d-none">
         <img src="./images/hp logo.png" alt="hp logo" />
+      </div>
+      <div class="logo d-lg-none d-block">
+        <img src="./images/left side.png" alt="hp logo" />
       </div>
       <div class="right-logo">
         <img src="./images/right logo.png" alt="right logo" />
@@ -36,6 +39,14 @@
 
     <!-- navbar -->
     <nav class="container-fluid navbar p-2">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <div class="right-side d-lg-none d-block">
+          <img src="./images/right side.png" alt="hp logo" />
+        </div>
+        <div class="d-lg-none d-block">
+          <div class="openbtn"><span></span><span></span><span></span></div>
+        </div>
+      </div>
       <ul>
         <li><a href="#home" class="active">home</a></li>
         <li><a href="#agenda">Agenda</a></li>
@@ -990,13 +1001,20 @@
         });
         //
         window.addEventListener("scroll", () => {
+          //
           if (window.scrollY > 10) {
             scrolltotop.classList.remove("d-none");
-            navbar.classList.add("active");
+            navbar.classList.add("stick");
           } else if (window.scrollY < 10) {
             scrolltotop.classList.add("d-none");
-            navbar.classList.remove("active");
+            navbar.classList.remove("stick");
           }
+        });
+
+        //
+        $(".openbtn").click(function () {
+          $(this).toggleClass("active");
+          navbar.classList.toggle("active");
         });
       });
 

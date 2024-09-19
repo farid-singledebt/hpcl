@@ -17,6 +17,24 @@
   .seniors-flex {
     grid-template-columns: repeat(2, 1fr);
   }
+  .navbar ul {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+  }
+  .navbar {
+    height: 75px;
+  }
+  .navbar.active {
+    height: 440px;
+  }
+  .navbar.active ul li a {
+    color: #000;
+  }
+  .navbar ul li a {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 950px) {
 }
 @media screen and (max-width: 768px) {
   .agenda-button-flex,

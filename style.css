@@ -48,16 +48,21 @@ img {
   max-width: 200px;
 }
 .navbar {
-  background: transparent;
-  position: fixed;
-  top: 84.8px;
   z-index: 10;
   overflow: hidden;
   transition: var(--transition);
-}
-.navbar.active {
-  background: var(--blue);
+  position: sticky;
   top: 0;
+  width: calc(100% - 16px);
+}
+.navbar.stick {
+  top: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .navbar ul {
   display: flex;
@@ -70,7 +75,7 @@ img {
   width: 100%;
 }
 .navbar ul li a {
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   text-align: center;
   text-decoration: none;
@@ -78,22 +83,8 @@ img {
   transition: var(--transition);
   position: relative;
 }
-.navbar ul li a::before {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: var(--red);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: var(--transition);
-}
-.navbar ul li a:hover::before,
-.navbar ul li a.active::before {
-  width: 100%;
-}
 .navbar ul li a.active {
-  color: var(--red);
+  color: var(--red) !important;
 }
 .carousel-item img {
   max-height: calc(100vh - 84.8px);
@@ -345,4 +336,51 @@ img {
   margin: 0 auto;
   aspect-ratio: 1;
   border-radius: 50%;
+}
+.right-side {
+  width: 50px;
+}
+.openbtn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.openbtn span {
+  display: inline-block;
+  position: absolute;
+  width: 45%;
+  left: 14px;
+  height: 3px;
+  border-radius: var(--radius);
+  background: #000;
+  transition: var(--transition);
+  &:nth-of-type(1) {
+    top: 17px;
+  }
+  &:nth-of-type(2) {
+    top: 25px;
+  }
+  &:nth-of-type(3) {
+    top: 33px;
+  }
+}
+
+.openbtn.active span {
+  &:nth-of-type(1) {
+    top: 18px;
+    left: 14px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 40%;
+  }
+  &:nth-of-type(2) {
+    opacity: 0;
+  }
+  &:nth-of-type(3) {
+    top: 30px;
+    left: 14px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 40%;
+  }
 }

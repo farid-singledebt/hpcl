@@ -194,7 +194,8 @@ img {
 .agendaButton.active,
 .ppButton.active,
 .launchButton.active,
-.mediaGalleryButton.active {
+.mediaGalleryButton.active,
+.awards-button.active {
   background: var(--red);
 }
 .subtitle {
@@ -222,13 +223,14 @@ img {
       center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  border-radius: var(--radius);
 }
 .glass-table {
   background: rgba(255, 255, 255, 0.25) !important;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
-  border-radius: 10px !important;
+  border-radius: var(--radius) !important;
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
   overflow: hidden;
 }
@@ -301,4 +303,46 @@ img {
 }
 .media-button-flex button {
   width: 90px;
+}
+.awards-button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.awards-button-flex button {
+  width: 220px;
+}
+.seniors-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.seniors-flex .seniors-card {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 8px;
+  background: #eee;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.seniors-flex .seniors-card:hover {
+  box-shadow: #959da533 0px 8px 24px;
+  border: 1px solid #959da533;
+}
+.seniors-flex .seniors-card img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
 }

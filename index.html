@@ -240,92 +240,162 @@
       <div class="title">
         <h1>Awards</h1>
       </div>
+
+      <div class="awards-button-flex my-4">
+        <button class="button awards-button active" onclick="toggleAwards(1)">
+          Awards
+        </button>
+        <button class="button awards-button" onclick="toggleAwards(2)">
+          Felicitating the seniors
+        </button>
+      </div>
     </div>
-    <div class="container-fluid awards-bg">
-      <div class="container px-0 py-4 overflow-container">
-        <table class="table glass-table glass-table-hover my-4">
-          <thead>
-            <tr>
-              <th>Sr No</th>
-              <th>SBU</th>
-              <th>Category</th>
-              <th>Winner</th>
-              <th>Winner image</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Lorem</td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>View image</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="container p-3 pb-0 overflow-container awards-bg awards-div">
+      <table class="table glass-table glass-table-hover">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>SBU</th>
+            <th>Category</th>
+            <th>Winner</th>
+            <th>Winner image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Lorem</td>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>View image</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container seniors-flex p-2 awards-div d-none">
+      <div class="seniors-card">
+        <img
+          src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="profile"
+        />
+
+        <div class="senior-details">
+          <p>Lorem, ipsum dolor.</p>
+          <p>Employee No: 12345678901234567890</p>
+          <p>Designation: Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="seniors-card">
+        <img
+          src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="profile"
+        />
+
+        <div class="senior-details">
+          <p>Lorem, ipsum dolor.</p>
+          <p>Employee No: 12345678901234567890</p>
+          <p>Designation: Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="seniors-card">
+        <img
+          src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="profile"
+        />
+
+        <div class="senior-details">
+          <p>Lorem, ipsum dolor.</p>
+          <p>Employee No: 12345678901234567890</p>
+          <p>Designation: Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="seniors-card">
+        <img
+          src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="profile"
+        />
+
+        <div class="senior-details">
+          <p>Lorem, ipsum dolor.</p>
+          <p>Employee No: 12345678901234567890</p>
+          <p>Designation: Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="seniors-card">
+        <img
+          src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="profile"
+        />
+
+        <div class="senior-details">
+          <p>Lorem, ipsum dolor.</p>
+          <p>Employee No: 12345678901234567890</p>
+          <p>Designation: Lorem, ipsum dolor.</p>
+        </div>
       </div>
     </div>
     <!--  -->
@@ -337,7 +407,7 @@
         <h1>Pragati prangan</h1>
       </div>
 
-      <div class="pragati-button-flex gap-2 my-4">
+      <div class="pragati-button-flex my-4">
         <button class="button ppButton active" onclick="togglePP(1)">
           Stall
         </button>
@@ -970,6 +1040,24 @@
         });
         //
         ppButtons.forEach((item, index) => {
+          item.classList.remove("active");
+          if (index + 1 === count) {
+            item.classList.add("active");
+          }
+        });
+      };
+
+      const awardsDivs = document.querySelectorAll(".awards-div");
+      const awardsButton = document.querySelectorAll(".awards-button");
+      const toggleAwards = (count) => {
+        awardsDivs.forEach((item, index) => {
+          item.classList.add("d-none");
+          if (index + 1 === count) {
+            item.classList.remove("d-none");
+          }
+        });
+        //
+        awardsButton.forEach((item, index) => {
           item.classList.remove("active");
           if (index + 1 === count) {
             item.classList.add("active");

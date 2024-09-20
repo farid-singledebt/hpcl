@@ -303,7 +303,7 @@ img {
   gap: 8px;
 }
 .media-button-flex button {
-  width: 90px;
+  width: 95px;
 }
 .awards-button-flex {
   display: flex;
@@ -442,4 +442,37 @@ footer {
 .close img {
   width: 20px;
   height: 20px;
+}
+.prizes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.prizes-grid .prizes-card {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background: linear-gradient(45deg, var(--blue), var(--red));
+  color: #fff;
+  text-align: center;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.prizes-grid .prizes-card img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+.prizes-grid .second {
+  margin-top: 100px;
+}
+.prizes-grid .third {
+  margin-top: 200px;
 }

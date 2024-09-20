@@ -73,6 +73,13 @@
   .prizes-grid .third {
     margin: 0;
   }
+  .presentation-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .presentation-grid .presentation-card {
+    gap: 16px;
+  }
 }
 @media screen and (max-width: 650px) {
   .header {

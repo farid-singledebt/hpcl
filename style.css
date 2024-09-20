@@ -54,15 +54,12 @@ img {
   position: sticky;
   top: 0;
   width: calc(100% - 16px);
+  border-radius: var(--radius);
+  background: #fff;
 }
 .navbar.stick {
   top: 8px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navbar ul {
   display: flex;
@@ -82,9 +79,23 @@ img {
   display: block;
   transition: var(--transition);
   position: relative;
+  padding: 4px;
+  border-radius: var(--radius);
 }
 .navbar ul li a.active {
-  color: var(--red) !important;
+  background-size: 300% 100%;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    var(--blue),
+    var(--red),
+    var(--red),
+    var(--blue)
+  );
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #fff;
 }
 .carousel-item img {
   height: calc(100vh - 84.8px - 39.99px);
@@ -105,7 +116,6 @@ img {
   border: none;
   text-transform: capitalize;
   color: #fff;
-  background: linear-gradient(45deg, var(--blue), var(--red));
   transition: var(--transition);
   border-radius: var(--radius);
   position: relative;
@@ -122,7 +132,7 @@ img {
     var(--red),
     var(--blue)
   );
-  box-shadow: 0 4px 15px 0 #ea21284f;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 2px solid transparent;
 }
 .button:hover {
@@ -228,7 +238,7 @@ img {
 }
 .glass-table {
   background: rgba(255, 255, 255, 0.25) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
   border-radius: var(--radius) !important;
@@ -337,7 +347,7 @@ img {
   cursor: pointer;
 }
 .seniors-flex .seniors-card:hover {
-  box-shadow: #959da533 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 1px solid #959da533;
 }
 .seniors-flex .seniors-card img {
@@ -417,7 +427,7 @@ footer {
   justify-content: center;
   /*  */
   background: rgba(255, 255, 255, 0.25) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }

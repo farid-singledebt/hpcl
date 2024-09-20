@@ -509,3 +509,22 @@ footer {
   margin: 0 auto;
   object-fit: cover;
 }
+.leadership-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.leadership-flex .leadership-left {
+  width: 200px;
+  min-width: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.leadership-flex .leadership-left img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.leadership-section .leadership-flex:nth-child(even) {
+  flex-direction: row-reverse;
+}

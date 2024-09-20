@@ -118,6 +118,10 @@
   .special-grid > div:nth-child(1) {
     grid-column: span 2;
   }
+  .leadership-flex {
+    flex-direction: column !important;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 650px) {
   .header {

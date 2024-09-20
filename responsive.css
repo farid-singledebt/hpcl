@@ -27,11 +27,20 @@
   .navbar.active {
     height: 440px;
   }
+  .navbar.active ul li {
+    text-align: center;
+  }
   .navbar.active ul li a {
     color: #000;
   }
   .navbar ul li a {
-    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  .navbar ul li a.active {
+    color: #fff;
   }
   .prizes-grid {
     grid-template-columns: 1fr;
@@ -53,6 +62,12 @@
     margin-top: 0;
     margin-left: auto;
     order: 3;
+  }
+  .special-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 3;
   }
 }
 @media screen and (max-width: 768px) {
@@ -97,6 +112,12 @@
     flex-direction: column;
     text-align: center;
   }
+  .special-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 2;
+  }
 }
 @media screen and (max-width: 650px) {
   .header {
@@ -132,6 +153,12 @@
   }
   .awards-button-flex button {
     width: 100%;
+  }
+  .special-grid {
+    grid-template-columns: 1fr;
+  }
+  .special-grid > div:nth-child(1) {
+    grid-column: span 1;
   }
 }
 @media screen and (max-width: 420px) {

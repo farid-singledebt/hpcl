@@ -212,10 +212,6 @@ img {
 .subtitle {
   text-align: center;
 }
-.subtitle h2 {
-  text-transform: uppercase;
-  color: var(--blue);
-}
 .scrolltotop {
   position: fixed;
   bottom: 10px;
@@ -504,10 +500,11 @@ footer {
   gap: 8px;
 }
 .special-card img {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   margin: 0 auto;
   object-fit: cover;
+  border-radius: 50%;
 }
 .leadership-flex {
   display: flex;

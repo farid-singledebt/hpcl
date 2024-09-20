@@ -236,31 +236,6 @@ img {
   background-attachment: fixed;
   border-radius: var(--radius);
 }
-.glass-table {
-  background: rgba(255, 255, 255, 0.25) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  border-radius: var(--radius) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
-  overflow: hidden;
-}
-.glass-table th,
-.glass-table td {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #000;
-  padding: 10px;
-  border: none;
-  color: #fff;
-}
-
-.glass-table thead th {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.glass-table-hover tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
 .table {
   min-width: 576px;
 }
@@ -269,27 +244,6 @@ img {
 }
 .overflow-container::-webkit-scrollbar {
   opacity: 0;
-}
-.table {
-  border: 2px solid var(--blue) !important;
-}
-
-.table-bordered td,
-.table-bordered th {
-  border: 2px solid var(--blue) !important;
-  transition: var(--transition);
-}
-.table-bordered th {
-  background: var(--blue);
-  color: #fff;
-}
-.table-hover tbody tr:hover td {
-  background-color: #02408734 !important;
-}
-
-.table-hover tbody tr:hover th {
-  background-color: var(--blue) !important;
-  color: white !important;
 }
 .agenda-button-flex,
 .pragati-button-flex,
@@ -473,6 +427,30 @@ footer {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-evenly;
+  position: relative;
+}
+.prizes-grid .prizes-card::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  filter: invert(1);
+  opacity: 0.25;
+  transform: rotate(16deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.prizes-grid .prizes-card:nth-child(1)::before {
+  background-image: url(./images/1st.png);
+}
+.prizes-grid .prizes-card:nth-child(2)::before {
+  background-image: url(./images/2nd.png);
+}
+.prizes-grid .prizes-card:nth-child(3)::before {
+  background-image: url(./images/3rd.png);
 }
 .prizes-grid .prizes-card img {
   aspect-ratio: 1;
@@ -480,9 +458,29 @@ footer {
   max-width: 100px;
   margin: 0 auto;
 }
+.prizes-grid .first {
+  order: 2;
+}
 .prizes-grid .second {
+  order: 1;
   margin-top: 100px;
 }
 .prizes-grid .third {
   margin-top: 200px;
+  order: 3;
+}
+.stall {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.stall .stall-left {
+  min-width: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.stall .stall-left img {
+  aspect-ratio: 1;
 }

@@ -68,22 +68,22 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="d-block w-100"
+              src="./images/banner/CVO.jpg"
+              class="d-block w-100 img-fluid"
               alt="banner1"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="d-block w-100"
+              src="./images/banner/CMD.jpg"
+              class="d-block w-100 img-fluid"
               alt="banner2"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="d-block w-100"
+              src="./images/banner/DF.jpg"
+              class="d-block w-100 img-fluid"
               alt="banner3"
             />
           </div>
@@ -206,6 +206,31 @@
 
       <div class="presentation-grid my-4" id="presentation">
         <!-- from presentation.js -->
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header p-2">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-2">
+            <!-- PDF iframe -->
+            <iframe id="pdfIframe" src="" class="modal-iframe"></iframe>
+          </div>
+        </div>
       </div>
     </div>
     <!--  -->

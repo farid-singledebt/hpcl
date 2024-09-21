@@ -525,3 +525,10 @@ footer {
 .leadership-section .leadership-flex:nth-child(even) {
   flex-direction: row-reverse;
 }
+.modal-body iframe {
+  border-radius: var(--radius) !important;
+}
+.modal-iframe {
+  width: 100%;
+  height: calc(100vh - 200px);
+}

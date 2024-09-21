@@ -531,5 +531,5 @@ footer {
 .modal-iframe,
 .modal-img {
   width: 100%;
-  max-height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
 }

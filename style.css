@@ -528,7 +528,8 @@ footer {
 .modal-body iframe {
   border-radius: var(--radius) !important;
 }
-.modal-iframe {
+.modal-iframe,
+.modal-img {
   width: 100%;
-  height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
 }

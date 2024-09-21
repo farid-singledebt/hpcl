@@ -938,6 +938,12 @@
       let scrolltotop = document.getElementById("scrolltotop");
       const navbar = document.querySelector(".navbar");
       $(document).ready(function () {
+        //
+        let allImages = document.querySelectorAll("img");
+        allImages.forEach((img) => {
+          img.setAttribute("lazy-loading", true);
+        });
+        //
         $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 8,

@@ -605,3 +605,27 @@ footer {
   width: 100%;
   height: calc(100vh - 200px);
 }
+/*  */
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+  grid-gap: 16px;
+  padding: 16px;
+}
+.masonry-item {
+  background-color: #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+.masonry-item:nth-child(odd) {
+  grid-row: span 10;
+}
+.masonry-item:nth-child(even) {
+  grid-row: span 15;
+}

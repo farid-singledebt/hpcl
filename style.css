@@ -19,6 +19,7 @@ body {
   --blue: #023f87;
   --transition: all 0.5s linear;
   --radius: 4px;
+  --shadow: #0000003d 0px 3px 8px;
 }
 h1 {
   font-size: 2rem;
@@ -59,7 +60,7 @@ img {
 }
 .navbar.stick {
   top: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
 }
 .navbar ul {
   display: flex;
@@ -94,7 +95,7 @@ img {
     var(--red),
     var(--blue)
   );
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
   color: #fff;
 }
 .carousel-item img {
@@ -125,8 +126,15 @@ img {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background: var(--blue);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
   border: 2px solid transparent;
+}
+.button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 auto;
 }
 .button:hover {
   background: var(--red);
@@ -148,10 +156,13 @@ img {
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
-  border: 1px solid #eee;
+  border: 1px solid var(--blue);
   padding: 8px;
   border-radius: var(--radius);
   overflow: hidden;
+}
+.presentation-grid .presentation-card a {
+  border: 1px solid var(--blue);
 }
 .presentation-grid .presentation-img {
   border-radius: var(--radius);
@@ -187,6 +198,14 @@ img {
   border-radius: var(--radius);
 }
 .overlay p {
+  color: #fff;
+}
+.owl-carousel .item {
+  background: var(--blue);
+  padding: 4px;
+  border-radius: var(--radius);
+}
+.owl-carousel .item p {
   color: #fff;
 }
 .owl-carousel .item img {
@@ -228,7 +247,7 @@ img {
 .table {
   min-width: 576px;
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: var(--shadow);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -253,6 +272,20 @@ th {
 }
 .overflow-container::-webkit-scrollbar {
   opacity: 0;
+}
+.agenda-card {
+  background: var(--blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+.agenda-card .button {
+  background-color: var(--red);
 }
 .agenda-button-flex,
 .pragati-button-flex,
@@ -310,7 +343,7 @@ th {
   cursor: pointer;
 }
 .seniors-flex .seniors-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
   border-color: var(--red);
 }
 .seniors-flex .seniors-card img {
@@ -399,7 +432,7 @@ footer {
   justify-content: center;
   /*  */
   background: rgba(255, 255, 255, 0.25) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  box-shadow: var(--shadow);
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
@@ -488,14 +521,14 @@ footer {
   order: 3;
 }
 .stall {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
 .stall .stall-left {
-  min-width: 200px;
-  max-width: 200px;
+  max-height: 400px;
   overflow: hidden;
   border-radius: var(--radius);
 }
@@ -513,13 +546,21 @@ footer {
   width: 100%;
   height: 200px;
   text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid var(--blue);
+  border-radius: var(--radius);
   padding: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: stretch;
+  justify-content: space-between;
   gap: 8px;
+}
+.special-details {
+  background: var(--blue);
+  padding: 8px;
+  color: #fff;
+  width: 100%;
+  border-radius: var(--radius);
 }
 .special-card img {
   width: 75px;
@@ -528,11 +569,20 @@ footer {
   object-fit: cover;
   border-radius: 50%;
 }
+.leadership-section .leadership-flex:nth-child(odd) {
+  border-right: 5px solid var(--blue);
+}
+.leadership-section .leadership-flex:nth-child(even) {
+  border-left: 5px solid var(--red);
+}
 .leadership-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  background: #eee;
+  padding: 8px;
+  border-radius: var(--radius);
 }
 .leadership-flex .leadership-left {
   width: 200px;

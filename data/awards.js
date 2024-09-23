@@ -320,7 +320,7 @@ awardsData
       <td class="view-image text-center" data-img="${
         item.img
       }" data-bs-toggle="modal" data-bs-target="#imgModal" >
-        <button class="button" >View image <i class="fa-solid fa-eye"></i></button>
+        <button class="button button-flex" >View image <i class="fa-solid fa-eye"></i></button>
       </td>
     </tr>
   `;

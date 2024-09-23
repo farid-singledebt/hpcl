@@ -71,6 +71,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .stall {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
   .prizes-grid .prizes-card {
     width: calc(100% - 100px);
   }

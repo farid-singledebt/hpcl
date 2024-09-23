@@ -48,7 +48,7 @@ specialData
     specialResult += `
         <div class="special-card">
           <img src="${item.img}" alt="" />
-          <div>
+          <div class="special-details"> 
             <p class="fw-bold">${item.title}</p>
             <p>${item.subtitle}</p>
           </div>

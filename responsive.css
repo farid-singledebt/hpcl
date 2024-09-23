@@ -1,5 +1,5 @@
 @media screen and (max-width: 1250px) {
-  .navbar ul {
+  .navbar .nav-links {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
@@ -8,6 +8,13 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .social-icons {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .header1 {
+    display: none;
+  }
   .presentation-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -17,7 +24,7 @@
   .seniors-flex {
     grid-template-columns: repeat(2, 1fr);
   }
-  .navbar ul {
+  .navbar .nav-links {
     grid-template-columns: 1fr;
     margin-top: 16px;
   }
@@ -25,22 +32,22 @@
     height: 75px;
   }
   .navbar.active {
-    height: 440px;
+    height: 550px;
   }
-  .navbar.active ul li {
+  .navbar.active .nav-links li {
     text-align: center;
   }
-  .navbar.active ul li a {
+  .navbar.active .nav-links li a {
     color: #000;
   }
-  .navbar ul li a {
+  .navbar .nav-links li a {
     width: 200px;
     margin: 0 auto;
     text-align: center;
     display: block;
   }
-  .navbar ul li a.active {
-    color: #fff;
+  .navbar .nav-links li a.active {
+    color: #fff !important;
   }
   .prizes-grid {
     grid-template-columns: 1fr;
@@ -126,6 +133,9 @@
     flex-direction: column !important;
     text-align: center;
   }
+  .header1 {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 650px) {
   .header {
@@ -138,6 +148,13 @@
   .logo,
   .right-logo {
     width: 100%;
+  }
+  .header1 {
+    display: none;
+  }
+  .header2 {
+    flex-direction: column;
+    align-items: start;
   }
 }
 @media screen and (max-width: 576px) {

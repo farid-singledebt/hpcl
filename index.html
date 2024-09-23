@@ -33,7 +33,36 @@
   </head>
   <body>
     <!-- header -->
-    <header class="container-fluid p-2 header" id="home">
+    <header class="container-fluid p-2 header1">
+      <ul>
+        <li class="icon-flex">
+          <i class="fa-solid fa-phone"></i>
+          +91 98765 43210
+        </li>
+        <li class="icon-flex">
+          <i class="fa-solid fa-envelope"></i>
+          hindustanpatroleum@gmail.com
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <header class="container-fluid p-2 header2" id="home">
       <div class="logo d-lg-block d-none">
         <img src="./images/hp logo.png" alt="hp logo" />
       </div>
@@ -56,7 +85,7 @@
           <div class="openbtn"><span></span><span></span><span></span></div>
         </div>
       </div>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#home" class="active">home</a></li>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#presentations">Presentations</a></li>
@@ -68,53 +97,61 @@
         <li><a href="#eventspecial">Event special</a></li>
         <li><a href="#pastconferences">Past conferences</a></li>
       </ul>
+
+      <ul class="social-icons">
+        <li>
+          <a href="#"><i class="fa-solid fa-phone"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+      </ul>
     </nav>
     <!--  -->
 
     <!-- banner -->
     <div class="container-fluid p-0">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./images/banner/CVO.jpg"
-              class="d-block w-100 img-fluid"
-              alt="banner1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/banner/CMD.jpg"
-              class="d-block w-100 img-fluid"
-              alt="banner2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/banner/DF.jpg"
-              class="d-block w-100 img-fluid"
-              alt="banner3"
-            />
-          </div>
+      <!--  -->
+      <div class="banner-carousel owl-carousel">
+        <div class="banner-item">
+          <img
+            src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Banner 1"
+          />
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="banner-item">
+          <img
+            src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Banner 2"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Banner 3"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Banner 3"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Banner 3"
+          />
+        </div>
       </div>
     </div>
     <!--  -->
@@ -282,7 +319,7 @@
       </div>
 
       <div class="gallery ppDiv d-none" id="gallery">
-        <div class="owl-carousel owl-theme" id="pragati-div"></div>
+        <div class="pp-carousel owl-carousel owl-theme" id="pragati-div"></div>
       </div>
 
       <div class="container overflow-container">
@@ -728,7 +765,7 @@
       <div class="title mb-4">
         <h1>past conferences</h1>
       </div>
-      <div class="owl-carousel owl-theme">
+      <div class="past-carousel owl-carousel owl-theme">
         <div class="item" onclick="openPhotoModal()">
           <img
             src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -845,7 +882,7 @@
           img.setAttribute("lazy-loading", true);
         });
         //
-        $(".owl-carousel").owlCarousel({
+        $(".pp-carousel").owlCarousel({
           loop: true,
           margin: 8,
           nav: true,
@@ -858,6 +895,45 @@
             },
             1000: {
               items: 3,
+            },
+          },
+        });
+        //
+        $(".past-carousel").owlCarousel({
+          loop: true,
+          margin: 8,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+        //
+        $(".banner-carousel").owlCarousel({
+          loop: true, // Infinite loop
+          margin: 0, // Space between items
+          nav: true, // Show next/prev buttons
+          items: 1, // Always show 1 image at a time
+          autoplay: true, // Enable autoplay
+          autoplayTimeout: 3000, // Time between transitions (3 seconds)
+          autoplayHoverPause: true, // Pause autoplay on hover
+          dots: true, // Show navigation dots
+          responsive: {
+            0: {
+              items: 1, // 1 item for mobile
+            },
+            600: {
+              items: 1, // 1 item for tablet
+            },
+            1000: {
+              items: 1, // 1 item for desktop
             },
           },
         });

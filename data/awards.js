@@ -317,10 +317,10 @@ awardsData
       <td>${item.SBU}</td>
       <td>${item.category}.</td>
       <td>${item.winner}</td>
-      <td style="cursor: pointer" class="view-image" data-img="${
+      <td class="view-image text-center" data-img="${
         item.img
-      }" data-bs-toggle="modal" data-bs-target="#imgModal">
-        View image <i class="fa-solid fa-eye"></i>
+      }" data-bs-toggle="modal" data-bs-target="#imgModal" >
+        <button class="button" >View image <i class="fa-solid fa-eye"></i></button>
       </td>
     </tr>
   `;

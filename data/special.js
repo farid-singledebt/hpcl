@@ -34,11 +34,6 @@ const specialData = [
     title: "Commitment to Quality",
     subtitle: "Setting New Standards",
   },
-  {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Commitment to Quality",
-    subtitle: "Setting New Standards",
-  },
 ];
 
 const specialDiv = document.getElementById("special-div");

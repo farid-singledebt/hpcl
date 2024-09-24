@@ -298,48 +298,51 @@
     <!--  -->
 
     <!-- awards -->
-    <div class="container p-2 pt-5" id="awards">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>Awards</h1>
+    <div class="container-fluid p-0 lightgrey-bg">
+      <div class="container p-2 pt-5" id="awards">
+        <div class="py-4"></div>
+        <div class="title">
+          <h1>Awards</h1>
+        </div>
+
+        <div class="awards-button-flex my-4">
+          <button
+            class="button awards-button arrow-button active"
+            data-aos="zoom-in"
+            onclick="toggleAwards(1)"
+          >
+            Awards
+          </button>
+          <button
+            class="button awards-button arrow-button"
+            data-aos="zoom-in"
+            onclick="toggleAwards(2)"
+          >
+            Felicitating the seniors
+          </button>
+        </div>
+      </div>
+      <div class="container p-3 pb-0 overflow-container awards-div">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>SBU</th>
+              <th>Category</th>
+              <th>Winner</th>
+              <th>Winner image</th>
+            </tr>
+          </thead>
+          <tbody id="awards-table"></tbody>
+        </table>
       </div>
 
-      <div class="awards-button-flex my-4">
-        <button
-          class="button awards-button arrow-button active"
-          data-aos="zoom-in"
-          onclick="toggleAwards(1)"
-        >
-          Awards
-        </button>
-        <button
-          class="button awards-button arrow-button"
-          data-aos="zoom-in"
-          onclick="toggleAwards(2)"
-        >
-          Felicitating the seniors
-        </button>
-      </div>
-    </div>
-    <div class="container p-3 pb-0 overflow-container awards-div">
-      <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th>Sr No</th>
-            <th>SBU</th>
-            <th>Category</th>
-            <th>Winner</th>
-            <th>Winner image</th>
-          </tr>
-        </thead>
-        <tbody id="awards-table"></tbody>
-      </table>
+      <div
+        class="container seniors-flex p-2 awards-div d-none"
+        id="senior-div"
+      ></div>
     </div>
 
-    <div
-      class="container seniors-flex p-2 awards-div d-none"
-      id="senior-div"
-    ></div>
     <!--  -->
 
     <!-- pragati prangan -->
@@ -707,7 +710,7 @@
     <!--  -->
 
     <!-- leadership speaks -->
-    <div class="container-fluid p-0 leadership-bg">
+    <div class="container-fluid p-0 leadership-bg lightgrey-bg">
       <div class="container p-2 py-5" id="leadershipspeaks">
         <div class="py-4"></div>
         <div class="title">

@@ -5,7 +5,9 @@ for (let i = 1; i <= 76; i++) {
   });
 }
 
+const mediaGalleryDay1 = document.getElementById("media-gallery-day1");
 const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
+const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
 let mediaGalleryDay2Result = "";
 mediaGalleryDay2Data
   .map((item) => {
@@ -19,4 +21,6 @@ mediaGalleryDay2Data
   })
   .join("");
 
+mediaGalleryDay1.innerHTML = mediaGalleryDay2Result;
 mediaGalleryDay2.innerHTML = mediaGalleryDay2Result;
+mediaGalleryDay3.innerHTML = mediaGalleryDay2Result;

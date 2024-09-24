@@ -59,19 +59,11 @@
   .prizes-grid .prizes-card {
     width: calc(100% - 200px);
     gap: 16px;
-  }
-  .prizes-grid .first {
-    order: 1;
+    padding: 24px 16px;
   }
   .prizes-grid .second {
     margin-top: 0;
-    margin: 0 auto;
-    order: 2;
-  }
-  .prizes-grid .third {
-    margin-top: 0;
     margin-left: auto;
-    order: 3;
   }
   .special-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -196,6 +188,9 @@
   }
   .special-grid > div:nth-child(1) {
     grid-column: span 1;
+  }
+  .prizes-grid .prizes-card {
+    width: 100%;
   }
 }
 @media screen and (max-width: 420px) {

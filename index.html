@@ -370,13 +370,6 @@
         >
           Prizes
         </button>
-        <button
-          class="button ppButton arrow-button"
-          data-aos="zoom-in"
-          onclick="togglePP(4)"
-        >
-          Prizes
-        </button>
       </div>
 
       <div class="stall ppDiv" id="stall">
@@ -403,94 +396,6 @@
         <div class="pp-carousel owl-carousel owl-theme" id="pragati-div"></div>
       </div>
 
-      <div class="container overflow-container">
-        <div class="ppDiv d-none">
-          <table class="table my-4">
-            <thead>
-              <tr>
-                <th>Sr No</th>
-                <th>SBU</th>
-                <th>Category</th>
-                <th>Winner</th>
-                <th>Winner image</th>
-              </tr>
-            </thead>
-            <tbody id="prize-table">
-              <tr>
-                <td>1</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Lorem</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Lorem, ipsum.</td>
-                <td>View image</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
       <div class="prizes ppDiv d-none">
         <div class="prizes-grid">
           <div class="prizes-card first">
@@ -507,18 +412,6 @@
           </div>
           <div class="prizes-card second">
             <h1 class="fw-bold">2</h1>
-            <img
-              src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-            />
-            <p class="fw-bold">Winner name</p>
-            <div>
-              <p>Subject - Lorem, ipsum.</p>
-              <p>Category - Lorem, ipsum dolor.</p>
-            </div>
-          </div>
-          <div class="prizes-card third">
-            <h1 class="fw-bold">3</h1>
             <img
               src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
@@ -580,7 +473,7 @@
       </div>
 
       <div class="launchDiv">
-        <div class="owl-carousel owl-theme">
+        <div class="three-carousel owl-carousel owl-theme">
           <div class="item" onclick="openPhotoModal()">
             <img
               src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -614,7 +507,7 @@
         </div>
       </div>
       <div class="launchDiv d-none">
-        <div class="owl-carousel owl-theme">
+        <div class="three-carousel owl-carousel owl-theme">
           <div class="item" onclick="openPhotoModal()">
             <img
               src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -648,7 +541,7 @@
         </div>
       </div>
       <div class="launchDiv d-none">
-        <div class="owl-carousel owl-theme">
+        <div class="three-carousel owl-carousel owl-theme">
           <div class="item" onclick="openPhotoModal()">
             <img
               src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -682,7 +575,7 @@
         </div>
       </div>
       <div class="launchDiv d-none">
-        <div class="owl-carousel owl-theme">
+        <div class="three-carousel owl-carousel owl-theme">
           <div class="item" onclick="openPhotoModal()">
             <img
               src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -716,7 +609,7 @@
         </div>
       </div>
       <div class="launchDiv d-none">
-        <div class="owl-carousel owl-theme">
+        <div class="three-carousel owl-carousel owl-theme">
           <div class="item" onclick="openPhotoModal()">
             <img
               src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -983,6 +876,23 @@
         });
         //
         $(".pp-carousel").owlCarousel({
+          loop: true,
+          margin: 8,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+        //
+        $(".three-carousel").owlCarousel({
           loop: true,
           margin: 8,
           nav: true,

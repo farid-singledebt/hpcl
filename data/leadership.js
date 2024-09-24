@@ -1,36 +1,36 @@
 const leadershipData = [
   {
-    img: "../images/leadership/1.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/1.jpg",
     title: "Address by C & MD",
     subtitle: "Guiding the Future",
     body: "Our leadership team brings a wealth of experience, innovation, and strategic thinking to propel the company forward.",
   },
   {
-    img: "../images/leadership/2.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/2.jpg",
     title: "Address by Director Finance",
     subtitle: "Inspiring Growth",
     body: "With a focus on sustainable growth, our leaders inspire teams to achieve excellence and drive impactful change.",
   },
   {
-    img: "../images/leadership/3.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/3.jpg",
     title: "Address by Director Refinery",
     subtitle: "Leading with Purpose",
     body: "Our leadership fosters a culture of innovation, empowering employees to create solutions that shape the future.",
   },
   {
-    img: "../images/leadership/4.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/4.jpg",
     title: "Address by Director Marketing",
     subtitle: "Driving Success",
     body: "Leaders at our company prioritize teamwork and collaboration, ensuring that every voice is heard and valued.",
   },
   {
-    img: "../images/leadership/5.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/5.jpg",
     title: "Address by Director HR",
     subtitle: "Building for the Future",
     body: "Through visionary strategy and expert guidance, our leadership team is building a future of growth and innovation.",
   },
   {
-    img: "../images/leadership/6.jpg",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/6.jpg",
     title: "Address by Cheif Vigiliance Officer",
     subtitle: "Leading by Example",
     body: "Our leadership embodies a commitment to excellence, driving the company toward continued success and market leadership.",

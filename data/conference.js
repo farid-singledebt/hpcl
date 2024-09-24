@@ -2,7 +2,7 @@ const conferenceData = [];
 
 for (let i = 1; i <= 10; i++) {
   conferenceData.push({
-    img: `../images/awards/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/awards/${i}.JPG`,
   });
 }
 

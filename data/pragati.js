@@ -2,7 +2,7 @@ const pragatiData = [];
 
 for (let i = 1; i <= 40; i++) {
   pragatiData.push({
-    img: `../images/pragati/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/${i}.JPG`,
   });
 }
 

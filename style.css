@@ -469,17 +469,15 @@ footer {
   height: 20px;
 }
 .prizes-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 350px;
-  grid-auto-columns: 350px;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 .prizes-grid .prizes-card {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 400px;
   padding: 8px;
   background: linear-gradient(45deg, var(--blue), var(--red));
   color: #fff;

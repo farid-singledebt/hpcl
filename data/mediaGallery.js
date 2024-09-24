@@ -1,7 +1,7 @@
 let mediaGalleryDay2Data = [];
 for (let i = 1; i <= 76; i++) {
   mediaGalleryDay2Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.jpg`,
+    img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.JPG`,
   });
 }
 

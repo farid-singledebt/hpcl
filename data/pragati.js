@@ -1,6 +1,6 @@
 const pragatiData = [];
 
-for (let i = 1; i <= 41; i++) {
+for (let i = 1; i <= 40; i++) {
   pragatiData.push({
     img: `https://farid-singledebt.github.io/hpcl/images/pragati/${i}.JPG`,
   });

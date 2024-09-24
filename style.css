@@ -614,14 +614,12 @@ footer {
   padding: 16px;
 }
 .masonry-item {
-  background-color: #ddd;
   border-radius: 8px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #333;
+  overflow: hidden;
+}
+.masonry-item img {
+  width: 100%;
+  height: 100%;
 }
 .masonry-item:nth-child(odd) {
   grid-row: span 10;

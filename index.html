@@ -30,6 +30,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
@@ -63,20 +66,20 @@
       </ul>
     </header>
     <header class="container-fluid p-2 header2" id="home">
-      <div class="logo d-lg-block d-none">
+      <div class="logo d-lg-block d-none" data-aos="fade-right">
         <img src="./images/hp logo.png" alt="hp logo" />
       </div>
-      <div class="logo d-lg-none d-block">
+      <div class="logo d-lg-none d-block" data-aos="fade-right">
         <img src="./images/left side.png" alt="hp logo" />
       </div>
-      <div class="right-logo">
+      <div class="right-logo" data-aos="fade-left">
         <img src="./images/right logo.png" alt="right logo" />
       </div>
     </header>
     <!--  -->
 
     <!-- navbar -->
-    <nav class="container-fluid navbar p-2">
+    <nav class="container-fluid navbar p-2" data-aos="fade-up">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="right-side d-lg-none d-block">
           <img src="./images/right side.png" alt="hp logo" />
@@ -164,13 +167,25 @@
       </div>
 
       <div class="agenda-button-flex my-4">
-        <button class="button agendaButton active" onclick="toggleAgenda(1)">
+        <button
+          class="button agendaButton active"
+          data-aos="zoom-in"
+          onclick="toggleAgenda(1)"
+        >
           Agenda day 1
         </button>
-        <button class="button agendaButton" onclick="toggleAgenda(2)">
+        <button
+          class="button agendaButton"
+          data-aos="zoom-in"
+          onclick="toggleAgenda(2)"
+        >
           Agenda day 2
         </button>
-        <button class="button agendaButton" onclick="toggleAgenda(3)">
+        <button
+          class="button agendaButton"
+          data-aos="zoom-in"
+          onclick="toggleAgenda(3)"
+        >
           Agenda day 3
         </button>
       </div>
@@ -253,10 +268,18 @@
       </div>
 
       <div class="awards-button-flex my-4">
-        <button class="button awards-button active" onclick="toggleAwards(1)">
+        <button
+          class="button awards-button active"
+          data-aos="zoom-in"
+          onclick="toggleAwards(1)"
+        >
           Awards
         </button>
-        <button class="button awards-button" onclick="toggleAwards(2)">
+        <button
+          class="button awards-button"
+          data-aos="zoom-in"
+          onclick="toggleAwards(2)"
+        >
           Felicitating the seniors
         </button>
       </div>
@@ -293,16 +316,34 @@
         <button class="button ppButton active" onclick="togglePP(1)">
           Stall
         </button>
-        <button class="button ppButton" onclick="togglePP(2)">Gallery</button>
-        <button class="button ppButton" onclick="togglePP(3)">Prizes</button>
-        <button class="button ppButton" onclick="togglePP(4)">Prizes</button>
+        <button
+          class="button ppButton"
+          data-aos="zoom-in"
+          onclick="togglePP(2)"
+        >
+          Gallery
+        </button>
+        <button
+          class="button ppButton"
+          data-aos="zoom-in"
+          onclick="togglePP(3)"
+        >
+          Prizes
+        </button>
+        <button
+          class="button ppButton"
+          data-aos="zoom-in"
+          onclick="togglePP(4)"
+        >
+          Prizes
+        </button>
       </div>
 
       <div class="stall ppDiv" id="stall">
-        <div class="stall-left">
+        <div class="stall-left" data-aos="fade-right">
           <img src="./images/pragati/1.JPG" alt="" />
         </div>
-        <div class="stall-right">
+        <div class="stall-right" data-aos="fade-left">
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
             facilis.
@@ -461,19 +502,39 @@
       </div>
 
       <div class="launches-button-flex my-4">
-        <button class="button launchButton active" onclick="toggleLaunch(1)">
+        <button
+          class="button launchButton active"
+          data-aos="zoom-in"
+          onclick="toggleLaunch(1)"
+        >
           LPG
         </button>
-        <button class="button launchButton" onclick="toggleLaunch(2)">
+        <button
+          class="button launchButton"
+          data-aos="zoom-in"
+          onclick="toggleLaunch(2)"
+        >
           Lubes
         </button>
-        <button class="button launchButton" onclick="toggleLaunch(3)">
+        <button
+          class="button launchButton"
+          data-aos="zoom-in"
+          onclick="toggleLaunch(3)"
+        >
           R&D
         </button>
-        <button class="button launchButton" onclick="toggleLaunch(4)">
+        <button
+          class="button launchButton"
+          data-aos="zoom-in"
+          onclick="toggleLaunch(4)"
+        >
           Mission 60
         </button>
-        <button class="button launchButton" onclick="toggleLaunch(5)">
+        <button
+          class="button launchButton"
+          data-aos="zoom-in"
+          onclick="toggleLaunch(5)"
+        >
           Digital initiatives
         </button>
       </div>
@@ -661,18 +722,21 @@
       <div class="media-button-flex gap-2 my-4">
         <button
           class="button mediaGalleryButton active"
+          data-aos="zoom-in"
           onclick="toggleMediaGallery(1)"
         >
           day 1
         </button>
         <button
           class="button mediaGalleryButton"
+          data-aos="zoom-in"
           onclick="toggleMediaGallery(2)"
         >
           day 2
         </button>
         <button
           class="button mediaGalleryButton"
+          data-aos="zoom-in"
           onclick="toggleMediaGallery(3)"
         >
           day 3
@@ -693,17 +757,7 @@
         </div>
       </div>
       <div class="mediaGalleryDiv d-none">
-        <div class="masonry">
-          <div class="masonry-item" onclick="openPhotoModal()">Item 1</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 2</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 3</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 4</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 5</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 6</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 7</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 8</div>
-          <div class="masonry-item" onclick="openPhotoModal()">Item 9</div>
-        </div>
+        <div class="masonry" id="media-gallery-day2"></div>
       </div>
       <div class="mediaGalleryDiv d-none">
         <div class="masonry">
@@ -804,6 +858,7 @@
     <button
       class="button scrolltotop d-none"
       id="scrolltotop"
+      data-aos="fade-up"
       onclick="scrollToTop()"
     >
       <img src="./images/scroll to top.png" alt="scrollarrow" />
@@ -863,6 +918,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--  -->
     <script src="./data/presentation.js"></script>
     <script src="./data/awards.js"></script>
@@ -871,11 +929,13 @@
     <script src="./data/leadership.js"></script>
     <script src="./data/special.js"></script>
     <script src="./data/pragati.js"></script>
+    <script src="./data/mediaGallery.js"></script>
     <!--  -->
     <script>
       let scrolltotop = document.getElementById("scrolltotop");
       const navbar = document.querySelector(".navbar");
       $(document).ready(function () {
+        AOS.init();
         //
         let allImages = document.querySelectorAll("img");
         allImages.forEach((img) => {

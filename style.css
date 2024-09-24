@@ -778,3 +778,10 @@ ul {
 .modal-header .btn-close {
   filter: invert(1);
 }
+.conference-view-image {
+  background: var(--red);
+}
+.conference-view-image:hover {
+  background: #fff;
+  color: var(--blue);
+}

@@ -50,13 +50,14 @@
     height: 75px;
   }
   .navbar.active {
-    height: 550px;
+    height: 620px;
+    overflow-y: scroll;
   }
   .navbar.active .nav-links li {
     text-align: center;
   }
   .navbar.active .nav-links li a {
-    color: #000;
+    color: #fff;
   }
   .navbar .nav-links li a {
     width: 200px;
@@ -183,7 +184,8 @@
   }
   .header2 {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    gap: 8px;
   }
 }
 @media screen and (max-width: 576px) {

@@ -32,10 +32,3 @@ conferenceData
   .join("");
 
 conferenceDiv.innerHTML = conferenceResult;
-
-document.querySelectorAll(".conference-view-image").forEach((item) => {
-  item.addEventListener("click", function () {
-    const imgUrl = this.getAttribute("data-img");
-    document.querySelector("#imgModal img").src = imgUrl;
-  });
-});

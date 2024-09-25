@@ -14,7 +14,7 @@ body {
   height: auto;
   overflow-x: hidden !important;
   position: relative;
-  background: url("https://farid-singledebt.github.io/hpcl/images/BG-1.JPG")
+  background: url("https://farid-singledebt.github.io/hpcl/images/BG-1.jpg")
     center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -807,7 +807,7 @@ ul {
   color: #fff;
 }
 .lightgrey-bg {
-  background: url("https://farid-singledebt.github.io/hpcl/images/BG-2.JPG")
+  background: url("https://farid-singledebt.github.io/hpcl/images/BG-2.jpg")
     center no-repeat;
   background-size: cover;
   background-attachment: fixed;

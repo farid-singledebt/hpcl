@@ -297,7 +297,8 @@ th {
 .overflow-container .table {
   min-width: 992px;
 }
-.overflow-container::-webkit-scrollbar {
+.overflow-container::-webkit-scrollbar,
+.presentation-scroll::-webkit-scrollbar {
   opacity: 0;
 }
 .agenda-card {

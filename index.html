@@ -292,30 +292,6 @@
         <div class="presentation-grid my-4" id="presentation"></div>
       </div>
     </div>
-
-    <div
-      class="modal fade"
-      id="pdfModal"
-      tabindex="-1"
-      aria-labelledby="pdfModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header p-2">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-2">
-            <iframe id="pdfIframe" src="" class="modal-iframe"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--  -->
 
     <!-- awards -->
@@ -797,7 +773,7 @@
       />
     </button>
 
-    <!-- view image -->
+    <!-- image modal -->
     <div
       class="modal fade"
       id="imgModal"
@@ -817,6 +793,30 @@
           </div>
           <div class="modal-body p-2">
             <img src="" alt="view-img" class="modal-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pdf modal -->
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header p-2">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-2">
+            <iframe id="pdfIframe" src="" class="modal-iframe"></iframe>
           </div>
         </div>
       </div>

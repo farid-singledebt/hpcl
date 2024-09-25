@@ -13,6 +13,10 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden !important;
+  position: relative;
+  background: url("../images/BG-1.JPG") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 :root {
   --red: #ea2127;
@@ -145,6 +149,7 @@ img {
   overflow-x: scroll;
 }
 .presentation-grid .presentation-card {
+  background: #fff;
   width: 350px;
   min-width: 350px;
   height: 400px;
@@ -288,6 +293,9 @@ th {
 }
 .overflow-container {
   overflow-x: auto;
+}
+.overflow-container .table {
+  min-width: 992px;
 }
 .overflow-container::-webkit-scrollbar {
   opacity: 0;
@@ -617,6 +625,7 @@ footer {
   gap: 8px;
 }
 .special-card {
+  background: #fff;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -761,6 +770,7 @@ footer {
   justify-content: space-between;
   gap: 8px;
   box-shadow: var(--shadow);
+  background: #fff;
 }
 .header1 ul {
   list-style-type: none;
@@ -795,7 +805,9 @@ ul {
   color: #fff;
 }
 .lightgrey-bg {
-  background-color: #eee;
+  background: url("../images/BG-2.JPG") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .modal-header {
   background: var(--blue);
@@ -886,9 +898,9 @@ ul {
 }
 #lottie-animation {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 100%;
   height: 100%;
   min-height: 500px;

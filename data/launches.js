@@ -1,35 +1,35 @@
 const launch1Data = [];
 for (let i = 1; i <= 5; i++) {
   launch1Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch1/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch1/${i}.jpg`,
   });
 }
 //
 const launch2Data = [];
 for (let i = 1; i <= 9; i++) {
   launch2Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch2/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch2/${i}.jpg`,
   });
 }
 //
 const launch3Data = [];
 for (let i = 1; i <= 13; i++) {
   launch3Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch3/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch3/${i}.jpg`,
   });
 }
 //
 const launch4Data = [];
 for (let i = 1; i <= 9; i++) {
   launch4Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch4/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch4/${i}.jpg`,
   });
 }
 //
 const launch5Data = [];
 for (let i = 1; i <= 7; i++) {
   launch5Data.push({
-    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch5/${i}.JPG`,
+    img: `https://farid-singledebt.github.io/hpcl/images/launches/launch5/${i}.jpg`,
   });
 }
 

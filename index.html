@@ -465,12 +465,14 @@
     <!-- launches -->
     <div class="container-fluid p-0 lightgrey-bg">
       <div class="container p-2 py-5" id="launches">
+        <div id="lottie-animation"></div>
+
         <div class="py-4"></div>
         <div class="title">
           <h1>Launches</h1>
         </div>
 
-        <div class="launches-button-flex my-4">
+        <!-- <div class="launches-button-flex my-4">
           <button
             class="button launchButton arrow-button active"
             data-aos="zoom-in"
@@ -677,13 +679,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!--  -->
-        <hr />
         <!--  -->
 
-        <div class="launches-flex-container" id="launches-container"></div>
+        <div class="launches-flex-container my-4" id="launches-container"></div>
       </div>
     </div>
     <!--  -->
@@ -838,6 +839,9 @@
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
     <!--  -->
     <script src="./data/presentation.js"></script>
     <script src="./data/awards.js"></script>
@@ -936,6 +940,24 @@
           $(this).toggleClass("active");
           navbar.classList.toggle("active");
         });
+        //
+        var animation = lottie.loadAnimation({
+          container: document.getElementById("lottie-animation"),
+          renderer: "svg",
+          loop: false,
+          autoplay: false,
+          path: "./lottie/celebrate.json",
+        });
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animation.goToAndPlay(0, true);
+            }
+          });
+        });
+
+        // Observe the Lottie container
+        observer.observe(document.getElementById("lottie-animation"));
       });
 
       //
@@ -1004,23 +1026,23 @@
       };
 
       //
-      const launchDivs = document.querySelectorAll(".launchDiv");
-      const launchButtons = document.querySelectorAll(".launchButton");
-      const toggleLaunch = (count) => {
-        launchDivs.forEach((item, index) => {
-          item.classList.add("d-none");
-          if (index + 1 === count) {
-            item.classList.remove("d-none");
-          }
-        });
-        //
-        launchButtons.forEach((item, index) => {
-          item.classList.remove("active");
-          if (index + 1 === count) {
-            item.classList.add("active");
-          }
-        });
-      };
+      // const launchDivs = document.querySelectorAll(".launchDiv");
+      // const launchButtons = document.querySelectorAll(".launchButton");
+      // const toggleLaunch = (count) => {
+      //   launchDivs.forEach((item, index) => {
+      //     item.classList.add("d-none");
+      //     if (index + 1 === count) {
+      //       item.classList.remove("d-none");
+      //     }
+      //   });
+      //   //
+      //   launchButtons.forEach((item, index) => {
+      //     item.classList.remove("active");
+      //     if (index + 1 === count) {
+      //       item.classList.add("active");
+      //     }
+      //   });
+      // };
       //
       const mediaGalleryDivs = document.querySelectorAll(".mediaGalleryDiv");
       const mediaGalleryButtons = document.querySelectorAll(

@@ -53,15 +53,31 @@ addFirstItems(
 );
 
 const launchTitles = [
-  "LPG",
-  "Lubes",
-  "R&D",
-  "Mission 60",
-  "Digital initiatives",
+  {
+    title: "LPG",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Lubes",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    title: "R&D",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Mission 60",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Digital initiatives",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  },
 ];
 
 mainLaunchData.forEach((item, index) => {
-  item.title = launchTitles[index];
+  item.title = launchTitles[index].title;
+  item.body = launchTitles[index].body;
 });
 
 const launchesContainer = document.getElementById("launches-container");
@@ -69,11 +85,14 @@ let mainLaunchResult = "";
 mainLaunchData.map((item) => {
   mainLaunchResult += `
     <div class="launches-flex-box">
-            <div class="launches-overlay">
-              <h2>${item.title}</h2>
+            <div class="launches-overlay1">
+              <p>${item.body}</p>
               <button class="button button-flex">
                 View image <i class="fa fa-eye"></i>
               </button>
+            </div>
+            <div class="launches-overlay2">
+              <h2>${item.title}</h2>
             </div>
             <img src="${item.img}" alt="Image 1" />
           </div>

@@ -425,7 +425,10 @@
       </div>
 
       <div class="gallery ppDiv d-none" id="gallery">
-        <div class="pp-carousel owl-carousel owl-theme" id="pragati-div"></div>
+        <div
+          class="three-carousel owl-carousel owl-theme"
+          id="pragati-div"
+        ></div>
       </div>
 
       <div class="prizes ppDiv d-none">
@@ -675,6 +678,25 @@
             </div>
           </div>
         </div>
+
+        <!--  -->
+        <hr />
+        <!--  -->
+
+        <div class="launches-flex-container" id="launches-container">
+          <div class="launches-flex-box">
+            <div class="launches-overlay">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis.
+              </p>
+              <button class="button button-flex">
+                View image <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <img src="./images/awards/1.JPG" alt="Image 1" />
+          </div>
+        </div>
       </div>
     </div>
     <!--  -->
@@ -838,6 +860,7 @@
     <script src="./data/pragati.js"></script>
     <script src="./data/mediaGallery.js"></script>
     <script src="./data/conference.js"></script>
+    <script src="./data/launches.js"></script>
     <!--  -->
     <script>
       let scrolltotop = document.getElementById("scrolltotop");
@@ -850,27 +873,14 @@
           img.setAttribute("lazy-loading", true);
         });
         //
-        $(".pp-carousel").owlCarousel({
-          loop: true,
-          margin: 8,
-          nav: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 2,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-        //
         $(".three-carousel").owlCarousel({
           loop: true,
           margin: 8,
           nav: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          autoplaySpeed: 2000,
           responsive: {
             0: {
               items: 1,

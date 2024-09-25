@@ -603,7 +603,7 @@ footer {
   padding: 8px;
 }
 .stall .stall-bg {
-  background: var(--blue);
+  background: linear-gradient(45deg, var(--red), var(--blue));
   height: 400px;
   border-radius: var(--radius);
   grid-area: 1 / 3 / 2 / 5;
@@ -815,4 +815,55 @@ ul {
 .conference-view-image:hover {
   background: #fff;
   color: var(--blue);
+}
+.launches-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.launches-flex-box {
+  flex: 1 1 300px;
+  max-width: 300px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 2px solid var(--blue);
+  position: relative;
+}
+.launches-flex-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.launches-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+.launches-overlay .button {
+  background: var(--red);
+}
+.launches-flex-box:hover .launches-overlay {
+  pointer-events: all;
+  transform: translate(-50%, 0);
 }

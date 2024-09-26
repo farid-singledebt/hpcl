@@ -95,7 +95,7 @@ prizeData
               <td>${item.SBU}</td>
               <td>${item.category}.</td>
               <td>${item.winner}</td>
-              <td>View image</td>
+              <td>View <i class="fa fa-eye"></i></td>
             </tr>
     `;
   })

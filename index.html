@@ -65,7 +65,11 @@
         </li>
       </ul>
     </header> -->
-    <header class="container p-2 header2" id="home" style="overflow-x: hidden">
+    <header
+      class="container-fluid p-0 header2"
+      id="home"
+      style="overflow-x: hidden"
+    >
       <div class="logo d-lg-block d-none" data-aos="fade-right">
         <img
           src="https://farid-singledebt.github.io/hpcl/images/hp_logo.png"
@@ -78,9 +82,10 @@
           alt="hp logo"
         />
       </div>
+      <div class="empty-gradient"></div>
       <div class="right-logo" data-aos="fade-left">
         <img
-          src="https://farid-singledebt.github.io/hpcl/images/clairvoyance.webp"
+          src="https://farid-singledebt.github.io/hpcl/images/right_logo.png"
           alt="right logo"
         />
       </div>
@@ -88,7 +93,7 @@
     <!--  -->
 
     <!-- navbar -->
-    <nav class="container-fluid navbar p-1">
+    <nav class="container-fluid navbar p-2">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="right-side d-lg-none d-block">
           <img
@@ -107,37 +112,20 @@
         <li><a href="#awards">Awards</a></li>
         <li><a href="#pragatiprangan">Pragati Prangan</a></li>
         <li><a href="#launches">Launches</a></li>
-        <li><a href="#mediagallery">Media Gallery</a></li>
         <li><a href="#leadershipspeaks">leadership speaks </a></li>
         <li><a href="#eventspecial">Event special</a></li>
+        <li><a href="#mediagallery">Media Gallery</a></li>
         <li><a href="#pastconferences">Event repository</a></li>
-      </ul>
-
-      <ul class="social-icons">
-        <li>
-          <a href="#"><i class="fa-solid fa-phone"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        </li>
       </ul>
     </nav>
     <!--  -->
 
     <!-- banner -->
-    <div class="container-fluid p-0">
-      <!--  -->
-      <div class="content-container">
-        <div class="banner-content">
+    <div class="container-fluid p-0 banner-container">
+      <div class="banner-content mt-3">
+        <h2>Visitors <i class="fa fa-eye"></i>: 12345</h2>
+      </div>
+      <!-- <div class="banner-content">
           <div class="content-bg">
             <h1 class="mb-4">Lorem ipsum dolor sit.</h1>
             <p>
@@ -152,80 +140,43 @@
             <p><span class="fw-bold">This week</span>: 284</p>
             <p><span class="fw-bold">Total</span>: 640972</p>
           </div>
+        </div> -->
+      <div class="banner-carousel owl-carousel" id="banner-carousel">
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopDM.png"
+          />
         </div>
-        <div class="banner-carousel owl-carousel">
-          <div class="banner-item">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/11.JPG"
-            />
-          </div>
-          <div class="banner-item">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/28.JPG"
-              alt="Banner 2"
-            />
-          </div>
-          <div class="banner-item">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/6.JPG"
-              alt="Banner 3"
-            />
-          </div>
-          <div class="banner-item">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/32.JPG"
-              alt="Banner 3"
-            />
-          </div>
-          <div class="banner-item">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/17.JPG"
-              alt="Banner 3"
-            />
-          </div>
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopCMD.png"
+            alt="Banner 2"
+          />
         </div>
-      </div>
-    </div>
-    <!--  -->
-
-    <!-- media gallery -->
-    <div class="container p-2 py-5" id="mediagallery">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>media gallery</h1>
-      </div>
-
-      <div class="media-button-flex gap-2 my-4">
-        <button
-          class="button mediaGalleryButton arrow-button active"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(1)"
-        >
-          day 1
-        </button>
-        <button
-          class="button mediaGalleryButton arrow-button"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(2)"
-        >
-          day 2
-        </button>
-        <button
-          class="button mediaGalleryButton arrow-button"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(3)"
-        >
-          day 3
-        </button>
-      </div>
-      <div class="mediaGalleryDiv">
-        <div class="masonry" id="media-gallery-day1"></div>
-      </div>
-      <div class="mediaGalleryDiv d-none">
-        <div class="masonry" id="media-gallery-day2"></div>
-      </div>
-      <div class="mediaGalleryDiv d-none">
-        <div class="masonry" id="media-gallery-day3"></div>
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopDF.png"
+            alt="Banner 3"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopCVO.png"
+            alt="Banner 3"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopDHR.png"
+            alt="Banner 3"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="https://farid-singledebt.github.io/hpcl/images/banner/desktopDR.png"
+            alt="Banner 3"
+          />
+        </div>
       </div>
     </div>
     <!--  -->
@@ -266,8 +217,8 @@
           <div class="agendaDiv">
             <div class="agenda-card">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, sed?
+                Celebrating Excellence: A Night of Recognition, Talent, and
+                Togetherness
               </p>
               <a
                 href="javascript:void(0)"
@@ -276,15 +227,15 @@
                 data-bs-target="#pdfModal"
                 style="margin: unset"
                 data-pdf="./pdf/agenda/agenda1.pdf"
-                >View PDF <i class="fa fa-eye"></i
+                >View <i class="fa fa-eye"></i
               ></a>
             </div>
           </div>
           <div class="agendaDiv d-none">
             <div class="agenda-card">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, sed?
+                Clairvoyance 2024 - The Marketing Conclave: Pioneering Growth
+                Through Innovation and Customer Experience
               </p>
               <a
                 href="javascript:void(0)"
@@ -293,15 +244,15 @@
                 data-bs-target="#pdfModal"
                 style="margin: unset"
                 data-pdf="./pdf/agenda/agenda2.pdf"
-                >View PDF <i class="fa fa-eye"></i
+                >View <i class="fa fa-eye"></i
               ></a>
             </div>
           </div>
           <div class="agendaDiv d-none">
             <div class="agenda-card">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, sed?
+                Clairvoyance 2024 - Inspiring Leadership and Innovation:
+                Celebrating 50 Years of Excellence
               </p>
               <a
                 href="javascript:void(0)"
@@ -310,7 +261,7 @@
                 data-bs-target="#pdfModal"
                 style="margin: unset"
                 data-pdf="./pdf/agenda/agenda3.pdf"
-                >View PDF <i class="fa fa-eye"></i
+                >View <i class="fa fa-eye"></i
               ></a>
             </div>
           </div>
@@ -333,7 +284,7 @@
     <!--  -->
 
     <!-- awards -->
-    <div class="container-fluid p-0 lightgrey-bg">
+    <div class="container-fluid p-0 awards-bg">
       <div class="container p-2 pt-5" id="awards">
         <div class="py-4"></div>
         <div class="title">
@@ -372,9 +323,35 @@
           </thead>
           <tbody id="awards-table"></tbody>
         </table>
-        <div class="text-end">
-          <button class="button" id="load-more">Load more</button>
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <button class="button pagination-button" data-start="0" data-end="10">
+            1
+          </button>
+          <button
+            class="button pagination-button"
+            data-start="10"
+            data-end="20"
+          >
+            2
+          </button>
+          <button
+            class="button pagination-button"
+            data-start="20"
+            data-end="30"
+          >
+            3
+          </button>
+          <button
+            class="button pagination-button"
+            data-start="30"
+            data-end="40"
+          >
+            4
+          </button>
         </div>
+        <!-- <div class="text-end">
+          <button class="button" id="load-more">Load more</button>
+        </div> -->
       </div>
 
       <div
@@ -746,6 +723,48 @@
     </div>
     <!--  -->
 
+    <!-- media gallery -->
+    <div class="container p-2 py-5" id="mediagallery">
+      <div class="py-4"></div>
+      <div class="title">
+        <h1>media gallery</h1>
+      </div>
+
+      <div class="media-button-flex gap-2 my-4">
+        <button
+          class="button mediaGalleryButton arrow-button active"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(1)"
+        >
+          day 1
+        </button>
+        <button
+          class="button mediaGalleryButton arrow-button"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(2)"
+        >
+          day 2
+        </button>
+        <button
+          class="button mediaGalleryButton arrow-button"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(3)"
+        >
+          day 3
+        </button>
+      </div>
+      <div class="mediaGalleryDiv">
+        <div class="masonry" id="media-gallery-day1"></div>
+      </div>
+      <div class="mediaGalleryDiv d-none">
+        <div class="masonry" id="media-gallery-day2"></div>
+      </div>
+      <div class="mediaGalleryDiv d-none">
+        <div class="masonry" id="media-gallery-day3"></div>
+      </div>
+    </div>
+    <!--  -->
+
     <!-- past conferences -->
     <div class="container p-2 py-5" id="pastconferences">
       <div class="py-4"></div>
@@ -820,6 +839,31 @@
         </div>
       </div>
     </div>
+    <!-- read more modal -->
+    <div
+      class="modal fade"
+      id="readMore"
+      tabindex="-1"
+      aria-labelledby="readMoreLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header p-2 py-3">
+            <h2 id="read-more-title"></h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-2 py-4">
+            <p id="read-more-div"></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
 
     <footer class="container-fluid p-2">
@@ -844,6 +888,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
     <!--  -->
+    <script src="./data/bannerHeight.js"></script>
     <script src="./data/presentation.js"></script>
     <script src="./data/awards.js"></script>
     <script src="./data/senior.js"></script>

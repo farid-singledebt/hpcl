@@ -24,7 +24,7 @@ conferenceData
             <p>Lorem ipsum dolor sit.</p>
             <button class="button mt-2 view-conference-image" data-index=${index}
           data-bs-toggle="modal"
-          data-bs-target="#imgModal">View image <i class="fa fa-eye"></i/> <button/>
+          data-bs-target="#imgModal">View <i class="fa fa-eye"></i/> <button/>
           </div>
         </div>
     `;

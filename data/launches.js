@@ -98,7 +98,7 @@ mainLaunchData.map((item, index) => {
               <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
     index + 1
   }" data-bs-toggle="modal" data-bs-target="#imgModal">
-                View image <i class="fa fa-eye"></i>
+                View <i class="fa fa-eye"></i>
               </button>
             </div>
             <div class="launches-overlay2">

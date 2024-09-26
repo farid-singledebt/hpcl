@@ -893,3 +893,7 @@ ul {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+#lottie-animation {
+  transform-origin: center;
+  transform: rotate(180deg) translateX(50%);
+}

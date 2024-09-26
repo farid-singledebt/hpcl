@@ -30,9 +30,9 @@
     display: flex;
     flex-direction: row !important;
   }
-  .header1 {
+  /* .header1 {
     display: none;
-  }
+  } */
   .presentation-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -136,9 +136,9 @@
     flex-direction: column !important;
     text-align: center;
   }
-  .header1 {
+  /* .header1 {
     flex-direction: column;
-  }
+  } */
   .banner-content {
     width: 100%;
     bottom: 50px;
@@ -179,9 +179,9 @@
   .right-logo {
     width: 100%;
   }
-  .header1 {
+  /* .header1 {
     display: none;
-  }
+  } */
   .header2 {
     flex-direction: column;
     align-items: center;

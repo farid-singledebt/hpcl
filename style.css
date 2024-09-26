@@ -28,10 +28,12 @@ body {
 }
 h1 {
   font-size: 2rem;
+  font-weight: bold;
   margin: 0;
 }
 h2 {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 0;
 }
 p {
@@ -107,7 +109,6 @@ img {
   color: var(--blue);
   border-bottom: 2px solid var(--red);
   display: inline-block;
-  font-weight: bold;
 }
 .button {
   padding: 8px 24px;

@@ -192,6 +192,48 @@
     </div>
     <!--  -->
 
+    <!-- media gallery -->
+    <div class="container p-2 py-5" id="mediagallery">
+      <div class="py-4"></div>
+      <div class="title">
+        <h1>media gallery</h1>
+      </div>
+
+      <div class="media-button-flex gap-2 my-4">
+        <button
+          class="button mediaGalleryButton arrow-button active"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(1)"
+        >
+          day 1
+        </button>
+        <button
+          class="button mediaGalleryButton arrow-button"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(2)"
+        >
+          day 2
+        </button>
+        <button
+          class="button mediaGalleryButton arrow-button"
+          data-aos="zoom-in"
+          onclick="toggleMediaGallery(3)"
+        >
+          day 3
+        </button>
+      </div>
+      <div class="mediaGalleryDiv">
+        <div class="masonry" id="media-gallery-day1"></div>
+      </div>
+      <div class="mediaGalleryDiv d-none">
+        <div class="masonry" id="media-gallery-day2"></div>
+      </div>
+      <div class="mediaGalleryDiv d-none">
+        <div class="masonry" id="media-gallery-day3"></div>
+      </div>
+    </div>
+    <!--  -->
+
     <!-- agenda -->
     <div class="container-fluid p-0 lightgrey-bg">
       <div class="container p-2 py-5" id="agenda">
@@ -415,7 +457,7 @@
       <div class="prizes ppDiv d-none">
         <div class="prizes-grid">
           <div class="prizes-card first">
-            <h1 class="fw-bold">1</h1>
+            <h1>1</h1>
             <img
               src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
@@ -427,7 +469,7 @@
             </div>
           </div>
           <div class="prizes-card second">
-            <h1 class="fw-bold">2</h1>
+            <h1>2</h1>
             <img
               src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
@@ -666,48 +708,6 @@
         <!--  -->
 
         <div class="launches-flex-container my-4" id="launches-container"></div>
-      </div>
-    </div>
-    <!--  -->
-
-    <!-- media gallery -->
-    <div class="container p-2 py-5" id="mediagallery">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>media gallery</h1>
-      </div>
-
-      <div class="media-button-flex gap-2 my-4">
-        <button
-          class="button mediaGalleryButton arrow-button active"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(1)"
-        >
-          day 1
-        </button>
-        <button
-          class="button mediaGalleryButton arrow-button"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(2)"
-        >
-          day 2
-        </button>
-        <button
-          class="button mediaGalleryButton arrow-button"
-          data-aos="zoom-in"
-          onclick="toggleMediaGallery(3)"
-        >
-          day 3
-        </button>
-      </div>
-      <div class="mediaGalleryDiv">
-        <div class="masonry" id="media-gallery-day1"></div>
-      </div>
-      <div class="mediaGalleryDiv d-none">
-        <div class="masonry" id="media-gallery-day2"></div>
-      </div>
-      <div class="mediaGalleryDiv d-none">
-        <div class="masonry" id="media-gallery-day3"></div>
       </div>
     </div>
     <!--  -->

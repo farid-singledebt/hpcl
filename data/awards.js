@@ -308,10 +308,13 @@ const awardsData = [
 ];
 
 const awardsTable = document.getElementById("awards-table");
-let awardsResult = "";
-awardsData
-  .map((item, index) => {
-    awardsResult += `
+let itemsPerPage = 10;
+function loadData() {
+  let awardsResult = "";
+  awardsData
+    .slice(0, itemsPerPage)
+    .map((item, index) => {
+      awardsResult += `
     <tr>
       <td>${index + 1}</td>
       <td>${item.SBU}</td>
@@ -323,9 +326,25 @@ awardsData
     </tr>
 
   `;
-  })
-  .join("");
-awardsTable.innerHTML = awardsResult;
+    })
+    .join("");
+  awardsTable.innerHTML = awardsResult;
+}
+loadData();
+
+const loadMore = document.getElementById("load-more");
+loadMore.addEventListener("click", () => {
+  if (itemsPerPage < awardsData.length) {
+    itemsPerPage += 10;
+  } else if (itemsPerPage > awardsData.length) {
+    itemsPerPage = 10;
+    loadMore.textContent = "Load more";
+  }
+  if (itemsPerPage >= awardsData.length) {
+    loadMore.textContent = "Reset";
+  }
+  loadData();
+});
 
 document.querySelectorAll(".view-image").forEach((item) => {
   item.addEventListener("click", function () {

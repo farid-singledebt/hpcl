@@ -826,7 +826,7 @@ ul {
 .modal-header .btn-close {
   filter: invert(1);
 }
-.conference-view-image {
+.view-conference-image {
   background: var(--red);
 }
 .conference-view-image:hover {

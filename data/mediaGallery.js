@@ -12,7 +12,7 @@ let mediaGalleryDay2Result = "";
 mediaGalleryDay2Data
   .map((item) => {
     mediaGalleryDay2Result += `
-    <div class="masonry-item" onclick="openPhotoModal()">
+    <div class="masonry-item">
     <img src="${item.img}"
               alt="Image 1"
             />

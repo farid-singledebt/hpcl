@@ -320,8 +320,8 @@ function loadData() {
       <td>${item.SBU}</td>
       <td>${item.category}</td>
       <td>${item.winner}</td>
-      <td class="view-image text-center" data-index="${index}" data-bs-toggle="modal" data-bs-target="#imgModal">
-        <button class="button button-flex">View image <i class="fa-solid fa-eye"></i></button>
+      <td class="view-awards-image text-center">
+        <button class="button button-flex" data-index="${index}" data-bs-toggle="modal" data-bs-target="#imgModal">View image <i class="fa-solid fa-eye"></i></button>
       </td>
     </tr>
 
@@ -346,7 +346,7 @@ loadMore.addEventListener("click", () => {
   loadData();
 });
 
-document.querySelectorAll(".view-image").forEach((item) => {
+document.querySelectorAll(".view-awards-image").forEach((item) => {
   item.addEventListener("click", function () {
     const index = this.getAttribute("data-index");
 

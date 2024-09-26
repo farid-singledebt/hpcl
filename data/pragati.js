@@ -14,7 +14,7 @@ pragatiData
     <div class="item">
             <img
               src="${item.img}"
-              class="view-image"
+              class="view-pragati-image"
               alt="Image 1"
               data-index="${index}" data-bs-toggle="modal" data-bs-target="#imgModal"
             />
@@ -24,7 +24,7 @@ pragatiData
   .join("");
 pragatiDiv.innerHTML = pragatiResult;
 
-document.querySelectorAll(".view-image").forEach((item) => {
+document.querySelectorAll(".view-pragati-image").forEach((item) => {
   item.addEventListener("click", function () {
     const index = this.getAttribute("data-index");
 

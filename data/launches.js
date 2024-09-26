@@ -95,7 +95,7 @@ mainLaunchData.map((item, index) => {
     <div class="launches-flex-box">
             <div class="launches-overlay1">
               <p>${item.body}</p>
-              <button class="button button-flex view-image" data-index="${index}" data-array="${
+              <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
     index + 1
   }" data-bs-toggle="modal" data-bs-target="#imgModal">
                 View image <i class="fa fa-eye"></i>
@@ -110,7 +110,7 @@ mainLaunchData.map((item, index) => {
 }).join;
 launchesContainer.innerHTML = mainLaunchResult;
 
-document.querySelectorAll(".view-image").forEach((item) => {
+document.querySelectorAll(".view-launches-image").forEach((item) => {
   item.addEventListener("click", function () {
     const index = this.getAttribute("data-index");
     const arrayNumber = this.getAttribute("data-array");

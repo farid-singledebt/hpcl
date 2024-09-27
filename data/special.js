@@ -1,38 +1,18 @@
 const specialData = [
   {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Special Achievement",
-    subtitle: "Recognizing Excellence",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/1.JPG",
+    title: "AV : Nayi Soch, Naya Josh",
+    body: "“Nayi Soch Naya Josh”, is the vibrant heartbeat of HPCL's flagship annual conference, Clairvoyance. In sync with management's call of Nayaa HPCL, this song reflects HPCL's commitment to creating new ideas, embracing fresh perspectives, and fostering a culture of positivity and growth. The visuals in the song feature HPCL's workforce, facilities, and everyday operations, aligning them with the themes of progress and technology. The lyrics resonate with the core message of “new thinking” and “new energy,” emphasizing HPCL's commitment to embracing change and driving success with passion. As you listen to this song, it conveys a sense of excitement and motivation, encouraging every employee to take ownership of their role in shaping the company's future with passion and energy. The song reinforces the idea of teamwork and collaboration, where all employees' contributions lead to collective success of the organization - in true spirit of HP FIRST.",
   },
   {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Innovative Leadership",
-    subtitle: "Driving the Future",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/2.JPG",
+    title: "AV Mission 60",
+    body: "The Mission 60 AV represents HPCL's ambitious initiative aimed at achieving excellence and growth through strategic interventions and innovations. This AV outlines the company's roadmap towards reaching significant milestones across various business verticals, so as to collectively exceed volume of 60MMT by FY 26' completion.",
   },
   {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Team Collaboration",
-    subtitle: "Strength in Unity",
-  },
-  {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Outstanding Growth",
-    subtitle: "Exceeding Expectations",
-  },
-  {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Customer Centricity",
-    subtitle: "Putting People First",
-  },
-  {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Innovation in Action",
-    subtitle: "Transforming Ideas",
-  },
-  {
-    img: "https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Commitment to Quality",
-    subtitle: "Setting New Standards",
+    img: "https://farid-singledebt.github.io/hpcl/images/leadership/3.JPG",
+    title: "AV : 'Hero's of Marketing'",
+    body: "Heroes are not just in stories — they exist right here in our workplace! The 'Heroes of Marketing' proudly showcase the extraordinary achievements of our remarkable Marketing Team during the fiscal year 2023-24. This year stands as a testament to our collective effort, filled with record-breaking milestones and numerous “Highest Evers” by each Marketing SBU that have set new benchmarks for success. This victory belongs to every team member who demonstrated unwavering dedication, creativity, hard work, and commitment to our shared vision. Every individual played a pivotal role in transforming ambitious goals into tangible achievements. Behind every milestone is a hero — someone who goes above and beyond to turn HPCL's vision into reality. Let this celebration serve as a powerful reminder of what we can accomplish when we unite with a common purpose. As we reflect on these accomplishments, may we find inspiration to push boundaries, break barriers, and continue delivering excellence in every aspect of our work, all while upholding the spirit of HP FIRST!",
   },
 ];
 
@@ -41,14 +21,21 @@ let specialResult = "";
 specialData
   .map((item) => {
     specialResult += `
-        <div class="special-card">
-          <img src="${item.img}" alt="" />
-          <div class="special-details"> 
-            <p class="fw-bold">${item.title}</p>
-            <p>${item.subtitle}</p>
+        <div class="special-flex mb-4">
+            <div class="special-left">
+              <img
+                src="${item.img}"
+                alt=""
+              />
+            </div>
+            <div class="special-right">
+              <h2>${item.title}</h2>
+              <p>
+                ${item.body}
+              </p>
+            </div>
           </div>
-        </div>
     `;
   })
   .join("");
-specialDiv.innerHTML += specialResult;
+specialDiv.innerHTML = specialResult;

@@ -7,12 +7,20 @@ function setCarouselHeight() {
   // Get viewport height
   const viewportHeight = window.innerHeight;
 
-  // Get the total height of the header and navbar
-  const headerHeight = header.offsetHeight;
+  // Get the total height of the navbar
   const navbarHeight = navbar.offsetHeight;
 
-  // Calculate the remaining height for the carousel
-  const carouselHeight = viewportHeight - headerHeight - navbarHeight;
+  let carouselHeight;
+
+  // Check if the screen width is greater than 992px
+  if (window.innerWidth > 992) {
+    // If screen size is greater than 992px, include header height in the calculation
+    const headerHeight = header.offsetHeight;
+    carouselHeight = viewportHeight - headerHeight - navbarHeight;
+  } else {
+    // If screen size is less than or equal to 992px, exclude header height
+    carouselHeight = viewportHeight - navbarHeight;
+  }
 
   // Set the height of the carousel
   carousel.style.height = `${carouselHeight}px`;
@@ -25,8 +33,7 @@ function setCarouselHeight() {
   });
 }
 
-// Run the function when the page loads
-window.addEventListener("load", setCarouselHeight);
-
-// Recalculate when the window is resized
-window.addEventListener("resize", setCarouselHeight);
+// Trigger the function immediately when the document is ready and on window events
+setCarouselHeight(); // Run on document ready
+window.addEventListener("load", setCarouselHeight); // Ensure it runs on load
+window.addEventListener("resize", setCarouselHeight); // Trigger on resize

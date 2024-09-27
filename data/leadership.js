@@ -60,4 +60,4 @@ leadershipData
     `;
   })
   .join("");
-// leadershipDiv.innerHTML = leadershipResult;
+leadershipDiv.innerHTML = leadershipResult;

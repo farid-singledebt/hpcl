@@ -36,40 +36,7 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="container-fluid p-2 header1">
-      <ul>
-        <li class="icon-flex">
-          <i class="fa-solid fa-phone"></i>
-          +91 98765 43210
-        </li>
-        <li class="icon-flex">
-          <i class="fa-solid fa-envelope"></i>
-          hindustanpatroleum@gmail.com
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </header> -->
-    <header
-      class="container-fluid p-0 header2"
-      id="home"
-      style="overflow-x: hidden"
-    >
+    <header class="container-fluid p-0 header2" style="overflow-x: hidden">
       <div class="logo d-lg-block d-none" data-aos="fade-right">
         <img
           src="https://farid-singledebt.github.io/hpcl/images/hp_logo.png"
@@ -93,7 +60,7 @@
     <!--  -->
 
     <!-- navbar -->
-    <nav class="container-fluid navbar p-2">
+    <nav class="container-fluid navbar p-2" id="home">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="right-side d-lg-none d-block">
           <img
@@ -122,7 +89,7 @@
     <!--  -->
 
     <!-- banner -->
-    <div class="container-fluid p-0 banner-container">
+    <div class="container-fluid p-0 banner-container banner">
       <div class="banner-content mt-3">
         <h2>Visitors <i class="fa fa-eye"></i>: 12345</h2>
       </div>
@@ -167,7 +134,8 @@
     </div>
     <!--  -->
 
-    <div class="container p-2 py-5">
+    <div class="container p-2 py-5 section" id="about">
+      <div class="py-4"></div>
       <div class="title">
         <h1>About us</h1>
       </div>
@@ -199,8 +167,8 @@
     </div>
 
     <!-- agenda -->
-    <div class="container-fluid p-0 lightgrey-bg">
-      <div class="container p-2 py-5" id="agenda">
+    <div class="container-fluid p-0 lightgrey-bg section" id="agenda">
+      <div class="container p-2 py-5">
         <div class="py-4"></div>
         <div class="title">
           <h1>agenda</h1>
@@ -288,7 +256,7 @@
     <!--  -->
 
     <!-- presentations -->
-    <div class="container p-2 py-5" id="presentations">
+    <div class="container p-2 py-5 section" id="presentations">
       <div class="py-4"></div>
       <div class="title">
         <h1>Presentations</h1>
@@ -301,8 +269,8 @@
     <!--  -->
 
     <!-- awards -->
-    <div class="container-fluid p-0 lightgrey-bg">
-      <div class="container p-2 pt-5" id="awards">
+    <div class="container-fluid p-0 lightgrey-bg section" id="awards">
+      <div class="container p-2 pt-5">
         <div class="py-4"></div>
         <div class="title">
           <h1>Awards</h1>
@@ -328,7 +296,7 @@
       <div
         class="container p-2 pb-4 overflow-container awards-div table-container"
       >
-        <table class="table table-striped table-hover">
+        <table class="table table-hover">
           <thead>
             <tr>
               <th style="min-width: 75px">Sr No</th>
@@ -381,7 +349,7 @@
 
     <!-- pragati prangan -->
     <div
-      class="container p-2 py-5"
+      class="container p-2 py-5 section"
       id="pragatiprangan"
       style="overflow-x: hidden"
     >
@@ -413,35 +381,172 @@
         </button>
       </div>
 
-      <div class="stall ppDiv mt-5" id="stall">
-        <div class="stall-left" data-aos="fade-right">
-          <div class="stall-overlay">
-            <button class="button">
-              <i class="fa-solid fa-play text-white"></i>
-            </button>
-          </div>
-          <img
-            src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
-            alt=""
-          />
+      <div class="stall ppDiv">
+        <img
+          src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+          alt=""
+        />
+        <div class="stall-overlay">
+          <button class="button">
+            <i class="fa-solid fa-play text-white"></i>
+          </button>
         </div>
-        <div class="stall-right" data-aos="fade-left">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
-            architecto! Odit quaerat, similique dolorem voluptate saepe
-            explicabo tenetur maiores molestiae, vero unde inventore consequatur
-            nobis.
-          </p>
-        </div>
-        <div class="stall-bg"></div>
       </div>
 
-      <div class="gallery ppDiv d-none" id="gallery">
-        <div
-          class="three-carousel owl-carousel owl-theme"
-          id="pragati-div"
-        ></div>
+      <div class="ppDiv mt-5 d-none">
+        <div class="pragati-gallery mb-5 py-4">
+          <div class="pragati-gallery-left" data-aos="fade-right">
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+              alt=""
+            />
+          </div>
+          <div class="pragati-gallery-right" data-aos="fade-left">
+            <h2 class="mb-4">Retail SBU</h2>
+            <p class="pragati-clamp">
+              The stall, themed "Retail Transformation," is designed to reflect
+              HPCL's forward-thinking approach to revolutionizing the retail
+              experience. With modern design elements and interactive displays,
+              it showcases the latest advancements in fuel technology, loyalty
+              programs, and digital payment solutions. The stall highlights our
+              commitment to staying ahead of market trends and delivering
+              seamless, technology-driven services to millions of consumers
+              every day.
+            </p>
+            <div class="text-end">
+              <p
+                class="fw-bold text-decoration-underline mt-2"
+                style="cursor: pointer"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="pragati-gallery-bg"></div>
+        </div>
+        <div class="pragati-gallery mb-5 py-4">
+          <div class="pragati-gallery-left" data-aos="fade-right">
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+              alt=""
+            />
+          </div>
+          <div class="pragati-gallery-right" data-aos="fade-left">
+            <h2 class="mb-4">Petrochemicals</h2>
+            <p class="pragati-clamp">
+              The stall centred on the theme "Powering Progress with
+              Petrochemicals" is designed to demonstrate how HPCL's innovative
+              products will fuel progress across sectors, from polymers to
+              solvents and industrial chemicals. The visitors could explore the
+              wide range of HPCL's petrochemical products and their applications
+              and experience how HPCL is "powering progress" by providing
+              high-quality, reliable petrochemical products that meet the
+              evolving demands of various industries.
+            </p>
+            <div class="text-end">
+              <p
+                class="fw-bold text-decoration-underline mt-2"
+                style="cursor: pointer"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="pragati-gallery-bg"></div>
+        </div>
+        <div class="pragati-gallery mb-5 py-4">
+          <div class="pragati-gallery-left" data-aos="fade-right">
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+              alt=""
+            />
+          </div>
+          <div class="pragati-gallery-right" data-aos="fade-left">
+            <h2 class="mb-4">Natural Gas and Renewables</h2>
+            <p class="pragati-clamp">
+              The stall, themed "Fuelling Future," was designed to highlight the
+              company's commitment to clean and green energy solutions. This
+              stall was shared between the Natural Gas and Biofuel & Renewable
+              teams, showcasing our diverse portfolio in these sectors. LED
+              screens showcased various projects in natural gas, biofuel, and
+              renewable energy. The design also incorporated cutouts of
+              renewable energy sources like windmills, solar panels, and CBG/CNG
+              dispensing units, creating an immersive visual experience. The
+              miniature model of the CGD Network, along with an interactive
+              screen displayed details of key projects. An exciting feature was
+              the launch of "Organic Manure," with an AV explaining its benefits
+              and future prospects.
+            </p>
+            <div class="text-end">
+              <p
+                class="fw-bold text-decoration-underline mt-2"
+                style="cursor: pointer"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="pragati-gallery-bg"></div>
+        </div>
+        <div class="pragati-gallery mb-5 py-4">
+          <div class="pragati-gallery-left" data-aos="fade-right">
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+              alt=""
+            />
+          </div>
+          <div class="pragati-gallery-right" data-aos="fade-left">
+            <h2 class="mb-4">Lubes and Aviation SBU</h2>
+            <p class="pragati-clamp">
+              The theme "Sustainability and Futuristic Technology," was designed
+              to showcase SBU's commitment to environmentally responsible
+              products and advanced technological solutions. The stall featured
+              a unique and eco-friendly design made from bamboo wood, providing
+              a visually distinct space that reflected the SBU's focus on
+              sustainability. Displays highlighted key aspects of Lubes and
+              Aviation SBUs, including product packs, base oils, models and
+              international market ventures.
+            </p>
+            <div class="text-end">
+              <p
+                class="fw-bold text-decoration-underline mt-2"
+                style="cursor: pointer"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="pragati-gallery-bg"></div>
+        </div>
+        <div class="pragati-gallery">
+          <div class="pragati-gallery-left" data-aos="fade-right">
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
+              alt=""
+            />
+          </div>
+          <div class="pragati-gallery-right" data-aos="fade-left">
+            <h2 class="mb-4">LPG</h2>
+            <p class="pragati-clamp">
+              The stall, themed "Transition and Sustainability," focused on
+              showcasing the company's role in facilitating sustainable energy
+              solutions while navigating the evolving dynamics of the LPG
+              business. Interactive displays highlighted key products offerings,
+              digital solutions, and notable milestones in LPG SBU's journey
+              like the LPG Cavern, offering visitors an immersive and
+              informative experience.
+            </p>
+            <div class="text-end">
+              <p
+                class="fw-bold text-decoration-underline mt-2"
+                style="cursor: pointer"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="pragati-gallery-bg"></div>
+        </div>
       </div>
 
       <div class="prizes ppDiv d-none">
@@ -476,8 +581,8 @@
     <!--  -->
 
     <!-- launches -->
-    <div class="container-fluid p-0 lightgrey-bg">
-      <div class="container p-2 py-5" id="launches">
+    <div class="container-fluid p-0 lightgrey-bg section" id="launches">
+      <div class="container p-2 py-5">
         <div id="lottie-animation"></div>
 
         <div class="py-4"></div>
@@ -703,7 +808,10 @@
     <!--  -->
 
     <!-- leadership speaks -->
-    <div class="container-fluid p-0">
+    <div
+      class="container-fluid p-0 section leadership-temp-syle"
+      id="leadershipspeaks"
+    >
       <div class="py-4"></div>
       <div class="title">
         <h1>leadership speaks</h1>
@@ -722,31 +830,52 @@
         alt=""
       />
 
-      <div class="leadership-section mt-4" id="leadership-div"></div>
+      <button
+        class="button"
+        data-bs-toggle="modal"
+        data-bs-target="#leadershipModal"
+      >
+        Click here
+      </button>
     </div>
-    <!--  -->
 
-    <!-- special performance -->
-    <div class="container p-2 py-5" id="eventspecial">
-      <div class="py-4"></div>
-      <div class="title">
-        <h1>Event special</h1>
-      </div>
-      <div class="special-grid mt-4" id="special-div">
-        <div class="text-lg-start text-center">
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            quibusdam molestiae quia suscipit vero mollitia corrupti et placeat
-            ab! Eum.
-          </p>
+    <div
+      class="modal fade"
+      id="leadershipModal"
+      tabindex="-1"
+      aria-labelledby="leadershipModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header p-2">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body lightgrey-bg p-2">
+            <div class="leadership-section mt-4" id="leadership-div"></div>
+          </div>
         </div>
       </div>
     </div>
     <!--  -->
 
+    <!-- Event special -->
+    <div class="container p-2 py-5 section" id="eventspecial">
+      <div class="py-4"></div>
+      <div class="title">
+        <h1>Event special</h1>
+      </div>
+      <div class="special-section mt-4" id="special-div"></div>
+    </div>
+    <!--  -->
+
     <!-- media gallery -->
-    <div class="container p-2 py-5" id="mediagallery">
+    <div class="container p-2 py-5 section" id="mediagallery">
       <div class="py-4"></div>
       <div class="title">
         <h1>media gallery</h1>
@@ -797,15 +926,17 @@
     <!--  -->
 
     <!-- past conferences -->
-    <div class="container p-2 py-5" id="pastconferences">
+    <div class="container p-2 py-5 section" id="pastconferences">
       <div class="py-4"></div>
       <div class="title mb-4">
-        <h1>Event conference</h1>
+        <h1>Event repository</h1>
       </div>
-      <div
-        class="three-carousel owl-carousel owl-theme"
-        id="conference-div"
-      ></div>
+      <div class="event-overlay mt-4 p-4">
+        <h2 class="mb-4">
+          To view the entire content of marketing conclave click below button
+        </h2>
+        <button class="button">Click here</button>
+      </div>
     </div>
     <!--  -->
 
@@ -919,6 +1050,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
     <!--  -->
+    <script src="./data/activeNavLinks.js"></script>
     <script src="./data/bannerHeight.js"></script>
     <script src="./data/presentation.js"></script>
     <script src="./data/awards.js"></script>

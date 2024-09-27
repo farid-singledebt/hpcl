@@ -44,7 +44,7 @@ presentationData
               alt="card"
             />
             <div class="overlay">
-              <p>${item.overlay}</p>
+              <p>${item.title}</p>
             </div>
           </a>
           <p class="presentation-clamp">${item.body}</p>

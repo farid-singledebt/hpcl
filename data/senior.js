@@ -212,8 +212,7 @@ seniorData
 
         <div class="senior-details">
           <p class="fw-bold">${item.name}</p>
-          <p>Employee No: ${item.emp_no}</p>
-          <p>Designation: ${item.designation}</p>
+          <p>${item.designation}</p>
         </div>
       </div>
     `;

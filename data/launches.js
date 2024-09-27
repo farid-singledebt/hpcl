@@ -55,23 +55,23 @@ addFirstItems(
 const launchTitles = [
   {
     title: "LPG",
-    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    body: "Click below button to view images of launches",
   },
   {
     title: "Lubes",
-    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    body: "Click below button to view images of launches",
   },
   {
     title: "R&D",
-    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    body: "Click below button to view images of launches",
   },
   {
     title: "Mission 60",
-    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    body: "Click below button to view images of launches",
   },
   {
     title: "Digital initiatives",
-    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    body: "Click below button to view images of launches",
   },
 ];
 

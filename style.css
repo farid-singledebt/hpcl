@@ -52,20 +52,20 @@ img {
 }
 .logo {
   max-width: 400px;
-  padding-left: 8px;
+  padding-left: 24px;
 }
 .right-logo {
   max-width: 200px;
   background: #000;
   height: 100%;
-  padding-right: 8px;
+  padding-right: 24px;
   display: grid;
   place-items: center;
 }
 .empty-gradient {
   flex: 1 auto;
   height: 100%;
-  background: linear-gradient(to right, transparent, #000 95%);
+  background: linear-gradient(to right, transparent, #000 120%);
 }
 .navbar {
   z-index: 10;
@@ -83,11 +83,9 @@ img {
   box-shadow: var(--shadow);
 }
 .navbar .nav-links {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -153,7 +151,9 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .presentation-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 500px;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
@@ -164,10 +164,7 @@ img {
 }
 .presentation-grid .presentation-card {
   background: #fff;
-  width: 350px;
-  min-width: 350px;
-  height: 400px;
-  min-height: 400px;
+  height: 100%;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -189,7 +186,7 @@ img {
   transition: var(--transition);
 }
 .presentation-grid .presentation-img img {
-  height: 200px;
+  height: 250px;
 }
 .presentation-img .overlay {
   position: absolute;
@@ -274,12 +271,6 @@ img {
   width: 30px;
   height: 30px;
   filter: invert(1);
-}
-.awards-bg {
-  background: linear-gradient(to left, var(--blue), var(--red));
-}
-.awards-bg .title h1 {
-  color: #fff !important;
 }
 thead {
   background: linear-gradient(to right, var(--blue), var(--red));
@@ -391,8 +382,8 @@ th {
   border-color: var(--red);
 }
 .seniors-flex .seniors-card img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -718,11 +709,22 @@ footer {
 .masonry-item {
   border-radius: 8px;
   overflow: hidden;
-  border: 5px solid var(--blue);
 }
 .masonry-item img {
   width: 100%;
   height: 100%;
+}
+.random-border-1 {
+  border: 2px solid var(--blue);
+}
+.random-border-1 {
+  border: 2px solid var(--red);
+}
+.random-border-1 {
+  border: 2px solid #000;
+}
+.random-border-1 {
+  border: 2px solid #eee;
 }
 .masonry-item:nth-child(odd) {
   grid-row: span 10;
@@ -808,8 +810,8 @@ ul {
   gap: 8px;
 }
 .launches-flex-box {
-  flex: 1 1 300px;
-  max-width: 300px;
+  flex: 1 1 420px;
+  max-width: 420px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
@@ -885,7 +887,7 @@ ul {
 }
 .owl-nav button span {
   font-size: 2rem;
-  color: #fff;
+  color: #000;
 }
 .presentation-clamp {
   display: -webkit-box;
@@ -896,4 +898,10 @@ ul {
 #lottie-animation {
   transform-origin: center;
   transform: rotate(180deg) translateX(50%);
+}
+.about-overlay {
+  background: linear-gradient(45deg, var(--blue), var(--red));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: #fff;
 }

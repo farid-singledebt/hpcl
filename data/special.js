@@ -27,6 +27,11 @@ specialData
                 src="${item.img}"
                 alt=""
               />
+              <div class="special-overlay">
+          <button class="button">
+            <i class="fa-solid fa-play text-white"></i>
+          </button>
+        </div>
             </div>
             <div class="special-right">
               <h2>${item.title}</h2>

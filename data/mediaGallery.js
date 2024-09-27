@@ -49,7 +49,7 @@ function loadMedia2() {
     .slice(0, media2Count)
     .map((item) => {
       mediaGalleryDay2Result += `
-    <div class="masonry-item">
+    <div class="masonry-item ${item.className}">
     <img src="${item.img}"
               alt="Image 1"
             />
@@ -66,7 +66,7 @@ function loadMedia3() {
     .slice(0, media3Count)
     .map((item) => {
       mediaGalleryDay3Result += `
-    <div class="masonry-item">
+    <div class="masonry-item ${item.className}">
     <img src="${item.img}"
               alt="Image 1"
             />

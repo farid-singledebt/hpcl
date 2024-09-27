@@ -32,7 +32,7 @@ function loadMedia1() {
     .slice(0, media1Count)
     .map((item) => {
       mediaGalleryDay1Result += `
-    <div class="masonry-item">
+    <div class="masonry-item ${item.className}">
     <img src="${item.img}"
               alt="Image 1"
             />

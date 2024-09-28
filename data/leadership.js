@@ -37,11 +37,12 @@ const leadershipData = [
   },
 ];
 
-const leadershipDiv = document.getElementById("leadership-div");
-let leadershipResult = "";
-leadershipData
-  .map((item) => {
-    leadershipResult += `
+$(document).ready(function () {
+  const leadershipDiv = document.getElementById("leadership-div");
+  let leadershipResult = "";
+  leadershipData
+    .map((item) => {
+      leadershipResult += `
         <div class="leadership-flex mb-4">
             <div class="leadership-left">
               <img
@@ -58,6 +59,7 @@ leadershipData
             </div>
           </div>
     `;
-  })
-  .join("");
-leadershipDiv.innerHTML = leadershipResult;
+    })
+    .join("");
+  leadershipDiv.innerHTML = leadershipResult;
+});

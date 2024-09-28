@@ -32,7 +32,8 @@ const seniorData = [
   {
     img: "https://farid-singledebt.github.io/hpcl/images/seniors/7.JPG",
     name: "AMITAVA MUKHOPADHYAY",
-    designation: "Executive Director - Engineering Projects & Facilities Planning",
+    designation:
+      "Executive Director - Engineering Projects & Facilities Planning",
   },
   {
     img: "https://farid-singledebt.github.io/hpcl/images/seniors/8.JPG",
@@ -52,17 +53,17 @@ const seniorData = [
   {
     img: "https://farid-singledebt.github.io/hpcl/images/seniors/11.JPG",
     name: "KANURU SRINIVAS",
-    designation: "Executive Director - Marketing Strategy and  Business Development",
+    designation:
+      "Executive Director - Marketing Strategy and  Business Development",
   },
-  
 ];
 
-
-const seniorDiv = document.getElementById("senior-div");
-let seniorResult = "";
-seniorData
-  .map((item) => {
-    seniorResult += `
+$(document).ready(function () {
+  const seniorDiv = document.getElementById("senior-div");
+  let seniorResult = "";
+  seniorData
+    .map((item) => {
+      seniorResult += `
     <div class="seniors-card">
         <img
           src="${item.img}"
@@ -75,6 +76,7 @@ seniorData
         </div>
       </div>
     `;
-  })
-  .join("");
-seniorDiv.innerHTML = seniorResult;
+    })
+    .join("");
+  seniorDiv.innerHTML = seniorResult;
+});

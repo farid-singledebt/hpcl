@@ -60,7 +60,7 @@
     <!--  -->
 
     <!-- navbar -->
-    <nav class="container-fluid navbar p-2" id="home">
+    <nav class="container-fluid navbar p-2">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="right-side d-lg-none d-block">
           <img
@@ -89,7 +89,7 @@
     <!--  -->
 
     <!-- banner -->
-    <div class="container-fluid p-0 banner-container banner">
+    <div class="container-fluid p-0 banner-container banner section" id="home">
       <div class="banner-content mt-3">
         <h2>Visitors <i class="fa fa-eye"></i>: 12345</h2>
       </div>
@@ -178,21 +178,21 @@
           <button
             class="button agendaButton arrow-button active"
             data-aos="zoom-in"
-            onclick="toggleAgenda(1)"
+            data-index="1"
           >
             day 1
           </button>
           <button
             class="button agendaButton arrow-button"
             data-aos="zoom-in"
-            onclick="toggleAgenda(2)"
+            data-index="2"
           >
             day 2
           </button>
           <button
             class="button agendaButton arrow-button"
             data-aos="zoom-in"
-            onclick="toggleAgenda(3)"
+            data-index="3"
           >
             day 3
           </button>
@@ -590,218 +590,6 @@
           <h1>Launches</h1>
         </div>
 
-        <!-- <div class="launches-button-flex my-4">
-          <button
-            class="button launchButton arrow-button active"
-            data-aos="zoom-in"
-            onclick="toggleLaunch(1)"
-          >
-            LPG
-          </button>
-          <button
-            class="button launchButton arrow-button"
-            data-aos="zoom-in"
-            onclick="toggleLaunch(2)"
-          >
-            Lubes
-          </button>
-          <button
-            class="button launchButton arrow-button"
-            data-aos="zoom-in"
-            onclick="toggleLaunch(3)"
-          >
-            R&D
-          </button>
-          <button
-            class="button launchButton arrow-button"
-            data-aos="zoom-in"
-            onclick="toggleLaunch(4)"
-          >
-            Mission 60
-          </button>
-          <button
-            class="button launchButton arrow-button"
-            data-aos="zoom-in"
-            onclick="toggleLaunch(5)"
-          >
-            Digital initiatives
-          </button>
-        </div>
-
-        <div class="launchDiv">
-          <div class="three-carousel owl-carousel owl-theme">
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 1"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 2"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 3"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="launchDiv d-none">
-          <div class="three-carousel owl-carousel owl-theme">
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 1"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 2"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 3"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="launchDiv d-none">
-          <div class="three-carousel owl-carousel owl-theme">
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 1"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 2"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 3"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="launchDiv d-none">
-          <div class="three-carousel owl-carousel owl-theme">
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 1"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 2"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 3"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="launchDiv d-none">
-          <div class="three-carousel owl-carousel owl-theme">
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 1"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/17805250/pexels-photo-17805250/free-photo-of-black-and-white-photograph-of-a-snowy-mountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 2"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img
-                src="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Image 3"
-              />
-              <div class="text-center mt-2">
-                <p class="fw-bold">Lorem, ipsum.</p>
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!--  -->
-        <!--  -->
-
         <div class="launches-flex-container my-4" id="launches-container"></div>
       </div>
     </div>
@@ -1050,7 +838,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
     <!--  -->
-    <script src="./data/activeNavLinks.js"></script>
     <script src="./data/bannerHeight.js"></script>
     <script src="./data/presentation.js"></script>
     <script src="./data/awards.js"></script>
@@ -1059,65 +846,38 @@
     <script src="./data/special.js"></script>
     <script src="./data/pragati.js"></script>
     <script src="./data/mediaGallery.js"></script>
-    <script src="./data/conference.js"></script>
     <script src="./data/launches.js"></script>
+    <script src="./data/activeNavLinks.js"></script>
     <!--  -->
     <script>
-      let scrolltotop = document.getElementById("scrolltotop");
-      const navbar = document.querySelector(".navbar");
-      $(document).ready(function () {
+      document.addEventListener("DOMContentLoaded", function () {
         AOS.init();
+        //
+        let scrolltotop = document.getElementById("scrolltotop");
+        const navbar = document.querySelector(".navbar");
         //
         let allImages = document.querySelectorAll("img");
         allImages.forEach((img) => {
           img.setAttribute("lazy-loading", true);
         });
         //
-        $(".three-carousel").owlCarousel({
-          loop: true,
-          margin: 8,
-          nav: true,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          autoplaySpeed: 2000,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 2,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-        //
         $(".banner-carousel").owlCarousel({
-          loop: true, // Infinite loop
-          margin: 0, // Space between items
-          nav: true, // Show next/prev buttons
-          items: 1, // Always show 1 image at a time
-          autoplay: true, // Enable autoplay
-          autoplayTimeout: 3000, // Time between transitions (3 seconds)
-          autoplayHoverPause: true, // Pause autoplay on hover
-          dots: true, // Show navigation dots
+          loop: false,
+          margin: 0,
+          nav: true,
+          items: 1,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          dots: true,
           responsive: {
-            0: {
-              items: 1, // 1 item for mobile
-            },
-            600: {
-              items: 1, // 1 item for tablet
-            },
-            1000: {
-              items: 1, // 1 item for desktop
-            },
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 },
           },
         });
         //
         window.addEventListener("scroll", () => {
-          //
           if (window.scrollY > 10) {
             scrolltotop.classList.remove("d-none");
             navbar.classList.add("stick");
@@ -1166,123 +926,114 @@
 
         // Observe the Lottie container
         observer.observe(document.getElementById("lottie-animation"));
-      });
-
-      //
-      const navLinks = document.querySelectorAll(".navbar a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", function () {
-          navLinks.forEach((link) => link.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-
-      //
-      const agendaDivs = document.querySelectorAll(".agendaDiv");
-      const agendaButtons = document.querySelectorAll(".agendaButton");
-      const toggleAgenda = (count) => {
-        agendaDivs.forEach((item, index) => {
-          item.classList.add("d-none");
-          if (index + 1 === count) {
-            item.classList.remove("d-none");
-          }
+        //
+        const navLinks = document.querySelectorAll(".navbar a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            this.classList.add("active");
+          });
         });
         //
-        agendaButtons.forEach((item, index) => {
-          item.classList.remove("active");
-          if (index + 1 === count) {
-            item.classList.add("active");
-          }
+        const agendaDivs = document.querySelectorAll(".agendaDiv");
+        const agendaButtons = document.querySelectorAll(".agendaButton");
+        agendaButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const index = button.getAttribute("data-index");
+            agendaDivs.forEach((div, divIndex) => {
+              if (divIndex + 1 == index) {
+                div.classList.remove("d-none");
+              } else {
+                div.classList.add("d-none");
+              }
+            });
+            agendaButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+          });
         });
-      };
-
-      //
-      const ppDivs = document.querySelectorAll(".ppDiv");
-      const ppButtons = document.querySelectorAll(".ppButton");
-      const togglePP = (count) => {
-        ppDivs.forEach((item, index) => {
-          item.classList.add("d-none");
-          if (index + 1 === count) {
-            item.classList.remove("d-none");
-          }
-        });
+        // const toggleAgenda = (count) => {
+        //   console.log(count);
+        //   agendaDivs.forEach((item, index) => {
+        //     item.classList.add("d-none");
+        //     if (index + 1 === count) {
+        //       item.classList.remove("d-none");
+        //     }
+        //   });
+        //   //
+        //   agendaButtons.forEach((item, index) => {
+        //     item.classList.remove("active");
+        //     if (index + 1 === count) {
+        //       item.classList.add("active");
+        //     }
+        //   });
+        // };
         //
-        ppButtons.forEach((item, index) => {
-          item.classList.remove("active");
-          if (index + 1 === count) {
-            item.classList.add("active");
-          }
-        });
-      };
-
-      const awardsDivs = document.querySelectorAll(".awards-div");
-      const awardsButton = document.querySelectorAll(".awards-button");
-      const toggleAwards = (count) => {
-        awardsDivs.forEach((item, index) => {
-          item.classList.add("d-none");
-          if (index + 1 === count) {
-            item.classList.remove("d-none");
-          }
-        });
+        const ppDivs = document.querySelectorAll(".ppDiv");
+        const ppButtons = document.querySelectorAll(".ppButton");
+        const togglePP = (count) => {
+          ppDivs.forEach((item, index) => {
+            item.classList.add("d-none");
+            if (index + 1 === count) {
+              item.classList.remove("d-none");
+            }
+          });
+          //
+          ppButtons.forEach((item, index) => {
+            item.classList.remove("active");
+            if (index + 1 === count) {
+              item.classList.add("active");
+            }
+          });
+        };
         //
-        awardsButton.forEach((item, index) => {
-          item.classList.remove("active");
-          if (index + 1 === count) {
-            item.classList.add("active");
-          }
-        });
-      };
-
-      //
-      // const launchDivs = document.querySelectorAll(".launchDiv");
-      // const launchButtons = document.querySelectorAll(".launchButton");
-      // const toggleLaunch = (count) => {
-      //   launchDivs.forEach((item, index) => {
-      //     item.classList.add("d-none");
-      //     if (index + 1 === count) {
-      //       item.classList.remove("d-none");
-      //     }
-      //   });
-      //   //
-      //   launchButtons.forEach((item, index) => {
-      //     item.classList.remove("active");
-      //     if (index + 1 === count) {
-      //       item.classList.add("active");
-      //     }
-      //   });
-      // };
-      //
-      const mediaGalleryDivs = document.querySelectorAll(".mediaGalleryDiv");
-      const mediaGalleryButtons = document.querySelectorAll(
-        ".mediaGalleryButton"
-      );
-      const toggleMediaGallery = (count) => {
-        mediaGalleryDivs.forEach((item, index) => {
-          item.classList.add("d-none");
-          if (index + 1 === count) {
-            item.classList.remove("d-none");
-          }
-        });
+        const awardsDivs = document.querySelectorAll(".awards-div");
+        const awardsButton = document.querySelectorAll(".awards-button");
+        const toggleAwards = (count) => {
+          awardsDivs.forEach((item, index) => {
+            item.classList.add("d-none");
+            if (index + 1 === count) {
+              item.classList.remove("d-none");
+            }
+          });
+          //
+          awardsButton.forEach((item, index) => {
+            item.classList.remove("active");
+            if (index + 1 === count) {
+              item.classList.add("active");
+            }
+          });
+        };
         //
-        mediaGalleryButtons.forEach((item, index) => {
-          item.classList.remove("active");
-          if (index + 1 === count) {
-            item.classList.add("active");
-          }
-        });
-      };
-
-      //
-      function scrollToTop() {
-        window.scrollTo(0, 0);
-      }
-
-      //
-      document.querySelectorAll(".agenda-button").forEach((item) => {
-        item.addEventListener("click", function () {
-          const pdfUrl = this.getAttribute("data-pdf");
-          console.log(pdfUrl);
-          document.getElementById("pdfIframe").src = pdfUrl;
+        const mediaGalleryDivs = document.querySelectorAll(".mediaGalleryDiv");
+        const mediaGalleryButtons = document.querySelectorAll(
+          ".mediaGalleryButton"
+        );
+        const toggleMediaGallery = (count) => {
+          mediaGalleryDivs.forEach((item, index) => {
+            item.classList.add("d-none");
+            if (index + 1 === count) {
+              item.classList.remove("d-none");
+            }
+          });
+          //
+          mediaGalleryButtons.forEach((item, index) => {
+            item.classList.remove("active");
+            if (index + 1 === count) {
+              item.classList.add("active");
+            }
+          });
+        };
+        //
+        function scrollToTop() {
+          window.scrollTo(0, 0);
+        }
+        //
+        document.querySelectorAll(".agenda-button").forEach((item) => {
+          item.addEventListener("click", function () {
+            const pdfUrl = this.getAttribute("data-pdf");
+            console.log(pdfUrl);
+            document.getElementById("pdfIframe").src = pdfUrl;
+          });
         });
       });
     </script>

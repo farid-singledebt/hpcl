@@ -16,11 +16,12 @@ const specialData = [
   },
 ];
 
-const specialDiv = document.getElementById("special-div");
-let specialResult = "";
-specialData
-  .map((item) => {
-    specialResult += `
+$(document).ready(function () {
+  const specialDiv = document.getElementById("special-div");
+  let specialResult = "";
+  specialData
+    .map((item) => {
+      specialResult += `
         <div class="special-flex mb-4">
             <div class="special-left">
               <img
@@ -41,6 +42,7 @@ specialData
             </div>
           </div>
     `;
-  })
-  .join("");
-specialDiv.innerHTML = specialResult;
+    })
+    .join("");
+  specialDiv.innerHTML = specialResult;
+});

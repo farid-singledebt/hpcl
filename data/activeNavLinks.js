@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".section");
-  const navLinks = document.querySelectorAll(".nav-links li a");
+  const navbarLinks = document.querySelectorAll(".nav-links li a");
 
   // Function to remove 'active' class from all links
   function removeActiveClasses() {
-    navLinks.forEach((link) => link.classList.remove("active"));
+    navbarLinks.forEach((link) => link.classList.remove("active"));
   }
 
   // Callback for when a section enters the viewport
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         removeActiveClasses();
 
         // Add 'active' class to the corresponding nav link
-        navLinks.forEach((link) => {
+        navbarLinks.forEach((link) => {
           if (link.getAttribute("href").substring(1) === sectionId) {
             link.classList.add("active");
           }
@@ -30,9 +29,34 @@ document.addEventListener("DOMContentLoaded", function () {
     threshold: 0.6, // triggers when 60% of the section is visible
   };
 
-  // Creating the observer
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  // Function to initialize observer for all sections
+  function observeSections() {
+    const sections = document.querySelectorAll(".section"); // Ensure sections are dynamically fetched
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
 
-  // Observing each section
-  sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => {
+      observer.observe(section); // Observe both static and dynamically loaded sections
+    });
+  }
+
+  // Initialize observer for static sections
+  observeSections();
+
+  // Example: Dynamically render content (simulated)
+  function renderDynamicContent() {
+    const dynamicSection = document.querySelector("#dynamic-section");
+    if (dynamicSection) {
+      // Inject dynamic content
+      dynamicSection.innerHTML = "<p>Dynamic content loaded...</p>";
+
+      // Reinitialize observer after dynamic content is added
+      observeSections();
+    }
+  }
+
+  // Simulate dynamic content loading after 2 seconds
+  setTimeout(renderDynamicContent, 5000);
 });

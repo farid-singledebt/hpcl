@@ -85,11 +85,12 @@ const prizeData = [
   },
 ];
 
-const prizeTable = document.getElementById("prize-table");
-let prizeResult = "";
-prizeData
-  .map((item, index) => {
-    prizeResult += `
+$(document).ready(function () {
+  const prizeTable = document.getElementById("prize-table");
+  let prizeResult = "";
+  prizeData
+    .map((item, index) => {
+      prizeResult += `
       <tr>
               <td>${index + 1}</td>
               <td>${item.SBU}</td>
@@ -98,6 +99,7 @@ prizeData
               <td>View <i class="fa fa-eye"></i></td>
             </tr>
     `;
-  })
-  .join("");
-prizeTable.innerHTML = prizeResult;
+    })
+    .join("");
+  prizeTable.innerHTML = prizeResult;
+});

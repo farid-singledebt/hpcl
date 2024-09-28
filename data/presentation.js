@@ -29,11 +29,12 @@ const presentationData = [
   },
 ];
 
-const presentation = document.getElementById("presentation");
-let presentationResult = "";
-presentationData
-  .map((item, index) => {
-    presentationResult += `
+$(document).ready(function () {
+  const presentation = document.getElementById("presentation");
+  let presentationResult = "";
+  presentationData
+    .map((item, index) => {
+      presentationResult += `
         <div class="presentation-card">
           <div class="presentation-border">
             <p class="fw-bold">${item.title}</p>
@@ -51,25 +52,26 @@ presentationData
           <p class="text-end text-decoration-underline fw-bold mt-2 read-more-button" style="cursor: pointer" data-index="${index}" data-bs-toggle="modal" data-bs-target="#readMore">Read more</p>
         </div>
     `;
-  })
-  .join("");
-presentation.innerHTML = presentationResult;
+    })
+    .join("");
+  presentation.innerHTML = presentationResult;
 
-//
-document.querySelectorAll(".presentation-img").forEach((item) => {
-  item.addEventListener("click", function () {
-    const pdfUrl = this.getAttribute("data-pdf");
-    document.getElementById("pdfIframe").src = pdfUrl;
+  //
+  document.querySelectorAll(".presentation-img").forEach((item) => {
+    item.addEventListener("click", function () {
+      const pdfUrl = this.getAttribute("data-pdf");
+      document.getElementById("pdfIframe").src = pdfUrl;
+    });
   });
-});
 
-const readMoreButtons = document.querySelectorAll(".read-more-button");
-readMoreButtons.forEach((item) => {
-  item.addEventListener("click", function () {
-    const paraIndex = this.getAttribute("data-index");
-    const readMoreTitle = document.getElementById("read-more-title");
-    const readMoreDiv = document.getElementById("read-more-div");
-    readMoreTitle.innerHTML = presentationData[paraIndex].title;
-    readMoreDiv.innerHTML = presentationData[paraIndex].body;
+  const readMoreButtons = document.querySelectorAll(".read-more-button");
+  readMoreButtons.forEach((item) => {
+    item.addEventListener("click", function () {
+      const paraIndex = this.getAttribute("data-index");
+      const readMoreTitle = document.getElementById("read-more-title");
+      const readMoreDiv = document.getElementById("read-more-div");
+      readMoreTitle.innerHTML = presentationData[paraIndex].title;
+      readMoreDiv.innerHTML = presentationData[paraIndex].body;
+    });
   });
 });

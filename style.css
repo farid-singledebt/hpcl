@@ -556,14 +556,28 @@ footer {
   justify-content: space-between;
   gap: 16px;
 }
-.pragati-gallery .pragati-gallery-left img {
-  height: 350px;
-}
 .pragati-gallery .pragati-gallery-left {
   grid-area: 1 / 1 / 2 / 4;
   overflow: hidden;
   border-radius: var(--radius);
   position: relative;
+}
+.pragati-gallery-left .owl-item {
+  width: 100%;
+}
+.pragati-gallery-left .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: unset !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.pragati-gallery .pragati-gallery-left img {
+  height: 350px;
 }
 .pragati-gallery .pragati-gallery-right {
   grid-area: 1 / 4 / 2 / 5;
@@ -691,6 +705,7 @@ footer {
 }
 .banner-container {
   position: relative;
+  background-color: #fff;
 }
 .banner-content {
   position: absolute;
@@ -710,6 +725,7 @@ footer {
 .banner-item img {
   width: 100%;
   display: block;
+  object-fit: contain !important;
 }
 .icon-flex {
   display: flex;
@@ -818,7 +834,11 @@ ul {
 #modal-carousel img {
   max-height: calc(100vh - 200px) !important;
 }
-.banner-carousel .owl-nav {
+.modal-body {
+  position: relative;
+}
+.banner-carousel .owl-nav,
+.modal-body .owl-nav {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -832,16 +852,19 @@ ul {
 }
 .owl-nav {
   text-align: center;
+  margin-top: 0 !important;
 }
-.banner-carousel .owl-nav button span {
-  font-size: 3rem;
+.owl-prev.disabled,
+.owl-next.disabled {
+  pointer-events: none;
+  opacity: 0;
 }
 .owl-nav button {
   outline: none;
+  color: #5d5d5d !important;
 }
 .owl-nav button span {
-  font-size: 2rem;
-  color: #000;
+  font-size: 3rem;
   font-weight: bold;
 }
 .presentation-clamp {
@@ -867,6 +890,10 @@ ul {
   box-shadow: var(--shadow);
   color: #fff;
   text-align: center;
+}
+.about-overlay p {
+  font-size: 1.2rem !important;
+  text-align: justify;
 }
 .stall {
   width: 100%;

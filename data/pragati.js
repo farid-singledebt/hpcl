@@ -26,38 +26,87 @@ const pragatiGalleryData = [
   },
 ];
 
-const pragatiGalleryDiv = document.getElementById("pragati-gallery-div");
-let pragatiGalleryResult = "";
+pragatiGalleryData.map((item) => {
+  for (let i = 1; i <= 10; i++) {
+    item.images.push({
+      img: `../images/awards/${i}.JPG`,
+    });
+  }
+});
 
-pragatiGalleryData.map((item, index) => {
-  pragatiGalleryResult += `
-    <div class="pragati-gallery mb-5 py-4">
+function renderPragatiGallery() {
+  const pragatiGalleryDiv = document.getElementById("pragati-gallery-div");
+  let pragatiGalleryResult = "";
+
+  // Loop through the gallery data and build the HTML
+  pragatiGalleryData.map((item, index) => {
+    pragatiGalleryResult += `
+        <div class="pragati-gallery mb-5 py-4">
           <div class="pragati-gallery-left" data-aos="fade-right">
-            <img
-              src="https://farid-singledebt.github.io/hpcl/images/pragati/1.JPG"
-              alt=""
-            />
+            <div class="owl-carousel owl-theme pragati-gallery-carousel" data-index="${index}">
+              ${item.images
+                .map(
+                  (img) => `
+                    <div class="item">
+                      <img src="${img.img}" alt="Gallery Image ${index}" />
+                    </div>
+                  `
+                )
+                .join("")}
+            </div>
           </div>
           <div class="pragati-gallery-right" data-aos="fade-left">
             <h2 class="mb-4">${item.title}</h2>
-            <p class="pragati-clamp">
-              ${item.body}
-            </p>
+            <p class="pragati-clamp">${item.body}</p>
             <div class="text-end">
-              <p
-                class="fw-bold text-decoration-underline mt-2 pragati-gallery-readmore" data-index="${index}"
-                style="cursor: pointer"
-                data-bs-toggle="modal" data-bs-target="#readMore"
-              >
+              <p class="fw-bold text-decoration-underline mt-2 pragati-gallery-readmore" data-index="${index}" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#readMore">
                 Read more
               </p>
             </div>
           </div>
           <div class="pragati-gallery-bg"></div>
         </div>
-    `;
+      `;
+  });
+
+  // Set the generated HTML into the container
+  pragatiGalleryDiv.innerHTML = pragatiGalleryResult;
+
+  // Initialize Owl Carousel after the gallery has been rendered
+  initializeOwlCarousel();
+}
+
+// Function to initialize Owl Carousel
+function initializeOwlCarousel() {
+  // Select all carousels
+  document.querySelectorAll(".pragati-gallery-carousel").forEach((carousel) => {
+    $(carousel).owlCarousel({
+      loop: true, // Infinite loop
+      margin: 0, // Space between items
+      nav: true, // Show next/prev buttons
+      items: 1, // Always show 1 image at a time
+      autoplay: false, // Enable autoplay
+      autoplayTimeout: 3000, // Time between transitions (3 seconds)
+      autoplayHoverPause: true, // Pause autoplay on hover
+      dots: false, // Show navigation dots
+      responsive: {
+        0: {
+          items: 1, // 1 item for mobile
+        },
+        600: {
+          items: 1, // 1 item for tablet
+        },
+        1000: {
+          items: 1, // 1 item for desktop
+        },
+      },
+    });
+  });
+}
+
+$(document).ready(function () {
+  renderPragatiGallery(); // Renders the gallery and initializes Owl Carousel
 });
-pragatiGalleryDiv.innerHTML = pragatiGalleryResult;
 
 const pragatiGalleryReadmore = document.querySelectorAll(
   ".pragati-gallery-readmore"

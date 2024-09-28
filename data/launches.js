@@ -94,16 +94,13 @@ $(document).ready(function () {
   mainLaunchData.map((item, index) => {
     mainLaunchResult += `
     <div class="launches-flex-box">
-            <div class="launches-overlay1">
-              <p>${item.body}</p>
-              <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
-      index + 1
-    }" data-bs-toggle="modal" data-bs-target="#imgModal">
-                View <i class="fa fa-eye"></i>
-              </button>
-            </div>
             <div class="launches-overlay2">
               <h2>${item.title}</h2>
+              <button class="button button-flex view-launches-image" data-index="${index}" data-array="${
+      index + 1
+    }" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                View <i class="fa fa-eye"></i>
+              </button>
             </div>
             <img src="${item.img}" alt="Image 1" />
           </div>

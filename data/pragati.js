@@ -6,22 +6,22 @@ const pragatiGalleryData = [
   },
   {
     title: "Petrochemicals",
-    body: "The stall centred on the theme 'Powering Progress with Petrochemicals' is designed to demonstrate how HPCL’s innovative products will fuel progress across sectors, from polymers to solvents and industrial chemicals. The visitors could explore the wide range of HPCL’s petrochemical products and their applications and experience how HPCL is 'powering progress' by providing high-quality, reliable petrochemical products that meet the evolving demands of various industries.",
+    body: "The stall centred on the theme 'Powering Progress with Petrochemicals' is designed to demonstrate how HPCL's innovative products will fuel progress across sectors, from polymers to solvents and industrial chemicals. The visitors could explore the wide range of HPCL's petrochemical products and their applications and experience how HPCL is 'powering progress' by providing high-quality, reliable petrochemical products that meet the evolving demands of various industries.",
     images: [],
   },
   {
     title: "Natural Gas and Renewables",
-    body: "The stall, themed 'Fuelling Future,' was designed to highlight the company’s commitment to clean and green energy solutions. This stall was shared between the Natural Gas and Biofuel & Renewable teams, showcasing our diverse portfolio in these sectors. LED screens showcased various projects in natural gas, biofuel, and renewable energy. The design also incorporated cutouts of renewable energy sources like windmills, solar panels, and CBG/CNG dispensing units, creating an immersive visual experience. The miniature model of the CGD Network, along with an interactive screen displayed details of key projects. An exciting feature was the launch of 'Organic Manure' with an AV explaining its benefits and future prospects. ",
+    body: "The stall, themed 'Fuelling Future,' was designed to highlight the company's commitment to clean and green energy solutions. This stall was shared between the Natural Gas and Biofuel & Renewable teams, showcasing our diverse portfolio in these sectors. LED screens showcased various projects in natural gas, biofuel, and renewable energy. The design also incorporated cutouts of renewable energy sources like windmills, solar panels, and CBG/CNG dispensing units, creating an immersive visual experience. The miniature model of the CGD Network, along with an interactive screen displayed details of key projects. An exciting feature was the launch of 'Organic Manure' with an AV explaining its benefits and future prospects. ",
     images: [],
   },
   {
     title: "Lubes and Aviation SBU",
-    body: "The theme 'Sustainability and Futuristic Technology,' was designed to showcase SBU’s commitment to environmentally responsible products and advanced technological solutions. The stall featured a unique and eco-friendly design made from bamboo wood, providing a visually distinct space that reflected the SBU’s focus on sustainability. Displays highlighted key aspects of Lubes and Aviation SBUs, including product packs, base oils, models and international market ventures. ",
+    body: "The theme 'Sustainability and Futuristic Technology,' was designed to showcase SBU's commitment to environmentally responsible products and advanced technological solutions. The stall featured a unique and eco-friendly design made from bamboo wood, providing a visually distinct space that reflected the SBU's focus on sustainability. Displays highlighted key aspects of Lubes and Aviation SBUs, including product packs, base oils, models and international market ventures. ",
     images: [],
   },
   {
     title: "LPG",
-    body: "The stall, themed 'Transition and Sustainability,' focused on showcasing the company’s role in facilitating sustainable energy solutions while navigating the evolving dynamics of the LPG business. Interactive displays highlighted key products offerings, digital solutions, and notable milestones in  LPG SBU’s journey like the LPG Cavern, offering visitors an immersive and informative experience.",
+    body: "The stall, themed 'Transition and Sustainability,' focused on showcasing the company's role in facilitating sustainable energy solutions while navigating the evolving dynamics of the LPG business. Interactive displays highlighted key products offerings, digital solutions, and notable milestones in  LPG SBU's journey like the LPG Cavern, offering visitors an immersive and informative experience.",
     images: [],
   },
 ];
@@ -29,7 +29,7 @@ const pragatiGalleryData = [
 pragatiGalleryData.map((item) => {
   for (let i = 1; i <= 10; i++) {
     item.images.push({
-      img: `../images/awards/${i}.JPG`,
+      img: `https://farid-singledebt.github.io/hpcl/images/awards/${i}.JPG`,
     });
   }
 });
@@ -42,7 +42,7 @@ function renderPragatiGallery() {
   pragatiGalleryData.map((item, index) => {
     pragatiGalleryResult += `
         <div class="pragati-gallery mb-5 py-4">
-          <div class="pragati-gallery-left" data-aos="fade-right">
+          <div class="pragati-gallery-left">
             <div class="owl-carousel owl-theme pragati-gallery-carousel" data-index="${index}">
               ${item.images
                 .map(
@@ -55,7 +55,7 @@ function renderPragatiGallery() {
                 .join("")}
             </div>
           </div>
-          <div class="pragati-gallery-right" data-aos="fade-left">
+          <div class="pragati-gallery-right">
             <h2 class="mb-4">${item.title}</h2>
             <p class="pragati-clamp">${item.body}</p>
             <div class="text-end">

@@ -36,30 +36,3 @@ const leadershipData = [
     body: "Our leadership embodies a commitment to excellence, driving the company toward continued success and market leadership.",
   },
 ];
-
-$(document).ready(function () {
-  const leadershipDiv = document.getElementById("leadership-div");
-  let leadershipResult = "";
-  leadershipData
-    .map((item) => {
-      leadershipResult += `
-        <div class="leadership-flex mb-4">
-            <div class="leadership-left">
-              <img
-                src="${item.img}"
-                alt=""
-              />
-            </div>
-            <div class="leadership-right">
-              <h2>${item.title}</h2>
-              <p>
-                ${item.body}
-              </p>
-              <p class="fw-bold">${item.subtitle}</p>
-            </div>
-          </div>
-    `;
-    })
-    .join("");
-  leadershipDiv.innerHTML = leadershipResult;
-});

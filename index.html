@@ -280,14 +280,14 @@
           <button
             class="button awards-button arrow-button active"
             data-aos="zoom-in"
-            onclick="toggleAwards(1)"
+            data-index="1"
           >
             Awards
           </button>
           <button
             class="button awards-button arrow-button"
             data-aos="zoom-in"
-            onclick="toggleAwards(2)"
+            data-index="2"
           >
             Felicitating the seniors
           </button>
@@ -299,7 +299,6 @@
         <table class="table table-hover">
           <thead>
             <tr>
-              <th style="min-width: 75px">Sr No</th>
               <th style="min-width: 150px">SBU</th>
               <th style="min-width: 510px">Category</th>
               <th style="min-width: 300px">Winner</th>
@@ -359,23 +358,20 @@
       </div>
 
       <div class="pragati-button-flex my-4">
-        <button
-          class="button ppButton arrow-button active"
-          onclick="togglePP(1)"
-        >
+        <button class="button ppButton arrow-button active" data-index="1">
           Stall
         </button>
         <button
           class="button ppButton arrow-button"
           data-aos="zoom-in"
-          onclick="togglePP(2)"
+          data-index="2"
         >
           Gallery
         </button>
         <button
           class="button ppButton arrow-button"
           data-aos="zoom-in"
-          onclick="togglePP(3)"
+          data-index="3"
         >
           Prizes
         </button>
@@ -645,7 +641,11 @@
             ></button>
           </div>
           <div class="modal-body lightgrey-bg p-2">
-            <div class="leadership-section mt-4" id="leadership-div"></div>
+            <img
+              src="https://farid-singledebt.github.io/hpcl/images/leadership/1.JPG"
+              style="max-height: 450px"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -673,21 +673,21 @@
         <button
           class="button mediaGalleryButton arrow-button active"
           data-aos="zoom-in"
-          onclick="toggleMediaGallery(1)"
+          data-index="1"
         >
           day 1
         </button>
         <button
           class="button mediaGalleryButton arrow-button"
           data-aos="zoom-in"
-          onclick="toggleMediaGallery(2)"
+          data-index="2"
         >
           day 2
         </button>
         <button
           class="button mediaGalleryButton arrow-button"
           data-aos="zoom-in"
-          onclick="toggleMediaGallery(3)"
+          data-index="3"
         >
           day 3
         </button>
@@ -721,7 +721,7 @@
       </div>
       <div class="event-overlay mt-4 p-4">
         <h2 class="mb-4">
-          To view the entire content of marketing conclave click below button
+          To view the entire content of marketing Conclave click below button
         </h2>
         <button class="button">Click here</button>
       </div>
@@ -740,6 +740,31 @@
         alt="scrollarrow"
       />
     </button>
+
+    <!-- carousel modal -->
+    <div
+      class="modal fade"
+      id="carouselModal"
+      tabindex="-1"
+      aria-labelledby="carouselModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header p-2">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-2">
+            <div class="owl-carousel owl-theme" id="modal-carousel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- image modal -->
     <div
@@ -760,11 +785,12 @@
             ></button>
           </div>
           <div class="modal-body p-2">
-            <div class="owl-carousel owl-theme" id="modal-carousel"></div>
+            <img src="" alt="" id="modal-img-div" />
           </div>
         </div>
       </div>
     </div>
+
     <!-- pdf modal -->
     <div
       class="modal fade"
@@ -951,78 +977,61 @@
             button.classList.add("active");
           });
         });
-        // const toggleAgenda = (count) => {
-        //   console.log(count);
-        //   agendaDivs.forEach((item, index) => {
-        //     item.classList.add("d-none");
-        //     if (index + 1 === count) {
-        //       item.classList.remove("d-none");
-        //     }
-        //   });
-        //   //
-        //   agendaButtons.forEach((item, index) => {
-        //     item.classList.remove("active");
-        //     if (index + 1 === count) {
-        //       item.classList.add("active");
-        //     }
-        //   });
-        // };
         //
         const ppDivs = document.querySelectorAll(".ppDiv");
         const ppButtons = document.querySelectorAll(".ppButton");
-        const togglePP = (count) => {
-          ppDivs.forEach((item, index) => {
-            item.classList.add("d-none");
-            if (index + 1 === count) {
-              item.classList.remove("d-none");
-            }
+        ppButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const index = button.getAttribute("data-index");
+            ppDivs.forEach((div, divIndex) => {
+              if (divIndex + 1 == index) {
+                div.classList.remove("d-none");
+              } else {
+                div.classList.add("d-none");
+              }
+            });
+            ppButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
           });
-          //
-          ppButtons.forEach((item, index) => {
-            item.classList.remove("active");
-            if (index + 1 === count) {
-              item.classList.add("active");
-            }
-          });
-        };
+        });
         //
         const awardsDivs = document.querySelectorAll(".awards-div");
-        const awardsButton = document.querySelectorAll(".awards-button");
-        const toggleAwards = (count) => {
-          awardsDivs.forEach((item, index) => {
-            item.classList.add("d-none");
-            if (index + 1 === count) {
-              item.classList.remove("d-none");
-            }
+        const awardsButtons = document.querySelectorAll(".awards-button");
+        awardsButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const index = button.getAttribute("data-index");
+            awardsDivs.forEach((div, divIndex) => {
+              if (divIndex + 1 == index) {
+                div.classList.remove("d-none");
+              } else {
+                div.classList.add("d-none");
+              }
+            });
+            awardsButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
           });
-          //
-          awardsButton.forEach((item, index) => {
-            item.classList.remove("active");
-            if (index + 1 === count) {
-              item.classList.add("active");
-            }
-          });
-        };
+        });
         //
         const mediaGalleryDivs = document.querySelectorAll(".mediaGalleryDiv");
         const mediaGalleryButtons = document.querySelectorAll(
           ".mediaGalleryButton"
         );
-        const toggleMediaGallery = (count) => {
-          mediaGalleryDivs.forEach((item, index) => {
-            item.classList.add("d-none");
-            if (index + 1 === count) {
-              item.classList.remove("d-none");
-            }
+        mediaGalleryButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const index = button.getAttribute("data-index");
+            mediaGalleryDivs.forEach((div, divIndex) => {
+              if (divIndex + 1 == index) {
+                div.classList.remove("d-none");
+              } else {
+                div.classList.add("d-none");
+              }
+            });
+            mediaGalleryButtons.forEach((btn) =>
+              btn.classList.remove("active")
+            );
+            button.classList.add("active");
           });
-          //
-          mediaGalleryButtons.forEach((item, index) => {
-            item.classList.remove("active");
-            if (index + 1 === count) {
-              item.classList.add("active");
-            }
-          });
-        };
+        });
         //
         function scrollToTop() {
           window.scrollTo(0, 0);

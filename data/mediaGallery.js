@@ -7,11 +7,11 @@ const randomBorders = [
 ];
 
 $(document).ready(function () {
-  for (let i = 1; i <= 76; i++) {
+  for (let i = 1; i <= 78; i++) {
     const randomClass =
       randomBorders[Math.floor(Math.random() * randomBorders.length)];
     mediaGalleryDay2Data.push({
-      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.jpg`,
+      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.webp`,
       className: randomClass,
     });
   }

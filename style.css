@@ -942,6 +942,11 @@ ul {
 }
 .leadership-temp-syle {
   position: relative;
+  width: 100%;
+  height: auto;
+}
+.leadership-temp-syle img {
+  object-fit: contain;
 }
 .leadership-temp-syle .button {
   position: absolute;

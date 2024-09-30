@@ -542,7 +542,7 @@ footer {
 .prizes-grid .prizes-card img {
   aspect-ratio: 1;
   border-radius: 50%;
-  max-width: 100px;
+  max-width: 250px;
   margin: 0 auto;
 }
 .prizes-grid .second {

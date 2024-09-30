@@ -549,27 +549,13 @@
         <div class="prizes-grid">
           <div class="prizes-card first">
             <h1>1</h1>
-            <img
-              src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-            />
-            <p class="fw-bold">Winner name</p>
-            <div>
-              <p>Subject - Lorem, ipsum.</p>
-              <p>Category - Lorem, ipsum dolor.</p>
-            </div>
+            <img src="./images/winner/winner1.webp" alt="" />
+            <h2 class="fw-bold">NG & Renewables</h2>
           </div>
           <div class="prizes-card second">
             <h1>2</h1>
-            <img
-              src="https://images.pexels.com/photos/6169125/pexels-photo-6169125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-            />
-            <p class="fw-bold">Winner name</p>
-            <div>
-              <p>Subject - Lorem, ipsum.</p>
-              <p>Category - Lorem, ipsum dolor.</p>
-            </div>
+            <img src="./images/winner/winner2.webp" alt="" />
+            <h2 class="fw-bold">LPG</h2>
           </div>
         </div>
       </div>
@@ -799,7 +785,6 @@
       class="button scrolltotop d-none"
       id="scrolltotop"
       data-aos="fade-up"
-      onclick="scrollToTop()"
     >
       <img
         src="https://farid-singledebt.github.io/hpcl/images/scroll_to_top.png"
@@ -969,6 +954,9 @@
           },
         });
         //
+        scrolltotop.addEventListener("click", () => {
+          window.scrollTo(0, 0);
+        });
         window.addEventListener("scroll", () => {
           if (window.scrollY > 10) {
             scrolltotop.classList.remove("d-none");
@@ -1098,10 +1086,6 @@
             button.classList.add("active");
           });
         });
-        //
-        function scrollToTop() {
-          window.scrollTo(0, 0);
-        }
         //
         document.querySelectorAll(".agenda-button").forEach((item) => {
           item.addEventListener("click", function () {

@@ -21,7 +21,7 @@ $(document).ready(function () {
     const randomClass =
       randomBorders[Math.floor(Math.random() * randomBorders.length)];
     mediaGalleryDay3Data.push({
-      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.webp`,
+      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day3/${i}.webp`,
       className: randomClass,
     });
   }

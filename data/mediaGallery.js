@@ -1,4 +1,5 @@
 let mediaGalleryDay2Data = [];
+let mediaGalleryDay3Data = [];
 const randomBorders = [
   "random-border-1",
   "random-border-2",
@@ -16,6 +17,15 @@ $(document).ready(function () {
     });
   }
 
+  for (let i = 1; i <= 34; i++) {
+    const randomClass =
+      randomBorders[Math.floor(Math.random() * randomBorders.length)];
+    mediaGalleryDay3Data.push({
+      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.webp`,
+      className: randomClass,
+    });
+  }
+
   const mediaGalleryDay1 = document.getElementById("media-gallery-day1");
   const mediaGalleryDay2 = document.getElementById("media-gallery-day2");
   const mediaGalleryDay3 = document.getElementById("media-gallery-day3");
@@ -25,8 +35,8 @@ $(document).ready(function () {
   let mediaGalleryDay3Result = "";
 
   let media1Count = 10;
-  let media2Count = 15;
-  let media3Count = 20;
+  let media2Count = 10;
+  let media3Count = 10;
 
   function loadMedia1() {
     mediaGalleryDay2Data
@@ -63,7 +73,7 @@ $(document).ready(function () {
   loadMedia2();
   //
   function loadMedia3() {
-    mediaGalleryDay2Data
+    mediaGalleryDay3Data
       .slice(0, media3Count)
       .map((item) => {
         mediaGalleryDay3Result += `
@@ -110,13 +120,13 @@ $(document).ready(function () {
   });
 
   media3LoadMore.addEventListener("click", () => {
-    if (media3Count < mediaGalleryDay2Data.length) {
+    if (media3Count < mediaGalleryDay3Data.length) {
       media3Count += 10;
-    } else if (media3Count > mediaGalleryDay2Data.length) {
+    } else if (media3Count > mediaGalleryDay3Data.length) {
       media3Count = 10;
       media3LoadMore.textContent = "Load more";
     }
-    if (media3Count >= mediaGalleryDay2Data.length) {
+    if (media3Count >= mediaGalleryDay3Data.length) {
       media3LoadMore.textContent = "Reset";
     }
     loadMedia3();

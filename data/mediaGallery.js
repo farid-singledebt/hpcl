@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
   }
 
-  for (let i = 1; i <= 34; i++) {
+  for (let i = 1; i <= 32; i++) {
     const randomClass =
       randomBorders[Math.floor(Math.random() * randomBorders.length)];
     mediaGalleryDay3Data.push({
@@ -34,13 +34,18 @@ $(document).ready(function () {
   let mediaGalleryDay2Result = "";
   let mediaGalleryDay3Result = "";
 
-  let media1Count = 10;
-  let media2Count = 10;
-  let media3Count = 10;
+  let media1Start = 0;
+  let media1End = 10;
+
+  let media2Start = 0;
+  let media2End = 10;
+
+  let media3Start = 0;
+  let media3End = 10;
 
   function loadMedia1() {
     mediaGalleryDay2Data
-      .slice(0, media1Count)
+      .slice(media1Start, media1End)
       .map((item) => {
         mediaGalleryDay1Result += `
       <div class="masonry-item ${item.className}">
@@ -57,7 +62,7 @@ $(document).ready(function () {
   //
   function loadMedia2() {
     mediaGalleryDay2Data
-      .slice(0, media2Count)
+      .slice(media2Start, media2End)
       .map((item) => {
         mediaGalleryDay2Result += `
       <div class="masonry-item ${item.className}">
@@ -74,7 +79,7 @@ $(document).ready(function () {
   //
   function loadMedia3() {
     mediaGalleryDay3Data
-      .slice(0, media3Count)
+      .slice(media3Start, media3End)
       .map((item) => {
         mediaGalleryDay3Result += `
       <div class="masonry-item ${item.className}">
@@ -85,6 +90,7 @@ $(document).ready(function () {
       `;
       })
       .join("");
+    console.log(media3Start, media3End);
     mediaGalleryDay3.innerHTML = mediaGalleryDay3Result;
   }
   loadMedia3();
@@ -94,39 +100,46 @@ $(document).ready(function () {
   const media3LoadMore = document.getElementById("media3-load-more");
 
   media1LoadMore.addEventListener("click", () => {
-    if (media1Count < mediaGalleryDay2Data.length) {
-      media1Count += 10;
-    } else if (media1Count > mediaGalleryDay2Data.length) {
-      media1Count = 10;
+    if (media1End < mediaGalleryDay2Data.length) {
+      media1Start += 10;
+      media1End += 10;
+    } else if (media1End > mediaGalleryDay2Data.length) {
+      media1Start = 0;
+      media1End = 10;
       media1LoadMore.textContent = "Load more";
     }
-    if (media1Count >= mediaGalleryDay2Data.length) {
+    if (media1End >= mediaGalleryDay2Data.length) {
       media1LoadMore.textContent = "Reset";
     }
     loadMedia1();
   });
 
   media2LoadMore.addEventListener("click", () => {
-    if (media2Count < mediaGalleryDay2Data.length) {
-      media2Count += 10;
-    } else if (media2Count > mediaGalleryDay2Data.length) {
-      media2Count = 10;
+    if (media2End < mediaGalleryDay2Data.length) {
+      media2Start += 10;
+      media2End += 10;
+    } else if (media2End > mediaGalleryDay2Data.length) {
+      media2Start = 0;
+      media2End = 10;
       media2LoadMore.textContent = "Load more";
     }
-    if (media2Count >= mediaGalleryDay2Data.length) {
+    if (media2End >= mediaGalleryDay2Data.length) {
       media2LoadMore.textContent = "Reset";
     }
     loadMedia2();
   });
 
   media3LoadMore.addEventListener("click", () => {
-    if (media3Count < mediaGalleryDay3Data.length) {
-      media3Count += 10;
-    } else if (media3Count > mediaGalleryDay3Data.length) {
-      media3Count = 10;
+    if (media3End < mediaGalleryDay3Data.length) {
+      media3Start += 10;
+      media3End += 10;
+    } else if (media3End > mediaGalleryDay3Data.length) {
+      media3Start = 0;
+      media3End = 10;
       media3LoadMore.textContent = "Load more";
+      return;
     }
-    if (media3Count >= mediaGalleryDay3Data.length) {
+    if (media3End >= mediaGalleryDay3Data.length) {
       media3LoadMore.textContent = "Reset";
     }
     loadMedia3();

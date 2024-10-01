@@ -10,7 +10,7 @@ const randomBorders = [
 ];
 
 $(document).ready(function () {
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 21; i++) {
     const randomClass =
       randomBorders[Math.floor(Math.random() * randomBorders.length)];
     mediaGalleryDay1Data.push({

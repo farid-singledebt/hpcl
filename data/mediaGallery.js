@@ -111,15 +111,15 @@ $(document).ready(function () {
   const media3LoadMore = document.getElementById("media3-load-more");
 
   media1LoadMore.addEventListener("click", () => {
-    if (media1End < mediaGalleryDay2Data.length) {
+    if (media1End < mediaGalleryDay1Data.length) {
       media1Start += 10;
       media1End += 10;
-    } else if (media1End > mediaGalleryDay2Data.length) {
+    } else if (media1End > mediaGalleryDay1Data.length) {
       media1Start = 0;
       media1End = 10;
       media1LoadMore.textContent = "Load more";
     }
-    if (media1End >= mediaGalleryDay2Data.length) {
+    if (media1End >= mediaGalleryDay1Data.length) {
       media1LoadMore.textContent = "Reset";
     }
     loadMedia1();

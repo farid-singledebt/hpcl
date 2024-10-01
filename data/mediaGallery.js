@@ -1,5 +1,7 @@
+let mediaGalleryDay1Data = [];
 let mediaGalleryDay2Data = [];
 let mediaGalleryDay3Data = [];
+
 const randomBorders = [
   "random-border-1",
   "random-border-2",
@@ -8,6 +10,15 @@ const randomBorders = [
 ];
 
 $(document).ready(function () {
+  for (let i = 1; i <= 20; i++) {
+    const randomClass =
+      randomBorders[Math.floor(Math.random() * randomBorders.length)];
+    mediaGalleryDay1Data.push({
+      img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day1/${i}.webp`,
+      className: randomClass,
+    });
+  }
+
   for (let i = 1; i <= 78; i++) {
     const randomClass =
       randomBorders[Math.floor(Math.random() * randomBorders.length)];
@@ -44,7 +55,7 @@ $(document).ready(function () {
   let media3End = 10;
 
   function loadMedia1() {
-    mediaGalleryDay2Data
+    mediaGalleryDay1Data
       .slice(media1Start, media1End)
       .map((item) => {
         mediaGalleryDay1Result += `

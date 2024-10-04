@@ -296,23 +296,36 @@ $(document).ready(function () {
   loadData();
 
   const paginationButtons = document.querySelectorAll(".pagination-button");
+  let count = 1;
+  const toggleActiveButton = () => {
+    paginationButtons.forEach((item) => {
+      item.classList.remove("active");
+      if (Number(item.getAttribute("data-count")) === count) {
+        item.classList.add("active");
+      }
+    });
+  };
+  toggleActiveButton();
+
   paginationButtons.forEach((item) => {
     item.addEventListener("click", function () {
       start = this.getAttribute("data-start");
       end = this.getAttribute("data-end");
+      count = Number(this.getAttribute("data-count"));
       loadData();
+      toggleActiveButton();
     });
   });
 
   document.querySelectorAll(".view-awards-image").forEach((item) => {
     item.addEventListener("click", function () {
       const index = this.getAttribute("data-index");
-      console.log(index);
 
-      // Set the src of the image dynamically from the awardsData
       document
         .getElementById("modal-img-div")
         .setAttribute("src", awardsData[index].img);
+      document.getElementById("image-title").innerHTML =
+        awardsData[index].winner;
     });
   });
 });

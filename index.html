@@ -83,7 +83,6 @@
         <li><a href="#leadershipspeaks">leadership speaks </a></li>
         <li><a href="#eventspecial">Event special</a></li>
         <li><a href="#mediagallery">Media Gallery</a></li>
-        <li><a href="#pastconferences">Event repository</a></li>
       </ul>
     </nav>
     <!--  -->
@@ -307,35 +306,40 @@
           </thead>
           <tbody id="awards-table"></tbody>
         </table>
-        <div class="d-flex align-items-center justify-content-center gap-2">
-          <button class="button pagination-button" data-start="0" data-end="10">
-            1
-          </button>
-          <button
-            class="button pagination-button"
-            data-start="10"
-            data-end="20"
-          >
-            2
-          </button>
-          <button
-            class="button pagination-button"
-            data-start="20"
-            data-end="30"
-          >
-            3
-          </button>
-          <button
-            class="button pagination-button"
-            data-start="30"
-            data-end="40"
-          >
-            4
-          </button>
-        </div>
-        <!-- <div class="text-end">
-          <button class="button" id="load-more">Load more</button>
-        </div> -->
+      </div>
+      <div class="d-flex align-items-center justify-content-center gap-2 py-4">
+        <button
+          class="button pagination-button"
+          data-start="0"
+          data-end="10"
+          data-count="1"
+        >
+          1
+        </button>
+        <button
+          class="button pagination-button"
+          data-start="10"
+          data-end="20"
+          data-count="2"
+        >
+          2
+        </button>
+        <button
+          class="button pagination-button"
+          data-start="20"
+          data-end="30"
+          data-count="3"
+        >
+          3
+        </button>
+        <button
+          class="button pagination-button"
+          data-start="30"
+          data-end="40"
+          data-count="4"
+        >
+          4
+        </button>
       </div>
 
       <div
@@ -834,6 +838,7 @@
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header p-2">
+            <p class="fw-bold" id="image-title"></p>
             <button
               type="button"
               class="btn-close"
@@ -902,12 +907,8 @@
     <footer class="container-fluid p-2">
       <div class="container">
         <p>
-          Copyright &copy; Hindustan Petroleum | Developed by
-          <a
-            href="https://parmarketing.agency"
-            class="text-white text-decoration-none"
-            >Par Marketing</a
-          >
+          Copyright &copy; Hindustan Petroleum | Developed by Team Digital
+          Initiative
         </p>
       </div>
     </footer>
@@ -950,7 +951,7 @@
         });
         //
         $(".banner-carousel").owlCarousel({
-          loop: false,
+          loop: true,
           margin: 0,
           nav: true,
           items: 1,

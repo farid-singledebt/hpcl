@@ -306,7 +306,16 @@ th {
 }
 .overflow-container::-webkit-scrollbar,
 .presentation-scroll::-webkit-scrollbar {
-  opacity: 0;
+  height: 4px !important;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.overflow-container::-webkit-scrollbar-thumb,
+.presentation-scroll::-webkit-scrollbar-thumb {
+  height: 4px;
+  background: var(--blue);
+  border-radius: var(--radius);
 }
 .agenda-card {
   background: var(--blue);
@@ -844,9 +853,82 @@ ul {
   outline: none;
   color: #5d5d5d !important;
 }
-.owl-nav button span {
-  font-size: 3rem;
-  font-weight: bold;
+.owl-next span {
+  position: relative;
+  display: none;
+}
+.owl-next,
+.owl-prev {
+  position: relative;
+  width: 40px !important;
+  height: 40px !important;
+  background: var(--blue) !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 50% !important;
+  transition: var(--transition) !important;
+}
+.owl-next:hover,
+.owl-prev:hover {
+  background: var(--red) !important;
+}
+.owl-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #fff;
+  transition: var(--transition);
+}
+.owl-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 16px solid var(--blue);
+  transition: var(--transition);
+}
+.owl-next:hover::after {
+  border-left: 16px solid var(--red);
+}
+.owl-prev:hover::after {
+  border-right: 16px solid var(--red);
+}
+.owl-prev::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #fff;
+  transition: var(--transition);
+}
+.owl-prev::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 16px solid var(--blue);
+  transition: var(--transition);
 }
 .presentation-clamp {
   display: -webkit-box;
@@ -1051,4 +1133,7 @@ ul {
 }
 #modal-img-div {
   max-height: 450px;
+}
+.pagination-button.active {
+  background: var(--red);
 }

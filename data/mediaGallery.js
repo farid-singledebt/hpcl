@@ -101,7 +101,6 @@ $(document).ready(function () {
       `;
       })
       .join("");
-    console.log(media3Start, media3End);
     mediaGalleryDay3.innerHTML = mediaGalleryDay3Result;
   }
   loadMedia3();
@@ -120,7 +119,7 @@ $(document).ready(function () {
       media1LoadMore.textContent = "Load more";
     }
     if (media1End >= mediaGalleryDay1Data.length) {
-      media1LoadMore.textContent = "Reset";
+      media1LoadMore.textContent = "Back";
     }
     loadMedia1();
   });
@@ -135,7 +134,7 @@ $(document).ready(function () {
       media2LoadMore.textContent = "Load more";
     }
     if (media2End >= mediaGalleryDay2Data.length) {
-      media2LoadMore.textContent = "Reset";
+      media2LoadMore.textContent = "Back";
     }
     loadMedia2();
   });
@@ -151,7 +150,7 @@ $(document).ready(function () {
       return;
     }
     if (media3End >= mediaGalleryDay3Data.length) {
-      media3LoadMore.textContent = "Reset";
+      media3LoadMore.textContent = "Back";
     }
     loadMedia3();
   });

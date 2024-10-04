@@ -20,7 +20,7 @@ const seniorData = [
     designation: "Chief General Manager - Tax",
   },
   {
-    img: "https://images.pexels.com/photos/28725288/pexels-photo-28725288/free-photo-of-scenic-black-and-white-train-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://farid-singledebt.github.io/hpcl/images/seniors/14.webp",
     name: "KOTA SREENIVASA RAO",
     designation: "Executive Director - Natural Gas",
   },

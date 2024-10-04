@@ -215,8 +215,6 @@ img {
   color: #fff;
 }
 .owl-carousel .item {
-  background: var(--blue);
-  padding: 4px;
   border-radius: var(--radius);
 }
 .owl-carousel .item p {

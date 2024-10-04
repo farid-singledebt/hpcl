@@ -2,38 +2,33 @@ let mediaGalleryDay1Data = [];
 let mediaGalleryDay2Data = [];
 let mediaGalleryDay3Data = [];
 
-const randomBorders = [
-  "random-border-1",
-  "random-border-2",
-  "random-border-3",
-  "random-border-4",
-];
+const randomBorders = ["random-border-1", "random-border-2", "random-border-3"];
 
 $(document).ready(function () {
   for (let i = 1; i <= 20; i++) {
-    const randomClass =
-      randomBorders[Math.floor(Math.random() * randomBorders.length)];
+    const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
+
     mediaGalleryDay1Data.push({
       img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day1/${i}.webp`,
-      className: randomClass,
+      className: sequentialClass,
     });
   }
 
   for (let i = 1; i <= 78; i++) {
-    const randomClass =
-      randomBorders[Math.floor(Math.random() * randomBorders.length)];
+    const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
+
     mediaGalleryDay2Data.push({
       img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day2/${i}.webp`,
-      className: randomClass,
+      className: sequentialClass,
     });
   }
 
   for (let i = 1; i <= 32; i++) {
-    const randomClass =
-      randomBorders[Math.floor(Math.random() * randomBorders.length)];
+    const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
+
     mediaGalleryDay3Data.push({
       img: `https://farid-singledebt.github.io/hpcl/images/media_gallery/day3/${i}.webp`,
-      className: randomClass,
+      className: sequentialClass,
     });
   }
 
@@ -54,20 +49,33 @@ $(document).ready(function () {
   let media3Start = 0;
   let media3End = 10;
 
+  const openImage = () => {
+    document.querySelectorAll(".mansory-image").forEach((item) => {
+      item.addEventListener("click", function () {
+        document
+          .getElementById("modal-img-div")
+          .setAttribute("src", this.getAttribute("src"));
+      });
+    });
+  };
+
   function loadMedia1() {
     mediaGalleryDay1Data
       .slice(media1Start, media1End)
       .map((item) => {
         mediaGalleryDay1Result += `
-      <div class="masonry-item ${item.className}">
-      <img src="${item.img}"
+          <div class="masonry-item ${item.className}">
+            <img src="${item.img}"
                 alt="Image 1"
-              />
-      </div>
+                    class="mansory-image"
+                    data-bs-toggle="modal" data-bs-target="#imgModal"
+                  />
+            </div>
       `;
       })
       .join("");
     mediaGalleryDay1.innerHTML = mediaGalleryDay1Result;
+    openImage();
   }
   loadMedia1();
   //
@@ -78,13 +86,15 @@ $(document).ready(function () {
         mediaGalleryDay2Result += `
       <div class="masonry-item ${item.className}">
       <img src="${item.img}"
-                alt="Image 1"
+                alt="Image 1" class="mansory-image"
+                    data-bs-toggle="modal" data-bs-target="#imgModal"
               />
       </div>
       `;
       })
       .join("");
     mediaGalleryDay2.innerHTML = mediaGalleryDay2Result;
+    openImage();
   }
   loadMedia2();
   //
@@ -95,13 +105,15 @@ $(document).ready(function () {
         mediaGalleryDay3Result += `
       <div class="masonry-item ${item.className}">
       <img src="${item.img}"
-                alt="Image 1"
+                alt="Image 1" class="mansory-image"
+                    data-bs-toggle="modal" data-bs-target="#imgModal"
               />
       </div>
       `;
       })
       .join("");
     mediaGalleryDay3.innerHTML = mediaGalleryDay3Result;
+    openImage();
   }
   loadMedia3();
 
@@ -154,4 +166,5 @@ $(document).ready(function () {
     }
     loadMedia3();
   });
+  //
 });

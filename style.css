@@ -689,6 +689,7 @@ footer {
 .masonry-item img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .random-border-1 {
   border: 8px solid var(--blue);
@@ -697,10 +698,7 @@ footer {
   border: 8px solid var(--red);
 }
 .random-border-3 {
-  border: 8px solid #028800;
-}
-.random-border-4 {
-  border: 8px solid #630172;
+  border: 8px solid #000;
 }
 .masonry-item:nth-child(odd) {
   grid-row: span 10;

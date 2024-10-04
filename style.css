@@ -1129,10 +1129,9 @@ ul {
 .modal-dialog-centered {
   display: flex;
   align-items: center;
-  min-height: 100vh; /* Vertically center the modal */
 }
 #modal-img-div {
-  max-height: 450px;
+  max-height: 80vh;
 }
 .pagination-button.active {
   background: var(--red);

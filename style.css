@@ -528,6 +528,7 @@ footer {
   align-items: stretch;
   justify-content: space-evenly;
   position: relative;
+  cursor: pointer;
 }
 .prizes-grid .prizes-card::before {
   content: "";

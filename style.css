@@ -1135,3 +1135,19 @@ ul {
 .pagination-button.active {
   background: var(--red);
 }
+.all-seniors {
+  border-radius: var(--radius);
+  border: 2px solid var(--blue);
+  overflow: hidden;
+  position: relative;
+}
+.all-seniors img {
+  max-height: 500px;
+  height: 100%;
+  cursor: pointer;
+}
+.all-seniors .button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}

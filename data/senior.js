@@ -56,6 +56,16 @@ const seniorData = [
     designation:
       "Executive Director - Marketing Strategy and  Business Development",
   },
+  {
+    img: "https://farid-singledebt.github.io/hpcl/images/seniors/5.webp",
+    name: "K Loganathan",
+    designation: "Cheif general manager - HSE marketing",
+  },
+  {
+    img: "https://farid-singledebt.github.io/hpcl/images/seniors/5.webp",
+    name: "P Veerabhadra rao",
+    designation: "Executive director - Visakh refinery modernisation project",
+  },
 ];
 
 $(document).ready(function () {
@@ -89,4 +99,10 @@ $(document).ready(function () {
       document.getElementById("image-title").innerHTML = seniorData[index].name;
     });
   });
+});
+
+document.getElementById("all-seniors").addEventListener("click", function () {
+  document
+    .getElementById("modal-img-div")
+    .setAttribute("src", this.getAttribute("src"));
 });

@@ -111,7 +111,11 @@
   }
   .leadership-flex {
     flex-direction: column !important;
-    text-align: center;
+    text-align: center !important;
+    gap: 24px;
+  }
+  .leadership-section .leadership-flex:nth-child(even) .leader-image {
+    margin: auto;
   }
   .special-flex {
     flex-direction: column !important;

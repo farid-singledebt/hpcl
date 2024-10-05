@@ -1,38 +1,62 @@
 const leadershipData = [
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/1.JPG",
-    title: "Address by C & MD",
-    subtitle: "Guiding the Future",
-    body: "Our leadership team brings a wealth of experience, innovation, and strategic thinking to propel the company forward.",
+    img: "../images/leadership/CMD.webp",
+    title: "Address by Chairman & Managing Director",
+    name: "Guiding the Future",
+    body: "HPCL is not an organisation, HPCL is a family, HPCL is a way of life, HPCL is a spirit.",
   },
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/2.JPG",
+    img: "../images/leadership/DM.webp",
     title: "Address by Director Finance",
-    subtitle: "Inspiring Growth",
-    body: "With a focus on sustainable growth, our leaders inspire teams to achieve excellence and drive impactful change.",
+    name: "Inspiring Growth",
+    body: "We are primarily a marketing company and as a marketing company customer comes first.",
   },
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/3.JPG",
+    img: "../images/leadership/DF.webp",
     title: "Address by Director Refinery",
-    subtitle: "Leading with Purpose",
-    body: "Our leadership fosters a culture of innovation, empowering employees to create solutions that shape the future.",
+    name: "Leading with Purpose",
+    body: "Arise, awake & stop not, ill the goal is reached.",
   },
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/4.JPG",
+    img: "../images/leadership/DR.webp",
     title: "Address by Director Marketing",
-    subtitle: "Driving Success",
+    name: "Driving Success",
     body: "Leaders at our company prioritize teamwork and collaboration, ensuring that every voice is heard and valued.",
   },
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/5.JPG",
+    img: "../images/leadership/HR.webp",
     title: "Address by Director HR",
-    subtitle: "Building for the Future",
-    body: "Through visionary strategy and expert guidance, our leadership team is building a future of growth and innovation.",
+    name: "Building for the Future",
+    body: "It is important we network with our channel partners and build on legacy of relaionship.",
   },
   {
-    img: "https://farid-singledebt.github.io/hpcl/images/leadership/6.JPG",
+    img: "../images/leadership/CVO.webp",
     title: "Address by Cheif Vigiliance Officer",
-    subtitle: "Leading by Example",
-    body: "Our leadership embodies a commitment to excellence, driving the company toward continued success and market leadership.",
+    name: "Leading by Example",
+    body: "Our objective is to eliminate complaints all together.",
   },
 ];
+
+$(document).ready(function () {
+  let leadershipSection = document.getElementById("leadership-section");
+  leadershipSection.innerHTML = "";
+
+  leadershipData.forEach((item) => {
+    let box = document.createElement("div");
+    box.classList.add("leadership-flex");
+    box.classList.add("mb-5");
+    box.innerHTML = `
+          <div class="leader-image">
+            <img src="${item.img}" alt="" />
+          </div>
+          <div class="leader-details">
+            <h2>${item.title}</h2>
+            <p class="fw-bold my-3">
+            ${item.body}
+            </p>
+            <button class="button">Click here</button>
+          </div>
+    `;
+    leadershipSection.appendChild(box);
+  });
+});

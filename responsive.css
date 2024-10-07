@@ -3,8 +3,11 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
-  .carousel-item img {
-    height: calc(100vh - 84.8px - 72px);
+  .navbar {
+    height: 96px;
+  }
+  .banner-item img {
+    max-height: calc(100vh - 196px);
   }
 }
 @media screen and (max-width: 1200px) {
@@ -23,9 +26,6 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .banner-item {
-    height: calc(100vh - 84.79px - 75px);
-  }
   .presentation-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -145,6 +145,12 @@
   .seniors-flex .seniors-card {
     width: 250px;
     min-width: 250px;
+  }
+  .banner {
+    display: none;
+  }
+  .mobile-banner {
+    display: block;
   }
 }
 @media screen and (max-width: 576px) {

@@ -24,15 +24,51 @@ const pragatiGalleryData = [
     body: "The stall, themed 'Transition and Sustainability,' focused on showcasing the company's role in facilitating sustainable energy solutions while navigating the evolving dynamics of the LPG business. Interactive displays highlighted key products offerings, digital solutions, and notable milestones in  LPG SBU's journey like the LPG Cavern, offering visitors an immersive and informative experience.",
     images: [],
   },
+  {
+    title: "SOD SBU",
+    body: "The SBU's stall was themed “Green Future”, suitably aligned with its sustainability and environmentally friendly initiatives. Inside the stall, many innovative displays were featured, such as a “Net Zero Terminal”, highlighting our commitment to reducing carbon footprints. For showcasing the use of cleaner energy for cooking, Ethanol Stove was displayed, and E Flex Fuel Kit was displayed for demonstrating solutions for flexible fuel usage. These displays were complemented with AV presentations, so as to provide to visitors, deeper insights  into these technologies and immersive experience about their impact on the environment.",
+    images: [],
+  },
 ];
 
-pragatiGalleryData.map((item) => {
-  for (let i = 1; i <= 10; i++) {
-    item.images.push({
-      img: `https://farid-singledebt.github.io/hpcl/images/awards/${i}.JPG`,
-    });
-  }
-});
+// pragatiGalleryData.map((item) => {
+//   for (let i = 1; i <= 10; i++) {
+//     item.images.push({
+//       img: `https://farid-singledebt.github.io/hpcl/images/awards/${i}.JPG`,
+//     });
+//   }
+// });
+
+for (let i = 1; i <= 4; i++) {
+  pragatiGalleryData[0].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/petrochemicals/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 4; i++) {
+  pragatiGalleryData[1].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/petrochemicals/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 9; i++) {
+  pragatiGalleryData[2].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/natural_gas/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 10; i++) {
+  pragatiGalleryData[3].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/lubes/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 4; i++) {
+  pragatiGalleryData[4].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/petrochemicals/${i}.webp`,
+  });
+}
+for (let i = 1; i <= 4; i++) {
+  pragatiGalleryData[5].images.push({
+    img: `https://farid-singledebt.github.io/hpcl/images/pragati/petrochemicals/${i}.webp`,
+  });
+}
 
 function renderPragatiGallery() {
   const pragatiGalleryDiv = document.getElementById("pragati-gallery-div");
@@ -106,17 +142,17 @@ function initializeOwlCarousel() {
 
 $(document).ready(function () {
   renderPragatiGallery(); // Renders the gallery and initializes Owl Carousel
-});
-
-const pragatiGalleryReadmore = document.querySelectorAll(
-  ".pragati-gallery-readmore"
-);
-pragatiGalleryReadmore.forEach((item) => {
-  item.addEventListener("click", function () {
-    const newparaIndex = this.getAttribute("data-index");
-    document.getElementById("read-more-title").innerHTML =
-      pragatiGalleryData[newparaIndex].title;
-    document.getElementById("read-more-div").innerHTML =
-      pragatiGalleryData[newparaIndex].body;
+  //
+  const pragatiGalleryReadmore = document.querySelectorAll(
+    ".pragati-gallery-readmore"
+  );
+  pragatiGalleryReadmore.forEach((item) => {
+    item.addEventListener("click", function () {
+      const newparaIndex = this.getAttribute("data-index");
+      document.getElementById("read-more-title").innerHTML =
+        pragatiGalleryData[newparaIndex].title;
+      document.getElementById("read-more-div").innerHTML =
+        pragatiGalleryData[newparaIndex].body;
+    });
   });
 });

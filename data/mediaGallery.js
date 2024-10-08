@@ -1,10 +1,14 @@
-let mediaGalleryDay1Data = [];
-let mediaGalleryDay2Data = [];
-let mediaGalleryDay3Data = [];
-
-const randomBorders = ["random-border-1", "random-border-2", "random-border-3"];
-
 $(document).ready(function () {
+  let mediaGalleryDay1Data = [];
+  let mediaGalleryDay2Data = [];
+  let mediaGalleryDay3Data = [];
+
+  const randomBorders = [
+    "random-border-1",
+    "random-border-2",
+    "random-border-3",
+  ];
+
   for (let i = 1; i <= 20; i++) {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
 
@@ -99,19 +103,15 @@ $(document).ready(function () {
   loadMedia2();
   //
   function loadMedia3() {
-    mediaGalleryDay3Data
-      .slice(media3Start, media3End)
-      .map((item) => {
-        mediaGalleryDay3Result += `
-      <div class="masonry-item ${item.className}">
-      <img src="${item.img}"
-                alt="Image 1" class="mansory-image"
-                    data-bs-toggle="modal" data-bs-target="#imgModal"
-              />
-      </div>
+    mediaGalleryDay3Data.slice(media3Start, media3End).forEach((item) => {
+      mediaGalleryDay3Result += `
+        <div class="masonry-item ${item.className}">
+          <img src="${item.img}" alt="Image" class="mansory-image" 
+               data-bs-toggle="modal" data-bs-target="#imgModal" />
+        </div>
       `;
-      })
-      .join("");
+    });
+
     mediaGalleryDay3.innerHTML = mediaGalleryDay3Result;
     openImage();
   }
@@ -126,44 +126,51 @@ $(document).ready(function () {
       media1Start += 10;
       media1End += 10;
     } else if (media1End > mediaGalleryDay1Data.length) {
+      media1LoadMore.textContent = "Back";
+    }
+
+    if (media1LoadMore.textContent === "Back") {
+      mediaGalleryDay1Result = "";
       media1Start = 0;
       media1End = 10;
       media1LoadMore.textContent = "Load more";
     }
-    if (media1End >= mediaGalleryDay1Data.length) {
-      media1LoadMore.textContent = "Back";
-    }
+    console.log(media1End, mediaGalleryDay1Data.length);
     loadMedia1();
   });
-
+  //
   media2LoadMore.addEventListener("click", () => {
     if (media2End < mediaGalleryDay2Data.length) {
       media2Start += 10;
       media2End += 10;
     } else if (media2End > mediaGalleryDay2Data.length) {
+      media2LoadMore.textContent = "Back";
+    }
+
+    if (media2LoadMore.textContent === "Back") {
+      mediaGalleryDay2Result = "";
       media2Start = 0;
       media2End = 10;
       media2LoadMore.textContent = "Load more";
     }
-    if (media2End >= mediaGalleryDay2Data.length) {
-      media2LoadMore.textContent = "Back";
-    }
+    console.log(media2End, mediaGalleryDay2Data.length);
     loadMedia2();
   });
-
   media3LoadMore.addEventListener("click", () => {
     if (media3End < mediaGalleryDay3Data.length) {
       media3Start += 10;
       media3End += 10;
     } else if (media3End > mediaGalleryDay3Data.length) {
+      media3LoadMore.textContent = "Back";
+    }
+
+    if (media3LoadMore.textContent === "Back") {
+      mediaGalleryDay3Result = "";
       media3Start = 0;
       media3End = 10;
       media3LoadMore.textContent = "Load more";
-      return;
     }
-    if (media3End >= mediaGalleryDay3Data.length) {
-      media3LoadMore.textContent = "Back";
-    }
+    console.log(media3End, mediaGalleryDay3Data.length);
     loadMedia3();
   });
   //

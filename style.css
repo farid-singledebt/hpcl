@@ -540,10 +540,10 @@ footer {
   background-position: center;
 }
 .prizes-grid .prizes-card:nth-child(1)::before {
-  background-image: url(http://82.112.226.178/images/1st.png);
+  background-image: url(http://82.112.226.178/images/1st.webp);
 }
 .prizes-grid .prizes-card:nth-child(2)::before {
-  background-image: url(http://82.112.226.178/images/2nd.png);
+  background-image: url(http://82.112.226.178/images/2nd.webp);
 }
 .prizes-grid .prizes-card img {
   aspect-ratio: 1;

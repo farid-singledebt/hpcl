@@ -14,8 +14,7 @@ body {
   height: auto;
   overflow-x: hidden !important;
   position: relative;
-  background: url("https://farid-singledebt.github.io/hpcl/images/BG-1.jpg")
-    center no-repeat;
+  background: url("http://82.112.226.178/images/BG-1.webp") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -273,7 +272,7 @@ thead {
 }
 .table {
   min-width: 576px;
-  background: url(https://farid-singledebt.github.io/hpcl/images/awards/awards-glammer.png)
+  background: url(http://82.112.226.178/images/awards/awards-glammer.webp)
     center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -541,10 +540,10 @@ footer {
   background-position: center;
 }
 .prizes-grid .prizes-card:nth-child(1)::before {
-  background-image: url(https://farid-singledebt.github.io/hpcl/images/1st.png);
+  background-image: url(http://82.112.226.178/images/1st.png);
 }
 .prizes-grid .prizes-card:nth-child(2)::before {
-  background-image: url(https://farid-singledebt.github.io/hpcl/images/2nd.png);
+  background-image: url(http://82.112.226.178/images/2nd.png);
 }
 .prizes-grid .prizes-card img {
   aspect-ratio: 1;
@@ -717,8 +716,7 @@ ul {
   margin-bottom: 0;
 }
 .lightgrey-bg {
-  background: url("https://farid-singledebt.github.io/hpcl/images/BG-2.jpg")
-    center no-repeat;
+  background: url("http://82.112.226.178/images/BG-2.webp") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }

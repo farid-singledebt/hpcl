@@ -13,7 +13,7 @@ $(document).ready(function () {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
 
     mediaGalleryDay1Data.push({
-      img: `https://82.112.226.178/images/hpcl/media_gallery/day1/${i}.webp`,
+      img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day1/${i}.webp`,
       className: sequentialClass,
     });
   }
@@ -22,7 +22,7 @@ $(document).ready(function () {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
 
     mediaGalleryDay2Data.push({
-      img: `https://82.112.226.178/images/hpcl/media_gallery/day2/${i}.webp`,
+      img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day2/${i}.webp`,
       className: sequentialClass,
     });
   }
@@ -31,7 +31,7 @@ $(document).ready(function () {
     const sequentialClass = randomBorders[(i - 1) % randomBorders.length];
 
     mediaGalleryDay3Data.push({
-      img: `https://82.112.226.178/images/hpcl/media_gallery/day3/${i}.webp`,
+      img: `https://hpcl.parmarketing.agency/images/hpcl/media_gallery/day3/${i}.webp`,
       className: sequentialClass,
     });
   }

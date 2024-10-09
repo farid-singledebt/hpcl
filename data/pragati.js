@@ -34,39 +34,39 @@ const pragatiGalleryData = [
 // pragatiGalleryData.map((item) => {
 //   for (let i = 1; i <= 10; i++) {
 //     item.images.push({
-//       img: `https://82.112.226.178/images/hpcl/awards/${i}.JPG`,
+//       img: `https://hpcl.parmarketing.agency/images/hpcl/awards/${i}.JPG`,
 //     });
 //   }
 // });
 
 for (let i = 1; i <= 4; i++) {
   pragatiGalleryData[0].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/petrochemicals/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
 for (let i = 1; i <= 4; i++) {
   pragatiGalleryData[1].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/petrochemicals/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
 for (let i = 1; i <= 9; i++) {
   pragatiGalleryData[2].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/natural_gas/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/natural_gas/${i}.webp`,
   });
 }
 for (let i = 1; i <= 10; i++) {
   pragatiGalleryData[3].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/lubes/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/lubes/${i}.webp`,
   });
 }
 for (let i = 1; i <= 4; i++) {
   pragatiGalleryData[4].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/petrochemicals/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
 for (let i = 1; i <= 4; i++) {
   pragatiGalleryData[5].images.push({
-    img: `https://82.112.226.178/images/hpcl/pragati/petrochemicals/${i}.webp`,
+    img: `https://hpcl.parmarketing.agency/images/hpcl/pragati/petrochemicals/${i}.webp`,
   });
 }
 

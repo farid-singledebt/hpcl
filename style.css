@@ -14,8 +14,8 @@ body {
   height: auto;
   overflow-x: hidden !important;
   position: relative;
-  background: url("https://82.112.226.178/images/hpcl/BG-1.webp") center
-    no-repeat;
+  background: url("https://hpcl.parmarketing.agency/images/hpcl/BG-1.webp")
+    center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -273,7 +273,7 @@ thead {
 }
 .table {
   min-width: 576px;
-  background: url(https://82.112.226.178/images/hpcl/awards/awards-glammer.webp)
+  background: url(https://hpcl.parmarketing.agency/images/hpcl/awards/awards-glammer.webp)
     center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -541,10 +541,10 @@ footer {
   background-position: center;
 }
 .prizes-grid .prizes-card:nth-child(1)::before {
-  background-image: url(https://82.112.226.178/images/hpcl/1st.webp);
+  background-image: url(https://hpcl.parmarketing.agency/images/hpcl/1st.webp);
 }
 .prizes-grid .prizes-card:nth-child(2)::before {
-  background-image: url(https://82.112.226.178/images/hpcl/2nd.webp);
+  background-image: url(https://hpcl.parmarketing.agency/images/hpcl/2nd.webp);
 }
 .prizes-grid .prizes-card img {
   aspect-ratio: 1;
@@ -717,8 +717,8 @@ ul {
   margin-bottom: 0;
 }
 .lightgrey-bg {
-  background: url("https://82.112.226.178/images/hpcl/BG-2.webp") center
-    no-repeat;
+  background: url("https://hpcl.parmarketing.agency/images/hpcl/BG-2.webp")
+    center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }

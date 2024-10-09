@@ -1,36 +1,36 @@
 const leadershipData = [
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/CMD.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CMD.webp",
     title: "Address by Chairman & Managing Director",
     name: "Guiding the Future",
     body: "HPCL is not an organisation, HPCL is a family, HPCL is a way of life, HPCL is a spirit.",
   },
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/DM.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DM.webp",
     title: "Address by Director Finance",
     name: "Inspiring Growth",
     body: "We are primarily a marketing company and as a marketing company customer comes first.",
   },
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/DF.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DF.webp",
     title: "Address by Director Refinery",
     name: "Leading with Purpose",
     body: "Arise, awake & stop not, ill the goal is reached.",
   },
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/DR.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/DR.webp",
     title: "Address by Director Marketing",
     name: "Driving Success",
     body: "Leaders at our company prioritize teamwork and collaboration, ensuring that every voice is heard and valued.",
   },
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/HR.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/HR.webp",
     title: "Address by Director HR",
     name: "Building for the Future",
     body: "It is important we network with our channel partners and build on legacy of relaionship.",
   },
   {
-    img: "https://82.112.226.178/images/hpcl/leadership/CVO.webp",
+    img: "https://hpcl.parmarketing.agency/images/hpcl/leadership/CVO.webp",
     title: "Address by Cheif Vigiliance Officer",
     name: "Leading by Example",
     body: "Our objective is to eliminate complaints all together.",

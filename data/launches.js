@@ -1,35 +1,35 @@
 const launch1Data = [];
 for (let i = 1; i <= 5; i++) {
   launch1Data.push({
-    img: `https://82.112.226.178/images/launches/launch1/${i}.webp`,
+    img: `https://82.112.226.178/images/hpcl/launches/launch1/${i}.webp`,
   });
 }
 //
 const launch2Data = [];
 for (let i = 1; i <= 9; i++) {
   launch2Data.push({
-    img: `https://82.112.226.178/images/launches/launch2/${i}.webp`,
+    img: `https://82.112.226.178/images/hpcl/launches/launch2/${i}.webp`,
   });
 }
 //
 const launch3Data = [];
 for (let i = 1; i <= 13; i++) {
   launch3Data.push({
-    img: `https://82.112.226.178/images/launches/launch3/${i}.webp`,
+    img: `https://82.112.226.178/images/hpcl/launches/launch3/${i}.webp`,
   });
 }
 //
 const launch4Data = [];
 for (let i = 1; i <= 9; i++) {
   launch4Data.push({
-    img: `https://82.112.226.178/images/launches/launch4/${i}.webp`,
+    img: `https://82.112.226.178/images/hpcl/launches/launch4/${i}.webp`,
   });
 }
 //
 const launch5Data = [];
 for (let i = 1; i <= 7; i++) {
   launch5Data.push({
-    img: `https://82.112.226.178/images/launches/launch5/${i}.webp`,
+    img: `https://82.112.226.178/images/hpcl/launches/launch5/${i}.webp`,
   });
 }
 //

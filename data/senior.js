@@ -1,68 +1,68 @@
 const seniorData = [
   {
-    img: "https://82.112.226.178/images/seniors/8.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/8.webp",
     name: "PRANAY KUMAR",
     designation: "Chief Executive Officer - HBL",
   },
   {
-    img: "https://82.112.226.178/images/seniors/4.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/4.webp",
     name: "SANJAY DASGUPTA",
     designation: "Chief General Manager - ERP",
   },
   {
-    img: "https://82.112.226.178/images/seniors/2.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/2.webp",
     name: "PRAVEEN KUMAR",
     designation: "Principal - HPMDI",
   },
   {
-    img: "https://82.112.226.178/images/seniors/1.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/1.webp",
     name: "BALAGURUNATHAN K",
     designation: "Chief General Manager - Tax",
   },
   {
-    img: "https://82.112.226.178/images/seniors/14.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/14.webp",
     name: "KOTA SREENIVASA RAO",
     designation: "Executive Director - Natural Gas",
   },
   {
-    img: "https://82.112.226.178/images/seniors/10.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/10.webp",
     name: "VIJAY SHRIKRISHNA AGASHE",
     designation: "Executive Director - Integrated Margin Management",
   },
   {
-    img: "https://82.112.226.178/images/seniors/11.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/11.webp",
     name: "AMITAVA MUKHOPADHYAY",
     designation:
       "Executive Director - Engineering Projects & Facilities Planning",
   },
   {
-    img: "https://82.112.226.178/images/seniors/12.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/12.webp",
     name: "RAJEEV GOEL",
     designation: "Executive Director - Corporate Social Responsibility & PRCC",
   },
   {
-    img: "https://82.112.226.178/images/seniors/13.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/13.webp",
     name: "SHUVENDU GUPTA",
     designation: "Chief Executive Officer",
   },
   {
-    img: "https://82.112.226.178/images/seniors/7.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/7.webp",
     name: "SANJAY MALHOTRA",
     designation: "Chief Executive Officer - HINCOL",
   },
   {
-    img: "https://82.112.226.178/images/seniors/9.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/9.webp",
     name: "KANURU SRINIVAS",
     designation:
       "Executive Director - Marketing Strategy and  Business Development",
   },
   {
-    img: "https://82.112.226.178/images/seniors/5.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/5.webp",
     name: "K Loganathan",
     designation: "Cheif general manager - HSE marketing",
   },
   {
-    img: "https://82.112.226.178/images/seniors/5.webp",
+    img: "https://82.112.226.178/images/hpcl/seniors/5.webp",
     name: "P Veerabhadra rao",
     designation: "Executive director - Visakh refinery modernisation project",
   },

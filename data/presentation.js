@@ -1,31 +1,31 @@
 const presentationData = [
   {
     title: "Channel Partners as Force Multipliers",
-    img: "http://82.112.226.178/images/presentation/channel_partners.webp",
+    img: "https://82.112.226.178/images/presentation/channel_partners.webp",
     body: "The presentation 'Channel Partners as Force Multipliers' highlights the critical role of channel partners, responsible for 83% of total sales, as key drivers of growth and operational excellence. The strategy aims to elevate engagement and performance across all partner tiers, transforming challenges into opportunities for enhanced impact. By addressing financial constraints, fostering stronger partnerships, and building capabilities, the strategy is geared toward unlocking sustainable growth and cultivating a more engaged, high-performing channel partner network poised for long-term success.",
     overlay: "Step into adventure",
-    pdf: "http://82.112.226.178/pdf/Channel_partners_as_Force_Multipliers.pdf",
+    pdf: "https://82.112.226.178/pdf/Channel_partners_as_Force_Multipliers.pdf",
   },
   {
     title: "Customer Focused Transformation",
-    img: "http://82.112.226.178/images/presentation/CX.webp",
+    img: "https://82.112.226.178/images/presentation/CX.webp",
     body: "The 'Customer Focused Transformation' presentation outlines a strategy to enhance Customer Experience (CX) by transforming customer journeys and interactions. It emphasizes the role of new and emerging technologies in creating value for customers. The strategy focuses on four key themes: Convenience, Service, Visual Delight, and Engagement; targeting improvements across retail outlets, LPG services, and digital platforms. For B2C, it emphasizes service innovation and enhanced digital experiences, while the B2B approach includes AI-driven predictive tracking and integrated solutions. The presentation also highlights fostering a CX-centric culture to ensure continuous improvement, aiming to make every interaction memorable and drive loyalty.",
     overlay: "Breathe the silence",
-    pdf: "http://82.112.226.178/pdf/Customer_Focused_Transformation.pdf",
+    pdf: "https://82.112.226.178/pdf/Customer_Focused_Transformation.pdf",
   },
   {
     title: "HPCL's Ascent to an Iconic Brand",
-    img: "http://82.112.226.178/images/presentation/journey.webp",
+    img: "https://82.112.226.178/images/presentation/journey.webp",
     body: "The presentation 'HPCL's Ascent to an Iconic Brand' outlines HPCL's strategic journey to becoming a globally recognized iconic brand. It highlights key areas for improvement to elevate brand perception, visibility, and customer engagement. At the core of this transformation is a focus on enhancing brand perception through targeted marketing and communication efforts aimed at differentiating HPCL in a competitive environment. The roadmap also emphasizes the role of digital transformation in driving deeper customer engagement for fostering brand loyalty. By leveraging digital tools and platforms, HPCL aims to provide personalized and seamless experiences across customer touchpoints. These initiatives are designed to not only strengthen customer relationships but also position HPCL as a forward-thinking, customer-centric brand on a global scale. The overarching goal is to build an enduring brand that resonates with customers and delivers lasting value.",
     overlay: "Pure winter magic",
-    pdf: "http://82.112.226.178/pdf/HPCL's_Ascent_to_an_Iconic_Brand.pdf",
+    pdf: "https://82.112.226.178/pdf/HPCL's_Ascent_to_an_Iconic_Brand.pdf",
   },
   {
     title: "Mission 60@T25",
-    img: "http://82.112.226.178/images/presentation/mission.webp",
+    img: "https://82.112.226.178/images/presentation/mission.webp",
     body: "The “Mission 60@T25” presentation lays out a comprehensive strategic plan aimed at achieving an ambitious target for marketing volume of 60 MMT by FY 2025-26. It provides a holistic overview of the current performances across various Strategic Business Units (SBUs), identifying key strengths, challenges, and untapped potential within each sector. The presentation highlights opportunities for growth and expansion in both existing and emerging markets.",
     overlay: "Endless possibilities await",
-    pdf: "http://82.112.226.178/pdf/Mission_60_@_T25.pdf",
+    pdf: "https://82.112.226.178/pdf/Mission_60_@_T25.pdf",
   },
 ];
 

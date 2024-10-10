@@ -679,6 +679,8 @@ footer {
 .banner-container {
   position: relative;
   background-color: #fff;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 .banner-content {
   position: fixed;
@@ -701,8 +703,7 @@ footer {
 }
 .banner-item img {
   width: 100%;
-  height: 100%;
-  max-height: calc(100vh - 160px);
+  height: auto;
   display: block;
   object-fit: contain !important;
   object-position: top;
@@ -929,13 +930,14 @@ ul {
 }
 .stall {
   width: 100%;
-  height: 500px;
+  max-height: 600px;
   position: relative;
+  overflow: hidden;
 }
 .stall img,
 .stall video {
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -949,7 +951,9 @@ ul {
   height: 100%;
   display: grid;
   place-items: center;
-  cursor: pointer;
+}
+.stall-overlay.hide {
+  background: none;
 }
 .stall-overlay .button {
   width: 75px;
@@ -978,17 +982,23 @@ ul {
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
+.stall-overlay #stall-pause-button {
+  opacity: 0;
+}
+.stall-overlay:hover #stall-pause-button {
+  opacity: 1;
+}
 @keyframes pulse {
   0% {
-    transform: translate(-50%, -50%) scale(1.5); /* Initial size */
+    transform: translate(-50%, -50%) scale(1.5);
     opacity: 0.8;
   }
   50% {
-    transform: translate(-50%, -50%) scale(2); /* Larger size */
+    transform: translate(-50%, -50%) scale(2);
     opacity: 0.5;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.5); /* Back to initial size */
+    transform: translate(-50%, -50%) scale(1.5);
     opacity: 0.8;
   }
 }

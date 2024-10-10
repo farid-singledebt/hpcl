@@ -445,13 +445,27 @@
       </div>
 
       <div class="stall ppDiv">
-        <img
-          src="https://hpcl.parmarketing.agency/images/hpcl/pragati/1.jpg"
-          alt=""
-        />
-        <div class="stall-overlay">
-          <button class="button">
+        <div class="video-container">
+          <div class="stall-placeholder" id="stall-placeholder">
+            <img
+              src="https://hpcl.parmarketing.agency/images/hpcl/winner/winner1.webp"
+              alt="Video Thumbnail"
+            />
+            <button id="play-video-button">Play Video</button>
+          </div>
+
+          <!-- Hidden video element -->
+          <video id="stall-video" controls style="display: none">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="stall-overlay" id="stall-overlay">
+          <button class="button" id="stall-play-button">
             <i class="fa-solid fa-play text-white"></i>
+          </button>
+          <button class="button d-none" id="stall-pause-button">
+            <i class="fa-solid fa-pause text-white"></i>
           </button>
         </div>
       </div>
@@ -653,6 +667,7 @@
         </h2>
         <a
           href="https://csnp.hpcl.in/sites/MRAPMON/image%20gallery/Clairvoyance%202024%20-%20The%20Marketing%20Conclave"
+          target="_blank"
           class="button d-inline-block text-decoration-none"
           >Click here</a
         >
@@ -809,6 +824,7 @@
     <script src="./data/mediaGallery.js"></script>
     <script src="./data/launches.js"></script>
     <script src="./data/activeNavLinks.js"></script>
+    <script src="./data/video.js"></script>
     <!--  -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
